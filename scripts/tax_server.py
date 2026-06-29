@@ -7,18 +7,15 @@ import json
 import re
 import sys
 import time
-import zipfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
-from xml.etree import ElementTree as ET
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 from tax_search import search_tax, detect_intent, resolve_tax_type
-from tax_detail import fetch_detail, get_download_url, SXX_MAP
+from tax_detail import fetch_detail, get_download_url, SXX_MAP, _parse_docx_from_bytes
 from tax_web_search import search_chinatax
 from tax_formatter import format_search_response
 from tax_aggregator import aggregate_search
@@ -249,21 +246,10 @@ def _download_and_extract(bbbs_id: str) -> list[str]:
     if resp.status_code != 200:
         return []
 
-    try:
-        z = zipfile.ZipFile(BytesIO(resp.content))
-        with z.open("word/document.xml") as f:
-            tree = ET.parse(f)
-        ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
-        paragraphs = []
-        for p in tree.findall(".//w:p", ns):
-            texts = [t.text or "" for t in p.findall(".//w:t", ns)]
-            para = "".join(texts).strip()
-            if para:
-                paragraphs.append(para)
+    paragraphs = _parse_docx_from_bytes(resp.content)
+    if paragraphs:
         _text_cache[bbbs_id] = paragraphs
-        return paragraphs
-    except Exception:
-        return []
+    return paragraphs
 
 
 @app.route("/")
@@ -294,19 +280,13 @@ def api_search():
     if source == "aggregated":
         result = aggregate_search(keyword, size=size, status=status, scope=scope)
     elif source == "chinatax":
-        if province:
-            # Search provincial tax site specifically
-            result = search_chinatax(keyword, size=size)
-        else:
-            result = search_chinatax(keyword, size=size)
+        result = search_chinatax(keyword, size=size)
     else:
         result = search_tax(
             keyword, scope=scope, search_type=search_type,
             status=status, date_from=date_from, date_to=date_to,
             size=size, sort=sort,
         )
-
-    province = data.get("province", "")
 
     return jsonify({
         "keyword": keyword,

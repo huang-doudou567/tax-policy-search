@@ -131,21 +131,28 @@ def download_file(bbbs_id: str, fmt: str = "docx", output_path: Optional[str] = 
     return output_path
 
 
-def extract_text_from_docx(filepath: str) -> list:
-    """Extract paragraphs from a DOCX file using stdlib (ZIP + XML)."""
+def _parse_docx_from_bytes(data: bytes) -> list[str]:
+    """Parse DOCX bytes and return non-empty paragraph texts (stdlib, zero-dependency)."""
     try:
-        with zipfile.ZipFile(filepath) as z:
+        with zipfile.ZipFile(BytesIO(data)) as z:
             with z.open("word/document.xml") as f:
                 tree = ET.parse(f)
         ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
         paragraphs = []
         for p in tree.findall(".//w:p", ns):
             texts = [t.text or "" for t in p.findall(".//w:t", ns)]
-            paragraphs.append("".join(texts))
+            para = "".join(texts).strip()
+            if para:
+                paragraphs.append(para)
         return paragraphs
     except Exception:
-        # .doc format — needs antiword/catdoc
         return []
+
+
+def extract_text_from_docx(filepath: str) -> list:
+    """Extract paragraphs from a DOCX file using stdlib (ZIP + XML)."""
+    with open(filepath, "rb") as f:
+        return _parse_docx_from_bytes(f.read())
 
 
 def preview_law(bbbs_id: str) -> dict:

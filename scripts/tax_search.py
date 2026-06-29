@@ -38,6 +38,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ── Constants ───────────────────────────────────────────────────────────────
+_CLEAN_HTML_RE = re.compile(r"<[^>]+>")
 BASE_URL = "https://flk.npc.gov.cn"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -92,8 +93,6 @@ class _CacheManager:
         if self.dir.exists():
             for f in self.dir.glob("*.json"):
                 f.unlink()
-            return True
-        return False
 
     def stats(self) -> dict:
         if not self.dir.exists():
@@ -338,10 +337,9 @@ def search_tax(keyword: str, *,
     total = outer.get("total", 0)
     rows = outer.get("rows", outer.get("list", []))
 
-    # Clean HTML tags from names
-    _clean_re = re.compile(r"<[^>]+>")
+    # Clean HTML tags from names (uses module-level _CLEAN_HTML_RE)
     def clean_html(s):
-        return _clean_re.sub("", s) if s else ""
+        return _CLEAN_HTML_RE.sub("", s) if s else ""
 
     results = []
     for item in rows:
