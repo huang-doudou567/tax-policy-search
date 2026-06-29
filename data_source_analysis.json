@@ -1,0 +1,23 @@
+{
+  "npc_api_results": {
+    "增值税_全文模糊": {"total": 1794, "status": "success"},
+    "企业所得税_全文模糊": {"total": 22134, "status": "success"},
+    "个人所得税_全文模糊": {"total": 24574, "status": "success"},
+    "税收优惠_全文模糊": {"total": 6147, "status": "success"},
+    "发票_全文模糊": {"total": 1041, "status": "success"},
+    "增值税_标题模糊": {"total": 57, "status": "success"},
+    "企业所得税_标题模糊": {"total": 538, "status": "success"},
+    "个人所得税_标题模糊": {"total": 79, "status": "success"}
+  },
+  "api_endpoint": "https://flk.npc.gov.cn/law-search/search/list",
+  "api_method": "POST (JSON body)",
+  "key_parameters": {
+    "searchRange": "1=标题, 2=正文",
+    "searchType": "1=精确, 2=模糊",
+    "sxx": "[1=已废止, 2=已修改, 3=现行有效, 4=尚未生效]",
+    "pageSize": "max 100",
+    "orderByParam": "sort + order"
+  },
+  "detail_api": "https://flk.npc.gov.cn/law-search/search/flfgDetails?bbbs={id}",
+  "download_api": "https://flk.npc.gov.cn/law-search/download/pc?format=docx&bbbs={id}"
+}
