@@ -92,8 +92,13 @@ python scripts/tax_web_search.py "<关键词>" --size 10
 ```bash
 python scripts/tax_detail.py --info <法规ID>
 python scripts/tax_detail.py --preview <法规ID>
+```
+
+🔴 CHECKPOINT · 下载完整法规文本前暂停，等用户确认：
+```
 python scripts/tax_detail.py --download <法规ID>
 ```
+理由：下载操作可能产生大文件，用户应先看过 `--info` 和 `--preview` 摘要再决定是否下载全文。
 
 ### 多源聚合 — NPC + chinatax + AnySearch 三源并行
 
@@ -161,6 +166,8 @@ python scripts/tax_search.py --cache-clear
 ```
 
 ### 风险自检专用输出
+
+🔴 CHECKPOINT · 输出风险自检结果前：如果风险等级为 🟡 中或 🔴 高，先告知用户"以下分析基于法规文本，实际风险以主管税务机关判断为准——是否继续？"，等确认后再展开详细输出。
 
 ```
 ## [风险关键词] — 合规风险提示
@@ -251,6 +258,8 @@ python scripts/tax_aggregator.py "<关键词>" --size 10
 ```
 
 如所有数据源均无结果：
+
+🔴 CHECKPOINT · 三源均无结果时：先向用户确认"未找到相关结果，是否尝试更宽泛关键词继续搜索 / 或联系 12366 热线？"，不要直接结束交互。
 1. 明确告知用户"在 NPC 法规库和国家税务总局网站均未找到相关结果"
 2. 建议用户尝试更宽泛的关键词
 3. 建议用户直接访问 chinatax.gov.cn 或咨询 12366 税务服务热线
