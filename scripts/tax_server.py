@@ -38,6 +38,32 @@ HEADERS_WEB = {
 }
 
 # Trusted tax-practice WeChat public account sources for interpretation/web search
+# ── Content filter: domains/keywords that indicate non-tax garbage results ──
+_BLOCKED_DOMAINS = [
+    "game", "4399", "7k7k", "xiaoyouxi", "youxi", "yxdown", "3dmgame",
+    "gamersky", "duowan", "17173", "52pk", "sina.com.cn/game",
+    "bilibili.com/video", "douyin.com", "kuaishou.com", "weibo.com",
+    "zhihu.com/question", "tieba.baidu.com", "baike.baidu.com/item",
+]
+_BLOCKED_TITLE_WORDS = [
+    "游戏", "小游戏", "手游", "网游", "页游", "棋牌", "捕鱼",
+    "娱乐", "八卦", "明星", "综艺", "电影", "电视剧",
+    "体育", "彩票", "竞彩", "博彩",
+    "小说", "漫画", "动漫",
+]
+
+def _is_garbage_result(url: str = "", title: str = "") -> bool:
+    """Filter out clearly irrelevant/non-tax content."""
+    lower_url = url.lower()
+    for kw in _BLOCKED_DOMAINS:
+        if kw in lower_url:
+            return True
+    lower_title = title.lower()
+    for kw in _BLOCKED_TITLE_WORDS:
+        if kw in lower_title:
+            return True
+    return False
+
 TAX_PRACTICE_SOURCES = [
     {"name": "小颖言税", "query_hint": "小颖言税"},
     {"name": "税海涛声", "query_hint": "税海涛声"},
@@ -218,6 +244,8 @@ def _search_practice_sources(query: str, n: int = 3) -> list[dict]:
                 title = re.sub(r'<[^>]+>', '', title_raw).strip()
                 if len(title) < 8 or href in seen:
                     continue
+                if _is_garbage_result(href, title):
+                    continue
                 seen.add(href)
                 dm = re.search(r'(\d{4}[-/]\d{1,2}[-/]\d{1,2})', block)
                 snippet = ""
@@ -239,7 +267,8 @@ def _search_practice_sources(query: str, n: int = 3) -> list[dict]:
 def search_interpretations(law_title: str, keyword: str = "",
                            sources: list[str] = None,
                            province: str = "") -> dict:
-    """Search policy interpretations — official first, then practical guides."""
+    """Search **official** policy interpretations ONLY from .gov.cn sources.
+    Practice/public-account/web results belong in /api/web-related, NOT here."""
     cache_key = f"{law_title}|{keyword}|{'-'.join(sources or [])}|{province}"
     if cache_key in _interp_cache:
         return _interp_cache[cache_key]
@@ -252,7 +281,7 @@ def search_interpretations(law_title: str, keyword: str = "",
 
     title_short = law_title.replace("中华人民共和国", "").strip()
 
-    # Phase 1: Official site-specific searches (formal interpretations)
+    # Only site:-restricted official searches — no broad web, no practice sources
     official_queries = [
         f"{title_short} 政策解读",
         f"{title_short} 解读",
@@ -260,34 +289,16 @@ def search_interpretations(law_title: str, keyword: str = "",
         f"{keyword} 官方解读" if keyword and keyword != law_title else f"{title_short} 官方解读",
     ]
 
-    # Phase 2: Broader practical searches (no site: filter) for real-world guidance
-    practical_queries = [
-        f"{title_short} 实务指南",
-        f"{title_short} 操作指引",
-        f"{keyword} 政策问答" if keyword and keyword != law_title else f"{title_short} 政策问答",
-    ]
-
     all_results = []
     seen_urls = set()
 
-    # Phase 1: Official sources
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         futures = {}
         for site in sources:
             for q_text in official_queries[:3]:
                 futures[(site, q_text)] = pool.submit(
                     _search_one_source, site, q_text, 4
                 )
-
-        # Phase 2: Trusted practice sources (小颖言税/税海涛声/会计网/税小课/朴税)
-        futures[("_practice", "main")] = pool.submit(
-            _search_practice_sources, f"{title_short} {keyword}", 3
-        )
-        # Also do broader practical web search
-        for q_text in practical_queries[:2]:
-            futures[("_broad", q_text)] = pool.submit(
-                _search_web_broad, f"{q_text}", 4
-            )
 
         for (site, q_text), future in futures.items():
             try:
@@ -297,45 +308,8 @@ def search_interpretations(law_title: str, keyword: str = "",
                         if item["url"] not in seen_urls:
                             seen_urls.add(item["url"])
                             all_results.append(item)
-                    elif isinstance(item, dict) and not item.get("url"):
-                        all_results.append(item)
             except Exception:
                 pass
-
-    # Phase 3: Baidu fallback if too few results
-    if len(all_results) < 3:
-        try:
-            baidu_url = f"https://www.baidu.com/s?wd={quote(title_short)}+{quote(keyword)}+政策解读&rn=8"
-            r = req.get(baidu_url, headers={**HEADERS_WEB, "Accept": "text/html"}, timeout=10)
-            if r.status_code == 200:
-                link_re = re.compile(
-                    r'<a[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', re.DOTALL
-                )
-                for href, title_raw in link_re.findall(r.text):
-                    if href in seen_urls or "baidu.com" in href:
-                        continue
-                    title = re.sub(r'<[^>]+>', '', title_raw).strip()
-                    if len(title) < 8:
-                        continue
-                    seen_urls.add(href)
-                    domain = re.search(r'https?://(?:www\.)?([^/]+)', href)
-                    all_results.append({
-                        "title": title, "url": href, "date": "",
-                        "source": domain.group(1) if domain else "",
-                        "source_label": "网络来源",
-                        "snippet": "",
-                    })
-        except Exception:
-            pass
-
-    # Sort: official sources first, then trusted practice sources, then others
-    PRACTICE_NAMES = {s["name"] for s in TAX_PRACTICE_SOURCES}
-    OFFICIAL_LABELS = {"国家税务总局", "财政部", "税务法规库", "中国政府网", "全国人大", "官方来源"}
-    all_results.sort(key=lambda x: (
-        0 if x.get("source_label") in OFFICIAL_LABELS else
-        1 if x.get("source_label") in PRACTICE_NAMES else
-        2 if x.get("source_label") == "实务解读" else 3
-    ))
 
     result = {
         "law_title": law_title,
@@ -604,6 +578,8 @@ def _search_web_broad(query: str, n: int = 8) -> list[dict]:
                 title = re.sub(r'<[^>]+>', '', title_raw).strip()
                 if len(title) < 8 or href in seen:
                     continue
+                if _is_garbage_result(href, title):
+                    continue
                 seen.add(href)
                 dm = re.search(r'(\d{4}[-/]\d{1,2}[-/]\d{1,2})', block)
                 snippet = ""
@@ -657,7 +633,7 @@ def _search_web_broad(query: str, n: int = 8) -> list[dict]:
 
 @app.route("/api/web-related/<bbbs_id>", methods=["GET"])
 def api_web_related(bbbs_id):
-    """Search broader web for practical policy analysis."""
+    """Search practice sources (公众号) + broader web for practical tax-policy analysis."""
     keyword = request.args.get("keyword", "")
     try:
         detail = fetch_detail(bbbs_id)
@@ -667,14 +643,34 @@ def api_web_related(bbbs_id):
 
         short_title = title.replace("中华人民共和国", "").strip()
         search_query = f"{short_title} {keyword}" if keyword else short_title
-        sources = _search_web_broad(search_query, 8)
+
+        # ── Concurrent: practice sources + broad web ──
+        all_sources = []
+        seen = set()
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            f_practice = pool.submit(_search_practice_sources, search_query, 3)
+            f_web = pool.submit(_search_web_broad, search_query, 8)
+
+            for future in [f_practice, f_web]:
+                try:
+                    items = future.result(timeout=20)
+                    for item in items:
+                        if item.get("url"):
+                            if item["url"] not in seen and not _is_garbage_result(item.get("url", ""), item.get("title", "")):
+                                seen.add(item["url"])
+                                all_sources.append(item)
+                        elif isinstance(item, dict):
+                            all_sources.append(item)
+                except Exception:
+                    pass
 
         return jsonify({
             "law_id": bbbs_id,
             "law_title": title,
             "keyword": keyword,
-            "total": len(sources),
-            "sources": sources,
+            "total": len(all_sources),
+            "sources": all_sources,
             "searched_at": time.strftime("%Y-%m-%d %H:%M:%S"),
         })
     except Exception as e:

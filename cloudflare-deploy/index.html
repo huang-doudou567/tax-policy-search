@@ -318,18 +318,16 @@ function renderLawTextTab(data,bbbsId,title){
 /* ═══════════ INTERPRETATIONS TAB ═══════════ */
 async function loadInterpretationsTab(bbbsId){
   const c=document.getElementById('tabInterpContent');
-  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索政策解读与实务指南…</p><p style="font-size:12px;color:var(--t3)">官方解读 · 小颖言税 · 税海涛声 · 会计网 · 税小课 · 朴税</p></div>`;
+  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索官方政策解读…</p><p style="font-size:12px;color:var(--t3)">chinatax.gov.cn · mof.gov.cn · gov.cn</p></div>`;
   try{
     const data=await fetchWithRetry(`/api/interpretations/${bbbsId}?keyword=${encodeURIComponent(lastKeyword)}&province=${encodeURIComponent(document.getElementById('filterProvince').value)}`);
     if(data.error)throw new Error(data.error);
     let h='';
     if(data.sources&&data.sources.length>0){
       data.sources.forEach(item=>{
-        const practiceNames=['小颖言税','税海涛声','会计网','税小课','朴税'];
         const isOfficial=item.source_label&&['国家税务总局','财政部','税务法规库','中国政府网','全国人大','官方来源'].includes(item.source_label);
-        const isPractice=practiceNames.includes(item.source_label);
-        const badge=isOfficial?'🏛️ 官方解读':(isPractice?`✍️ ${item.source_label}`:'🌐 网页来源');
-        const badgeClass=isOfficial?'is-official':(isPractice?'is-practical':'is-web');
+        const badge=isOfficial?'🏛️ 官方解读':'🏛️ 官方';
+        const badgeClass='is-official';
         h+=`<a class="interp-card" href="${item.url||'#'}" target="_blank" rel="noopener">
           <div class="it">📋 ${esc(item.title)}</div>
           <div class="im">
@@ -346,7 +344,7 @@ async function loadInterpretationsTab(bbbsId){
 /* ═══════════ WEB RELATED TAB ═══════════ */
 async function loadWebRelatedTab(bbbsId,title){
   const c=document.getElementById('tabWebContent');
-  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索相关解读与实践指南…</p><p style="font-size:12px;color:var(--t3)">chinatax · 财政部 · 专业解读</p></div>`;
+  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索实务参考与解读…</p><p style="font-size:12px;color:var(--t3)">小颖言税 · 税海涛声 · 会计网 · 税小课 · 朴税 + 网络补充</p></div>`;
   try{
     const data=await fetchWithRetry(`/api/web-related/${bbbsId}?keyword=${encodeURIComponent(title+' '+lastKeyword)}`);
     if(data.error)throw new Error(data.error);
@@ -354,12 +352,15 @@ async function loadWebRelatedTab(bbbsId,title){
     if(data.sources&&data.sources.length>0){
       h+=`<div style="padding:12px 20px;font-size:12px;color:var(--t2);background:#fafafa;border-bottom:1px solid var(--border)">🔎 搜索结果: ${data.total}条 · ${data.searched_at||''}</div>`;
       data.sources.forEach(item=>{
-        const label=item.source_label||item.source||'网页';
-        const icon=item.source==='chinatax.gov.cn'?'🏛️':(item.source==='mof.gov.cn'?'💰':'🌐');
+        const practiceNames=['小颖言税','税海涛声','会计网','税小课','朴税'];
+        const isPractice=practiceNames.includes(item.source_label);
+        const isOfficial=item.source_label&&['国家税务总局','财政部','税务法规库','中国政府网','全国人大','官方来源'].includes(item.source_label);
+        const badge=isPractice?`✍️ ${item.source_label}`:(isOfficial?'🏛️ 官方':'🌐 网络来源');
+        const badgeClass=isPractice?'is-practical':(isOfficial?'is-official':'is-web');
         h+=`<a class="interp-card" href="${item.url||'#'}" target="_blank" rel="noopener">
-          <div class="it">${icon} ${esc(item.title)}</div>
+          <div class="it">${esc(item.title)}</div>
           <div class="im">
-            <span class="is is-web">${esc(label)}</span>${item.date?`<span>${item.date}</span>`:''}
+            <span class="is ${badgeClass}">${badge}</span>${item.date?`<span>${item.date}</span>`:''}
             ${item.snippet?`<span style="color:var(--t2);font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(item.snippet)}</span>`:''}
             ${item.url?`<span style="color:var(--primary)">🔗 查看 →</span>`:''}
           </div></a>`;
@@ -431,7 +432,7 @@ function switchTab(tab){
   if(tab==='interp')loadInterpretationsTab(_modalLawId);
   if(tab==='web')loadWebRelatedTab(_modalLawId,_modalTitle);
   // Footer info
-  const footerLabels={law:'实时获取自NPC国家法规库',interp:'搜索自 chinatax.gov.cn · mof.gov.cn · gov.cn',ai:'AI 生成 · 仅供参考 · 以官方为准',web:'搜索自 AnySearch 网页引擎'};
+  const footerLabels={law:'实时获取自NPC国家法规库',interp:'搜索自 chinatax.gov.cn · mof.gov.cn · gov.cn（仅官方来源）',ai:'AI 生成 · 仅供参考 · 以官方为准',web:'搜索自公众号 + 实务网络（含小颖言税/税海涛声/会计网等）'};
   document.getElementById('footerInfo').textContent=footerLabels[tab]||'';
 }
 
