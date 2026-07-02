@@ -199,10 +199,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 /* ═══════════ QUICK TAX ═══════════ */
 async function loadQuickTax(){
-  const r=await fetch('/api/quick-tax-types');const types=await r.json();
+  try{const types=await fetchWithRetry('/api/quick-tax-types');
   document.getElementById('quickTax').innerHTML=types.map(t=>
     `<button onclick="pickTax('${t.keyword}')"><span class="t">${t.icon} ${t.label}</span><span class="s">${t.keyword}</span></button>`
   ).join('');
+  }catch(e){
+    document.getElementById('quickTax').innerHTML='<span style="font-size:12px;color:var(--t3)">快捷税种加载中…</span>';
+  }
 }
 function pickTax(kw){document.getElementById('searchInput').value=kw;document.getElementById('searchInput').focus();}
 
@@ -213,7 +216,35 @@ async function loadProvinces(){
 }
 
 /* ═══════════ SEARCH ═══════════ */
-async function doSearch(){
+async function fetchWithRetry(url,opts={},retries=3,delay=800){
+  // Auto-retry on network errors + empty responses (serveo tunnel instability)
+  for(let i=0;i<retries;i++){
+    try{
+      const r=await fetch(url,opts);
+      const text=await r.text();
+      if(!text||text.trim()===''){
+        if(i<retries-1){await new Promise(x=>setTimeout(x,delay*(i+1)));continue;}
+        throw new Error('服务返回空响应，请刷新重试');
+      }
+      try{return JSON.parse(text);}catch(e){
+        if(i<retries-1){await new Promise(x=>setTimeout(x,delay*(i+1)));continue;}
+        throw new Error('响应格式异常: '+text.slice(0,80));
+      }
+    }catch(e){
+      if(e.name==='TypeError'||e.message.includes('Failed to fetch')||e.message.includes('NetworkError')){
+        if(i<retries-1){
+          const c=document.getElementById('resultsContainer');
+          c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>连接不稳定，正在重试…</p><p style="font-size:12px;color:var(--t3)">第 ${i+2}/${retries} 次尝试</p></div>`;
+          await new Promise(x=>setTimeout(x,delay*(i+1)));
+          continue;
+        }
+        throw new Error('网络连接失败，请检查网络后刷新页面重试');
+      }
+      throw e;
+    }
+  }
+  throw new Error('请求失败，已达最大重试次数');
+}
   const keyword=document.getElementById('searchInput').value.trim();if(!keyword)return;
   const c=document.getElementById('resultsContainer'),btn=document.getElementById('searchBtn');
   c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>实时查询中…</p><p style="font-size:12px;color:var(--t3)">"${esc(keyword)}"</p></div>`;
@@ -229,11 +260,10 @@ async function doSearch(){
       date_from:document.getElementById('filterDateFrom').value||null,
       date_to:document.getElementById('filterDateTo').value||null,
     };
-    const r=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!r.ok){const e=await r.json();throw new Error(e.error||'请求失败')}
-    const data=await r.json();lastResults=data.result?.results||data.result?.items||[];lastKeyword=keyword;
+    const data=await fetchWithRetry('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    lastResults=data.result?.results||data.result?.items||[];lastKeyword=keyword;
     renderResults(data);
-  }catch(e){c.innerHTML=`<div class="empty-state"><div class="icon">⚠️</div><p><b>查询失败</b></p><p style="font-size:13px">${esc(e.message)}</p></div>`}
+  }catch(e){c.innerHTML=`<div class="empty-state"><div class="icon">⚠️</div><p><b>查询失败</b></p><p style="font-size:13px">${esc(e.message)}</p><p style="font-size:12px;margin-top:8px;color:var(--t3)">已自动重试 3 次 · 请稍后再试</p></div>`}
   finally{btn.disabled=false;btn.textContent='搜索';}
 }
 
@@ -288,8 +318,7 @@ async function loadInterpretationsTab(bbbsId){
   const c=document.getElementById('tabInterpContent');
   c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索政策解读与实务指南…</p><p style="font-size:12px;color:var(--t3)">官方解读 · 小颖言税 · 税海涛声 · 会计网 · 税小课 · 朴税</p></div>`;
   try{
-    const r=await fetch(`/api/interpretations/${bbbsId}?keyword=${encodeURIComponent(lastKeyword)}&province=${encodeURIComponent(document.getElementById('filterProvince').value)}`);
-    const data=await r.json();
+    const data=await fetchWithRetry(`/api/interpretations/${bbbsId}?keyword=${encodeURIComponent(lastKeyword)}&province=${encodeURIComponent(document.getElementById('filterProvince').value)}`);
     if(data.error)throw new Error(data.error);
     let h='';
     if(data.sources&&data.sources.length>0){
@@ -317,8 +346,7 @@ async function loadWebRelatedTab(bbbsId,title){
   const c=document.getElementById('tabWebContent');
   c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索相关解读与实践指南…</p><p style="font-size:12px;color:var(--t3)">chinatax · 财政部 · 专业解读</p></div>`;
   try{
-    const r=await fetch(`/api/web-related/${bbbsId}?keyword=${encodeURIComponent(title+' '+lastKeyword)}`);
-    const data=await r.json();
+    const data=await fetchWithRetry(`/api/web-related/${bbbsId}?keyword=${encodeURIComponent(title+' '+lastKeyword)}`);
     if(data.error)throw new Error(data.error);
     let h='';
     if(data.sources&&data.sources.length>0){
@@ -375,7 +403,7 @@ async function viewLaw(bbbsId,title){
 
   // Load law text immediately
   try{
-    const r=await fetch('/api/text/'+bbbsId);const data=await r.json();
+    const data=await fetchWithRetry('/api/text/'+bbbsId);
     if(data.error)throw new Error(data.error);
     renderLawTextTab(data,bbbsId,title);
     document.getElementById('footerInfo').textContent=`${data.total_paragraphs}段 · ${data.article_count}条法条 · 实时获取`;
@@ -409,8 +437,7 @@ async function generateAiInterpret(){
   const c=document.getElementById('tabAiContent');
   c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">AI 正在解读法规…</p><p style="font-size:12px;color:var(--t3)">约需 5-10 秒</p></div>`;
   try{
-    const r=await fetch(`/api/ai-interpret/${_modalLawId}?keyword=${encodeURIComponent(lastKeyword)}`);
-    const data=await r.json();
+    const data=await fetchWithRetry(`/api/ai-interpret/${_modalLawId}?keyword=${encodeURIComponent(lastKeyword)}`);
     if(data.error)throw new Error(data.error);
     // Parse the markdown interpretation into HTML sections
     const text=data.interpretation||'';
