@@ -37,6 +37,21 @@ HEADERS_WEB = {
     "Accept": "text/html,application/xhtml+xml",
 }
 
+# Trusted tax-practice WeChat public account sources for interpretation/web search
+TAX_PRACTICE_SOURCES = [
+    {"name": "小颖言税", "query_hint": "小颖言税"},
+    {"name": "税海涛声", "query_hint": "税海涛声"},
+    {"name": "会计网",   "query_hint": "会计网"},
+    {"name": "税小课",   "query_hint": "税小课服务"},
+    {"name": "朴税",     "query_hint": "朴税"},
+]
+# Sources that should be tagged as "实务解读" even if not from .gov.cn
+PRACTICE_DOMAIN_KEYWORDS = [
+    "小颖言税", "税海涛声", "会计网", "税小课", "朴税",
+    "mp.weixin.qq.com", "zhuanlan.zhihu.com", "toutiao.com",
+    "kuaiji", "shuiwu", "tax", "chinaacc",
+]
+
 # ── Interpretation Search Engine ─────────────────────────────────────────
 
 def _search_one_source(site: str, query: str, n: int = 5) -> list[dict]:
@@ -162,10 +177,69 @@ def _anysearch_legal(query: str, n: int = 5) -> list[dict]:
         return []
 
 
+def _is_practice_source(label_or_domain: str) -> bool:
+    """Check if a source label matches known tax practice outlets."""
+    for kw in PRACTICE_DOMAIN_KEYWORDS:
+        if kw.lower() in label_or_domain.lower():
+            return True
+    return False
+
+
+def _practice_source_name(domain: str, title: str) -> str:
+    """Return the practice source name if the domain/title matches, else ''."""
+    combined = f"{domain} {title}".lower()
+    for src in TAX_PRACTICE_SOURCES:
+        if src["query_hint"] in combined:
+            return src["name"]
+    return ""
+
+
+def _search_practice_sources(query: str, n: int = 3) -> list[dict]:
+    """Search trusted WeChat public account sources (小颖言税/税海涛声 etc.)
+    for practical tax-policy analysis.  Uses Bing with quoted source names."""
+    results = []
+    seen = set()
+    # Search each trusted source with the query — small N per source to stay fast
+    for src in TAX_PRACTICE_SOURCES:
+        full_q = f'"{src["name"]}" {query}'
+        try:
+            bing_url = f"https://www.bing.com/search?q={quote(full_q)}&count={n}"
+            r = req.get(bing_url, headers=HEADERS_WEB, timeout=8)
+            if r.status_code != 200:
+                continue
+            blocks = re.findall(r'<li class="b_algo"[^>]*>(.*?)</li>', r.text, re.DOTALL)
+            for block in blocks[:n * 2]:
+                tm = re.search(r'<h2[^>]*><a[^>]*href="([^"]*)"[^>]*>(.*?)</a></h2>', block, re.DOTALL)
+                if not tm:
+                    tm = re.search(r'<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>', block, re.DOTALL)
+                if not tm:
+                    continue
+                href, title_raw = tm.group(1), tm.group(2)
+                title = re.sub(r'<[^>]+>', '', title_raw).strip()
+                if len(title) < 8 or href in seen:
+                    continue
+                seen.add(href)
+                dm = re.search(r'(\d{4}[-/]\d{1,2}[-/]\d{1,2})', block)
+                snippet = ""
+                sm = re.search(r'<p[^>]*>(.*?)</p>', block, re.DOTALL)
+                if sm:
+                    snippet = re.sub(r'<[^>]+>', '', sm.group(1)).strip()[:180]
+                results.append({
+                    "title": title, "url": href,
+                    "date": dm.group(1) if dm else "",
+                    "source": src["name"],
+                    "source_label": src["name"],
+                    "snippet": snippet,
+                })
+        except Exception:
+            continue
+    return results
+
+
 def search_interpretations(law_title: str, keyword: str = "",
                            sources: list[str] = None,
                            province: str = "") -> dict:
-    """Search official policy interpretations across multiple .gov.cn sources."""
+    """Search policy interpretations — official first, then practical guides."""
     cache_key = f"{law_title}|{keyword}|{'-'.join(sources or [])}|{province}"
     if cache_key in _interp_cache:
         return _interp_cache[cache_key]
@@ -176,54 +250,98 @@ def search_interpretations(law_title: str, keyword: str = "",
         else:
             sources = ["chinatax.gov.cn", "fgk.chinatax.gov.cn", "mof.gov.cn", "www.gov.cn"]
 
-    # Build varied queries to find different types of interpretations
     title_short = law_title.replace("中华人民共和国", "").strip()
-    queries = [
-        f"{law_title} 解读 答记者问",
+
+    # Phase 1: Official site-specific searches (formal interpretations)
+    official_queries = [
         f"{title_short} 政策解读",
-        f"{law_title} 官方解读",
+        f"{title_short} 解读",
+        f"{law_title} 答记者问",
+        f"{keyword} 官方解读" if keyword and keyword != law_title else f"{title_short} 官方解读",
     ]
-    if keyword and keyword != law_title:
-        queries.insert(0, f"{keyword} 政策解读 官方")
+
+    # Phase 2: Broader practical searches (no site: filter) for real-world guidance
+    practical_queries = [
+        f"{title_short} 实务指南",
+        f"{title_short} 操作指引",
+        f"{keyword} 政策问答" if keyword and keyword != law_title else f"{title_short} 政策问答",
+    ]
 
     all_results = []
     seen_urls = set()
 
+    # Phase 1: Official sources
     with ThreadPoolExecutor(max_workers=6) as pool:
         futures = {}
         for site in sources:
-            for q_text in queries[:3]:  # top 3 queries per site
+            for q_text in official_queries[:3]:
                 futures[(site, q_text)] = pool.submit(
                     _search_one_source, site, q_text, 4
                 )
+
+        # Phase 2: Trusted practice sources (小颖言税/税海涛声/会计网/税小课/朴税)
+        futures[("_practice", "main")] = pool.submit(
+            _search_practice_sources, f"{title_short} {keyword}", 3
+        )
+        # Also do broader practical web search
+        for q_text in practical_queries[:2]:
+            futures[("_broad", q_text)] = pool.submit(
+                _search_web_broad, f"{q_text}", 4
+            )
 
         for (site, q_text), future in futures.items():
             try:
                 items = future.result(timeout=15)
                 for item in items:
-                    if item["url"] not in seen_urls:
-                        seen_urls.add(item["url"])
+                    if isinstance(item, dict) and item.get("url"):
+                        if item["url"] not in seen_urls:
+                            seen_urls.add(item["url"])
+                            all_results.append(item)
+                    elif isinstance(item, dict) and not item.get("url"):
                         all_results.append(item)
             except Exception:
                 pass
 
-    # Supplementary: AnySearch legal domain
-    try:
-        anysearch_items = _anysearch_legal(f"{law_title} 政策解读", 3)
-        for item in anysearch_items:
-            if item.get("url") and item["url"] not in seen_urls:
-                seen_urls.add(item["url"])
-                all_results.append(item)
-            elif not item.get("url"):
-                all_results.append(item)
-    except Exception:
-        pass
+    # Phase 3: Baidu fallback if too few results
+    if len(all_results) < 3:
+        try:
+            baidu_url = f"https://www.baidu.com/s?wd={quote(title_short)}+{quote(keyword)}+政策解读&rn=8"
+            r = req.get(baidu_url, headers={**HEADERS_WEB, "Accept": "text/html"}, timeout=10)
+            if r.status_code == 200:
+                link_re = re.compile(
+                    r'<a[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', re.DOTALL
+                )
+                for href, title_raw in link_re.findall(r.text):
+                    if href in seen_urls or "baidu.com" in href:
+                        continue
+                    title = re.sub(r'<[^>]+>', '', title_raw).strip()
+                    if len(title) < 8:
+                        continue
+                    seen_urls.add(href)
+                    domain = re.search(r'https?://(?:www\.)?([^/]+)', href)
+                    all_results.append({
+                        "title": title, "url": href, "date": "",
+                        "source": domain.group(1) if domain else "",
+                        "source_label": "网络来源",
+                        "snippet": "",
+                    })
+        except Exception:
+            pass
+
+    # Sort: official sources first, then trusted practice sources, then others
+    PRACTICE_NAMES = {s["name"] for s in TAX_PRACTICE_SOURCES}
+    OFFICIAL_LABELS = {"国家税务总局", "财政部", "税务法规库", "中国政府网", "全国人大", "官方来源"}
+    all_results.sort(key=lambda x: (
+        0 if x.get("source_label") in OFFICIAL_LABELS else
+        1 if x.get("source_label") in PRACTICE_NAMES else
+        2 if x.get("source_label") == "实务解读" else 3
+    ))
 
     result = {
         "law_title": law_title,
         "keyword": keyword,
         "total": len(all_results),
-        "sources": all_results[:12],
+        "sources": all_results[:15],
         "searched_at": time.strftime("%Y-%m-%d %H:%M:%S"),
     }
     _interp_cache[cache_key] = result
@@ -459,6 +577,106 @@ def api_interpretations(bbbs_id):
         result = search_interpretations(title, keyword, province=province)
         result["law_id"] = bbbs_id
         return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ── Web-related search (broader, more practical) ──────────────────────────
+def _search_web_broad(query: str, n: int = 8) -> list[dict]:
+    """Search broader web for practical tax policy analysis and interpretations.
+    Uses multiple engines with fallbacks for China accessibility."""
+    results = []
+    seen = set()
+
+    # Engine 1: Bing (broader, no site: filter)
+    try:
+        bing_url = f"https://www.bing.com/search?q={quote(query)}+税收+政策解读&count={n}"
+        r = req.get(bing_url, headers=HEADERS_WEB, timeout=10)
+        if r.status_code == 200:
+            blocks = re.findall(r'<li class="b_algo"[^>]*>(.*?)</li>', r.text, re.DOTALL)
+            for block in blocks[:n * 2]:
+                tm = re.search(r'<h2[^>]*><a[^>]*href="([^"]*)"[^>]*>(.*?)</a></h2>', block, re.DOTALL)
+                if not tm:
+                    tm = re.search(r'<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>', block, re.DOTALL)
+                if not tm:
+                    continue
+                href, title_raw = tm.group(1), tm.group(2)
+                title = re.sub(r'<[^>]+>', '', title_raw).strip()
+                if len(title) < 8 or href in seen:
+                    continue
+                seen.add(href)
+                dm = re.search(r'(\d{4}[-/]\d{1,2}[-/]\d{1,2})', block)
+                snippet = ""
+                sm = re.search(r'<p[^>]*>(.*?)</p>', block, re.DOTALL)
+                if sm:
+                    snippet = re.sub(r'<[^>]+>', '', sm.group(1)).strip()[:200]
+                # Source label from domain
+                domain = re.search(r'https?://(?:www\.)?([^/]+)', href)
+                domain_label = domain.group(1) if domain else ""
+                results.append({
+                    "title": title, "url": href,
+                    "date": dm.group(1) if dm else "",
+                    "source": domain_label,
+                    "source_label": "官方来源" if ("chinatax" in href or "gov.cn" in href) else (
+                        _practice_source_name(domain_label, title) or "实务解读"
+                    ),
+                    "snippet": snippet,
+                })
+    except Exception:
+        pass
+
+    if len(results) < 3:
+        # Engine 2: Baidu as fallback
+        try:
+            baidu_url = f"https://www.baidu.com/s?wd={quote(query)}+税收政策&rn={n}"
+            r = req.get(baidu_url, headers={**HEADERS_WEB, "Accept": "text/html"}, timeout=10)
+            if r.status_code == 200:
+                link_re = re.compile(
+                    r'<a[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', re.DOTALL
+                )
+                for href, title_raw in link_re.findall(r.text):
+                    if href in seen or "baidu.com" in href:
+                        continue
+                    title = re.sub(r'<[^>]+>', '', title_raw).strip()
+                    if len(title) < 8:
+                        continue
+                    seen.add(href)
+                    domain = re.search(r'https?://(?:www\.)?([^/]+)', href)
+                    results.append({
+                        "title": title, "url": href, "date": "",
+                        "source": domain.group(1) if domain else "",
+                        "source_label": "网络来源",
+                        "snippet": "",
+                    })
+                results = results[:n]
+        except Exception:
+            pass
+
+    return results
+
+
+@app.route("/api/web-related/<bbbs_id>", methods=["GET"])
+def api_web_related(bbbs_id):
+    """Search broader web for practical policy analysis."""
+    keyword = request.args.get("keyword", "")
+    try:
+        detail = fetch_detail(bbbs_id)
+        title = detail.get("title", "")
+        if not title:
+            return jsonify({"error": "Law not found"}), 404
+
+        short_title = title.replace("中华人民共和国", "").strip()
+        search_query = f"{short_title} {keyword}" if keyword else short_title
+        sources = _search_web_broad(search_query, 8)
+
+        return jsonify({
+            "law_id": bbbs_id,
+            "law_title": title,
+            "keyword": keyword,
+            "total": len(sources),
+            "sources": sources,
+            "searched_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
