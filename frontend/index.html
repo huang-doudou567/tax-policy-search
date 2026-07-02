@@ -245,6 +245,8 @@ async function fetchWithRetry(url,opts={},retries=3,delay=800){
   }
   throw new Error('请求失败，已达最大重试次数');
 }
+
+async function doSearch(){
   const keyword=document.getElementById('searchInput').value.trim();if(!keyword)return;
   const c=document.getElementById('resultsContainer'),btn=document.getElementById('searchBtn');
   c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>实时查询中…</p><p style="font-size:12px;color:var(--t3)">"${esc(keyword)}"</p></div>`;
