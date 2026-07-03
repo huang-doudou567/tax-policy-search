@@ -132,6 +132,7 @@ let taxData = {};
 let dataUpdated = '';
 let guideState = {};
 const NEXT_STEP = {user_type:'tax_type',tax_type:'intent',intent:'conditions'};
+const PROVINCE_NAMES = {beijing:'北京',shanghai:'上海',tianjin:'天津',chongqing:'重庆',guangdong:'广东',shenzhen:'深圳',zhejiang:'浙江',jiangsu:'江苏',shandong:'山东',sichuan:'四川',hubei:'湖北',hunan:'湖南',henan:'河南',hebei:'河北',fujian:'福建',xiamen:'厦门',anhui:'安徽',liaoning:'辽宁',dalian:'大连',jilin:'吉林',heilongjiang:'黑龙江',jiangxi:'江西',shanxi:'山西',shaanxi:'陕西',gansu:'甘肃',qinghai:'青海',yunnan:'云南',guizhou:'贵州',guangxi:'广西',hainan:'海南',neimenggu:'内蒙古',ningxia:'宁夏',xinjiang:'新疆',xizang:'西藏',qingdao:'青岛',ningbo:'宁波'};
 
 const TAX_TYPES = [
   {label:"增值税",kw:"增值税",icon:"📊"},{label:"企业所得税",kw:"企业所得税",icon:"🏢"},
@@ -204,9 +205,6 @@ function doSearch() {
   const statusFilter = filterStatus !== '' ? parseInt(filterStatus) : null;
   const isExact = filterType === 'exact';
 
-  // Province name map for filtering
-  const provinceNames = {beijing:'北京',shanghai:'上海',tianjin:'天津',chongqing:'重庆',guangdong:'广东',shenzhen:'深圳',zhejiang:'浙江',jiangsu:'江苏',shandong:'山东',sichuan:'四川',hubei:'湖北',hunan:'湖南',henan:'河南',hebei:'河北',fujian:'福建',xiamen:'厦门',anhui:'安徽',liaoning:'辽宁',dalian:'大连',jilin:'吉林',heilongjiang:'黑龙江',jiangxi:'江西',shanxi:'山西',shaanxi:'陕西',gansu:'甘肃',qinghai:'青海',yunnan:'云南',guizhou:'贵州',guangxi:'广西',hainan:'海南',neimenggu:'内蒙古',ningxia:'宁夏',xinjiang:'新疆',xizang:'西藏',qingdao:'青岛',ningbo:'宁波'};
-
   let allResults = [];
   const seen = new Set();
   const q = query.toLowerCase();
@@ -249,7 +247,7 @@ function doSearch() {
 
   // Apply province filter: match issuing_authority against selected province name
   if (filterProvince) {
-    const provName = provinceNames[filterProvince] || filterProvince;
+    const provName = PROVINCE_NAMES[filterProvince] || filterProvince;
     allResults = allResults.filter(item => {
       const auth = (item.issuing_authority || '');
       // Match: the authority contains the province name (e.g. "广东省人民代表大会")
@@ -307,7 +305,7 @@ function renderResults(query, items) {
   const fsSort = document.getElementById('filterSort').value;
   const fp = document.getElementById('filterProvince').value;
   if (fs === '3') h += '<span class="tag" style="background:var(--gbg);color:var(--green)">🟢 现行有效</span>';
-  if (fp) h += `<span class="tag" style="background:#fef3c7;color:#92400e">📍 ${provinceNames[fp]||fp}</span>`;
+  if (fp) h += `<span class="tag" style="background:#fef3c7;color:#92400e">📍 ${PROVINCE_NAMES[fp]||fp}</span>`;
   if (ff || ft) h += `<span class="tag" style="background:var(--ybg);color:var(--yellow)">📅 ${ff||'…'} — ${ft||'…'}</span>`;
   if (fsSort === 'date') h += '<span class="tag" style="background:var(--plight);color:var(--primary)">⬇ 按日期排序</span>';
   h += '</div>';
@@ -407,9 +405,9 @@ function renderGuideStep(step) {
       <div class="choice${guideState.region==='national'?' picked':''}" onclick="guidePick('region','national')"><span class="ci">🇨🇳</span>全国性政策</div>
       <div class="choice${guideState.region==='local'?' picked':''}" onclick="guidePick('region','local')"><span class="ci">📍</span>指定省份</div>
     </div>
-    ${guideState.region==='local'?`<div style="margin-top:10px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">选择省份：</div><select id="guideProvince" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px">
+    ${guideState.region==='local'?`<div style="margin-top:10px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">选择省份：</div><select id="guideProvince" onchange="guideState.guideProvince=this.value" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px">
       <option value="">请选择省份</option>
-      ${Object.entries(provinceNames).map(([k,v])=>`<option value="${k}" ${guideState.guideProvince===k?'selected':''}>${v}</option>`).join('')}
+      ${Object.entries(PROVINCE_NAMES).map(([k,v])=>`<option value="${k}" ${guideState.guideProvince===k?'selected':''}>${v}</option>`).join('')}
     </select></div>`:''}
     <div style="margin-top:14px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">或直接输入关键词：</div><input type="text" id="customKeyword" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px" placeholder="例如：研发费用加计扣除、留抵退税…"></div></div>`;
     foot.innerHTML = `<button onclick="executeGuidedSearch()">🔍 生成搜索 →</button><button class="reset" onclick="renderGuideStep('intent')">← 返回修改</button>`;
