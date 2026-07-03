@@ -695,6 +695,11 @@ def api_quick_tax_types():
     ])
 
 
+@app.route("/api/health", methods=["GET"])
+def api_health():
+    return jsonify({"status": "ok", "time": time.strftime("%Y-%m-%d %H:%M:%S")})
+
+
 if __name__ == "__main__":
     import sys
     sys.stdout.reconfigure(encoding='utf-8')

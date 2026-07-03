@@ -5,448 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>财税政策实时搜索引擎</title>
 <style>
-:root{--bg:#f3f4f6;--card:#fff;--text:#111827;--t2:#6b7280;--t3:#9ca3af;--border:#e5e7eb;--primary:#1d4ed8;--plight:#dbeafe;--green:#059669;--gbg:#d1fae5;--yellow:#b45309;--ybg:#fef3c7;--red:#dc2626;--rbg:#fee2e2;--radius:10px;--shadow:0 1px 3px #00000010;--panel-w:420px}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-.app{display:flex;min-height:100vh}
-.main{flex:1;min-width:0;transition:margin .25s}
-.main.with-panel{margin-right:var(--panel-w)}
-@media(max-width:800px){.main.with-panel{margin-right:0;display:none}}
-.header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:22px 0 18px;text-align:center}
-.header h1{font-size:22px;font-weight:700}
-.header p{font-size:12.5px;opacity:.7;margin-top:4px}
-.header .badges{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap}
-.header .badge{background:#ffffff22;padding:3px 10px;border-radius:20px;font-size:11px}
-.container{max-width:860px;margin:0 auto;padding:16px}
-.search-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 22px;margin-bottom:16px}
-.search-row{display:flex;gap:10px;align-items:center}
-.search-input{flex:1;padding:11px 15px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none;transition:border .2s}
-.search-input:focus{border-color:var(--primary)}
-.search-btn{padding:11px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
-.search-btn:hover{background:#1e40af}.search-btn:disabled{opacity:.5;cursor:not-allowed}
-.quick-tax{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
-.quick-tax button{padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:var(--card);font-size:12px;cursor:pointer;transition:all .12s}
-.quick-tax button:hover{background:var(--plight);border-color:var(--primary)}
-.quick-tax button .t{display:block;font-weight:600;font-size:13px}
-.quick-tax button .s{display:block;font-size:10px;color:var(--t2)}
-.guidance-toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--primary);cursor:pointer;margin-top:8px;width:fit-content}
-.guidance-toggle:hover{text-decoration:underline}
-.filters{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;align-items:center}
-.filter-group{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--t2)}
-.filter-group select,.filter-group input{padding:5px 8px;border:1px solid var(--border);border-radius:5px;font-size:12px;outline:none;background:#fff}
-.filter-group select:focus{border-color:var(--primary)}
-.meta-bar{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:12px;color:var(--t2);flex-wrap:wrap}
-.tag{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
-.tag-source{background:var(--plight);color:var(--primary)}
-.tag-time{background:#f3f4f6;color:#6b7280}.tag-count{background:var(--gbg);color:var(--green)}
-.result-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 20px;margin-bottom:10px;border-left:4px solid transparent;cursor:pointer;transition:all .15s}
-.result-card:hover{border-left-color:var(--primary);box-shadow:0 2px 8px #00000012}
-.result-card .title{font-size:15px;font-weight:600;margin-bottom:6px}
-.result-card .title mark{background:#fef08a;color:#854d0e;padding:0 2px;border-radius:2px}
-.result-card .meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--t2)}
-.result-card .meta span{display:inline-flex;align-items:center;gap:3px}
-.result-card .id-row{font-size:10.5px;color:var(--t3);font-family:monospace;margin-top:4px}
-.status-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
-.s-effective{background:var(--gbg);color:var(--green)}.s-amended{background:var(--ybg);color:var(--yellow)}
-.s-abolished{background:var(--rbg);color:var(--red)}.s-pending{background:var(--plight);color:var(--primary)}
-.empty-state{text-align:center;padding:50px 20px;color:var(--t2)}
-.empty-state .icon{font-size:40px;margin-bottom:10px}
-.loading-spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 14px}
+*{margin:0;padding:0}
+body,html{width:100%;height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+#loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f3f4f6;z-index:9999;transition:opacity .4s}
+#loading.done{opacity:0;pointer-events:none}
+#loading .spinner{width:40px;height:40px;border:3px solid #e5e7eb;border-top-color:#1d4ed8;border-radius:50%;animation:spin .7s linear infinite;margin-bottom:16px}
 @keyframes spin{to{transform:rotate(360deg)}}
-.data-note{font-size:11px;color:var(--t3);text-align:center;padding:8px;background:var(--card);border-radius:0 0 var(--radius) var(--radius);margin:-4px 0 16px}
-.data-note a{color:var(--primary)}
-/* ── Guidance Panel ── */
-.guidance-panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);background:#fff;box-shadow:-2px 0 12px #00000010;z-index:500;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .25s}
-.guidance-panel.open{transform:translateX(0)}
-.guidance-panel .gp-header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--border);flex-shrink:0}
-.guidance-panel .gp-header h3{font-size:16px}
-.guidance-panel .gp-body{flex:1;overflow-y:auto;padding:18px}
-.guidance-panel .gp-body .step{margin-bottom:20px}
-.guidance-panel .gp-body .step-label{font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
-.guidance-panel .gp-body .step-question{font-size:14px;font-weight:600;margin-bottom:10px}
-.guidance-panel .gp-body .choice-grid{display:flex;flex-wrap:wrap;gap:6px}
-.guidance-panel .gp-body .choice{flex:1 1 calc(50% - 6px);min-width:100px;padding:14px 10px;border:2px solid var(--border);border-radius:8px;text-align:center;cursor:pointer;font-size:14px;transition:all .12s;background:#fff}
-.guidance-panel .gp-body .choice:hover{border-color:var(--primary);background:var(--plight)}
-.guidance-panel .gp-body .choice.picked{border-color:var(--primary);background:var(--plight);font-weight:600}
-.guidance-panel .gp-body .choice .ci{font-size:22px;display:block;margin-bottom:4px}
-.guidance-panel .gp-body .choice .cl{display:block;font-size:12px;color:var(--t2);margin-top:2px}
-.guidance-panel .gp-footer{padding:14px 18px;border-top:1px solid var(--border);flex-shrink:0}
-.guidance-panel .gp-footer button{width:100%;padding:10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer}
-.guidance-panel .gp-footer button:disabled{opacity:.4;cursor:not-allowed}
-.guidance-panel .gp-footer button:hover:not(:disabled){background:#1e40af}
-.guidance-panel .gp-footer .reset{background:none;color:var(--t2);font-size:12px;margin-top:6px;width:100%}
-.guidance-panel .gp-footer .reset:hover{color:var(--text)}
-@media(max-width:800px){.guidance-panel{width:100%}}
+#loading p{color:#6b7280;font-size:14px}
+#loading .err{color:#dc2626;font-size:12px;margin-top:8px;display:none}
+#iframe{width:100%;height:100%;border:none}
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>财税政策实时搜索引擎</h1>
-  <p>覆盖 12 大税种 · 数据每日自动更新 · NPC 国家法律法规数据库</p>
-  <div class="badges">
-    <span class="badge">增值税</span><span class="badge">企业所得税</span><span class="badge">个人所得税</span>
-    <span class="badge">消费税</span><span class="badge">印花税</span><span class="badge">房产税</span>
-    <span class="badge">关税</span><span class="badge">契税</span><span class="badge">土地增值税</span>
-  </div>
+<div id="loading">
+  <div class="spinner"></div>
+  <p>财税政策实时搜索引擎正在连接…</p>
+  <p class="err" id="loadErr"></p>
 </div>
-
-<div class="app">
-<div class="main" id="mainContent">
-<div class="container">
-
-  <div class="search-card">
-    <div class="search-row">
-      <input type="text" class="search-input" id="searchInput" placeholder="输入税收政策关键词…如：小微企业增值税优惠、研发费用加计扣除比例…" autofocus>
-      <button class="search-btn" id="searchBtn" onclick="doSearch()">搜索</button>
-    </div>
-    <div class="quick-tax" id="quickTax"></div>
-    <div class="filters">
-      <div class="filter-group"><label>范围</label><select id="filterScope"><option value="title">标题</option><option value="fulltext" selected>全文</option></select></div>
-      <div class="filter-group"><label>匹配</label><select id="filterType"><option value="fuzzy">模糊</option><option value="exact">精确</option></select></div>
-      <div class="filter-group"><label>时效</label><select id="filterStatus"><option value="3" selected>现行有效</option><option value="">全部</option></select></div>
-      <div class="filter-group"><label>排序</label><select id="filterSort"><option value="relevance">相关度</option><option value="date">日期↓</option></select></div>
-      <div class="filter-group"><label>省份</label><select id="filterProvince"><option value="">全国</option></select></div>
-      <div class="filter-group"><label>日期</label><input type="date" id="filterDateFrom">—<input type="date" id="filterDateTo"></div>
-    </div>
-    <div class="guidance-toggle" onclick="toggleGuidance()">💡 不确定查什么？打开智能引导</div>
-  </div>
-
-  <div id="resultsContainer"></div>
-  <div class="data-note" id="dataNote"></div>
-
-</div>
-</div>
-
-<div class="guidance-panel" id="guidancePanel">
-  <div class="gp-header"><h3>💡 政策需求引导</h3><button style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--t2)" onclick="toggleGuidance()">✕</button></div>
-  <div class="gp-body" id="guideBody"></div>
-  <div class="gp-footer" id="guideFooter"></div>
-</div>
-
-</div>
+<iframe id="iframe" src="" allow="clipboard-read;clipboard-write"></iframe>
 
 <script>
-/* ═══════════ GLOBAL STATE ═══════════ */
-let taxData = {};
-let dataUpdated = '';
-let guideState = {};
-const NEXT_STEP = {user_type:'tax_type',tax_type:'intent',intent:'conditions'};
-const PROVINCE_NAMES = {beijing:'北京',shanghai:'上海',tianjin:'天津',chongqing:'重庆',guangdong:'广东',shenzhen:'深圳',zhejiang:'浙江',jiangsu:'江苏',shandong:'山东',sichuan:'四川',hubei:'湖北',hunan:'湖南',henan:'河南',hebei:'河北',fujian:'福建',xiamen:'厦门',anhui:'安徽',liaoning:'辽宁',dalian:'大连',jilin:'吉林',heilongjiang:'黑龙江',jiangxi:'江西',shanxi:'山西',shaanxi:'陕西',gansu:'甘肃',qinghai:'青海',yunnan:'云南',guizhou:'贵州',guangxi:'广西',hainan:'海南',neimenggu:'内蒙古',ningxia:'宁夏',xinjiang:'新疆',xizang:'西藏',qingdao:'青岛',ningbo:'宁波'};
-
-const TAX_TYPES = [
-  {label:"增值税",kw:"增值税",icon:"📊"},{label:"企业所得税",kw:"企业所得税",icon:"🏢"},
-  {label:"个人所得税",kw:"个人所得税",icon:"👤"},{label:"消费税",kw:"消费税",icon:"🛒"},
-  {label:"关税",kw:"关税",icon:"🚢"},{label:"房产税",kw:"房产税",icon:"🏠"},
-  {label:"印花税",kw:"印花税",icon:"📝"},{label:"契税",kw:"契税",icon:"🔑"},
-  {label:"土地增值税",kw:"土地增值税",icon:"🏗️"},{label:"税收优惠",kw:"税收优惠",icon:"🎁"},
-  {label:"发票管理",kw:"发票管理办法",icon:"🧾"},{label:"税收征管",kw:"税收征收管理法",icon:"⚖️"}
+const BACKENDS = [
+  { url: 'http://localhost:5080', label: '本地服务', timeout: 2000 },
+  { url: 'https://0a37d8d71373ad22-218-75-157-37.serveousercontent.com', label: '在线 Demo', timeout: 8000 },
+  { url: 'https://deploy-vercel-lemon-mu.vercel.app', label: 'Vercel 备用', timeout: 12000 },
 ];
-const STATUS_ICONS = {1:"🔴",2:"🟡",3:"🟢",4:"🔵"};
-const STATUS_NAMES = {1:"已废止",2:"已修改",3:"现行有效",4:"尚未生效"};
-const STATUS_MAP = {1:"s-abolished",2:"s-amended",3:"s-effective",4:"s-pending"};
 
-/* ═══════════ INIT ═══════════ */
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') doSearch(); });
-  loadData();
-  loadProvinces();
-  renderGuideStep('user_type');
-});
+(async function init() {
+  var iframe = document.getElementById('iframe');
+  var loading = document.getElementById('loading');
+  var loadErr = document.getElementById('loadErr');
 
-/* ═══════════ DATA LOADING ═══════════ */
-async function loadData() {
-  document.getElementById('dataNote').innerHTML = '⏳ 正在加载数据…';
-  try {
-    const r = await fetch('data/index.json');
-    const idx = await r.json();
-    taxData = idx.searches || {};
-    dataUpdated = idx.updated || '';
-    buildQuickTax();
-    document.getElementById('dataNote').innerHTML = `📅 数据更新时间: ${dataUpdated} · <a href="https://flk.npc.gov.cn" target="_blank">数据源: NPC 国家法律法规数据库</a> · 每日自动更新`;
-  } catch(e) {
-    document.getElementById('dataNote').innerHTML = '⚠️ 数据加载失败，请刷新页面重试';
-  }
-}
-
-function buildQuickTax() {
-  document.getElementById('quickTax').innerHTML = TAX_TYPES.map(t =>
-    `<button onclick="pickTax('${t.kw}')"><span class="t">${t.icon} ${t.label}</span><span class="s">${t.kw}</span></button>`
-  ).join('');
-}
-
-function loadProvinces() {
-  const sel = document.getElementById('filterProvince');
-  const provs = [
-    {name:'全国',subdomain:''},{name:'北京',subdomain:'beijing'},{name:'上海',subdomain:'shanghai'},{name:'天津',subdomain:'tianjin'},{name:'重庆',subdomain:'chongqing'},{name:'广东',subdomain:'guangdong'},{name:'深圳',subdomain:'shenzhen'},{name:'浙江',subdomain:'zhejiang'},{name:'江苏',subdomain:'jiangsu'},{name:'山东',subdomain:'shandong'},{name:'四川',subdomain:'sichuan'},{name:'湖北',subdomain:'hubei'},{name:'湖南',subdomain:'hunan'},{name:'河南',subdomain:'henan'},{name:'河北',subdomain:'hebei'},{name:'福建',subdomain:'fujian'},{name:'厦门',subdomain:'xiamen'},{name:'安徽',subdomain:'anhui'},{name:'辽宁',subdomain:'liaoning'},{name:'大连',subdomain:'dalian'},{name:'吉林',subdomain:'jilin'},{name:'黑龙江',subdomain:'heilongjiang'},{name:'江西',subdomain:'jiangxi'},{name:'山西',subdomain:'shanxi'},{name:'陕西',subdomain:'shaanxi'},{name:'甘肃',subdomain:'gansu'},{name:'青海',subdomain:'qinghai'},{name:'云南',subdomain:'yunnan'},{name:'贵州',subdomain:'guizhou'},{name:'广西',subdomain:'guangxi'},{name:'海南',subdomain:'hainan'},{name:'内蒙古',subdomain:'neimenggu'},{name:'宁夏',subdomain:'ningxia'},{name:'新疆',subdomain:'xinjiang'},{name:'西藏',subdomain:'xizang'},{name:'青岛',subdomain:'qingdao'},{name:'宁波',subdomain:'ningbo'}
-  ];
-  sel.innerHTML = provs.map(p => `<option value="${p.subdomain}">${p.name}</option>`).join('');
-}
-
-function pickTax(kw) {
-  document.getElementById('searchInput').value = kw;
-  doSearch();
-}
-
-/* ═══════════ SEARCH ═══════════ */
-function doSearch() {
-  const query = document.getElementById('searchInput').value.trim();
-  if (!query) return;
-  const c = document.getElementById('resultsContainer');
-  c.innerHTML = `<div class="empty-state"><div class="loading-spinner"></div><p>搜索中…</p></div>`;
-
-  // Read filters
-  const filterStatus = document.getElementById('filterStatus').value;
-  const filterSort = document.getElementById('filterSort').value;
-  const filterType = document.getElementById('filterType').value;
-  const filterProvince = document.getElementById('filterProvince').value;
-  const filterDateFrom = document.getElementById('filterDateFrom').value;
-  const filterDateTo = document.getElementById('filterDateTo').value;
-  const statusFilter = filterStatus !== '' ? parseInt(filterStatus) : null;
-  const isExact = filterType === 'exact';
-
-  let allResults = [];
-  const seen = new Set();
-  const q = query.toLowerCase();
-
-  // Step 1: Exact tax type match
-  for (const [key, data] of Object.entries(taxData)) {
-    if (!data || !data.results) continue;
-    const kw = (data.keyword || '').toLowerCase();
-    const type = (data.type || '').toLowerCase();
-    if (kw.includes(q) || q.includes(kw) || type.includes(q) || q.includes(type)) {
-      for (const item of data.results) {
-        if (!seen.has(item.id)) { seen.add(item.id); allResults.push({...item, _source: data.type || key}); }
+  for (var i = 0; i < BACKENDS.length; i++) {
+    var backend = BACKENDS[i];
+    try {
+      var ctrl = new AbortController();
+      var timer = setTimeout(function() { ctrl.abort(); }, backend.timeout);
+      var r = await fetch(backend.url + '/api/health', { signal: ctrl.signal });
+      clearTimeout(timer);
+      if (r.ok) {
+        iframe.src = backend.url;
+        iframe.onload = function() { loading.classList.add('done'); };
+        setTimeout(function() { loading.classList.add('done'); }, 5000);
+        return;
       }
-    }
+    } catch(e) {}
   }
 
-  // Step 2: Broad text search (only when results < 5, or always for non-exact)
-  if (!isExact || allResults.length < 5) {
-    for (const [key, data] of Object.entries(taxData)) {
-      if (!data || !data.results) continue;
-      for (const item of data.results) {
-        if (seen.has(item.id)) continue;
-        const t = (item.title || '').toLowerCase();
-        const a = (item.issuing_authority || '').toLowerCase();
-        const matched = isExact
-          ? t.includes(q)  // exact: must contain full query string (case-insensitive)
-          : t.includes(q) || a.includes(q);  // fuzzy: also match by authority
-        if (matched) {
-          seen.add(item.id);
-          allResults.push({...item, _source: data.type || key});
-        }
-      }
-    }
-  }
-
-  // Apply status filter
-  if (statusFilter !== null) {
-    allResults = allResults.filter(item => item.status_code === statusFilter);
-  }
-
-  // Apply province filter: match issuing_authority against selected province name
-  if (filterProvince) {
-    const provName = PROVINCE_NAMES[filterProvince] || filterProvince;
-    allResults = allResults.filter(item => {
-      const auth = (item.issuing_authority || '');
-      // Match: the authority contains the province name (e.g. "广东省人民代表大会")
-      return auth.includes(provName) || auth.includes(filterProvince);
-    });
-  }
-
-  // Apply date range filter
-  if (filterDateFrom || filterDateTo) {
-    allResults = allResults.filter(item => {
-      const d = item.publish_date || '';
-      if (!d) return true;
-      if (filterDateFrom && d < filterDateFrom) return false;
-      if (filterDateTo && d > filterDateTo) return false;
-      return true;
-    });
-  }
-
-  // Sort
-  if (filterSort === 'date') {
-    allResults.sort((a, b) => (b.publish_date || '').localeCompare(a.publish_date || ''));
-  } else {
-    allResults.sort((a, b) => {
-      if (a.status_code === 3 && b.status_code !== 3) return -1;
-      if (b.status_code === 3 && a.status_code !== 3) return 1;
-      return (b.publish_date || '').localeCompare(a.publish_date || '');
-    });
-  }
-
-  renderResults(query, allResults);
-}
-
-function highlight(text, query) {
-  if (!query || !text) return esc(text);
-  let r = esc(text);
-  const tokens = query.split(/\s+/).filter(t => t.length >= 1).sort((a, b) => b.length - a.length);
-  tokens.forEach(t => {
-    const e = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    r = r.replace(new RegExp(`(${e})`, 'gi'), '<mark>$1</mark>');
-  });
-  return r;
-}
-
-function renderResults(query, items) {
-  const c = document.getElementById('resultsContainer');
-  if (items.length === 0) {
-    c.innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p><b>未找到相关结果</b></p><p style="font-size:13px">关键词: "${esc(query)}"</p><p style="font-size:12px;margin-top:8px;color:var(--t3)">试试更宽泛的关键词（如 "增值税" "企业所得税"）</p></div>`;
-    return;
-  }
-  let h = `<div class="meta-bar"><span class="tag tag-count">📋 ${items.length}条</span><span class="tag tag-time">🔍 "${esc(query)}"</span>`;
-  // Show active filters
-  const fs = document.getElementById('filterStatus').value;
-  const ff = document.getElementById('filterDateFrom').value;
-  const ft = document.getElementById('filterDateTo').value;
-  const fsSort = document.getElementById('filterSort').value;
-  const fp = document.getElementById('filterProvince').value;
-  if (fs === '3') h += '<span class="tag" style="background:var(--gbg);color:var(--green)">🟢 现行有效</span>';
-  if (fp) h += `<span class="tag" style="background:#fef3c7;color:#92400e">📍 ${PROVINCE_NAMES[fp]||fp}</span>`;
-  if (ff || ft) h += `<span class="tag" style="background:var(--ybg);color:var(--yellow)">📅 ${ff||'…'} — ${ft||'…'}</span>`;
-  if (fsSort === 'date') h += '<span class="tag" style="background:var(--plight);color:var(--primary)">⬇ 按日期排序</span>';
-  h += '</div>';
-  items.slice(0, 50).forEach((item, i) => {
-    const sc = STATUS_MAP[item.status_code] || '';
-    const sid = item.id || '';
-    const titleHl = highlight(item.title, query);
-    h += `<div class="result-card" onclick="viewDetail('${sid}')">
-      <div class="title"><span style="font-size:11px;color:var(--t3)">#${i+1}</span> ${item._source?`<span class="tag tag-source" style="font-size:10px">${esc(item._source)}</span>`:''} ${titleHl}</div>
-      <div class="meta">${item.status_code?`<span><span class="status-badge ${sc}">${STATUS_ICONS[item.status_code]||'❓'} ${STATUS_NAMES[item.status_code]||''}</span></span>`:''}${item.publish_date?`<span>📅 ${item.publish_date}</span>`:''}${item.effective_date?`<span>施行:${item.effective_date}</span>`:''}${item.issuing_authority?`<span>🏛️ ${esc(item.issuing_authority)}</span>`:''}</div>
-      <div class="id-row">NPC ID: ${sid}</div></div>`;
-  });
-  if (items.length > 50) h += `<p style="text-align:center;font-size:12px;color:var(--t2);margin-top:10px">显示前 50 条，共 ${items.length} 条 · 缩小搜索范围以获取更精确结果</p>`;
-  c.innerHTML = h;
-}
-
-function viewDetail(id) {
-  for (const [key, data] of Object.entries(taxData)) {
-    if (!data || !data.results) continue;
-    const item = data.results.find(r => r.id === id);
-    if (item) {
-      const detail = [
-        `法规名称: ${item.title}`,
-        `公布日期: ${item.publish_date || '未知'}`,
-        `施行日期: ${item.effective_date || '未知'}`,
-        `时效性: ${STATUS_NAMES[item.status_code] || '未知'}`,
-        `发布机关: ${item.issuing_authority || '未知'}`,
-        `法规分类: ${item.category || '未知'}`,
-        `NPC 法规ID: ${id}`,
-        '',
-        '💡 点击下方按钮查看 NPC 官网法规原文',
-      ].join('\n');
-      if (confirm(detail)) { window.open(`https://flk.npc.gov.cn/detail?id=${id}`, '_blank'); }
-      return;
-    }
-  }
-  window.open(`https://flk.npc.gov.cn/detail?id=${id}`, '_blank');
-}
-
-/* ═══════════ GUIDANCE PANEL ═══════════ */
-function toggleGuidance() {
-  const p = document.getElementById('guidancePanel');
-  const m = document.getElementById('mainContent');
-  p.classList.toggle('open');
-  if (p.classList.contains('open')) m.classList.add('with-panel');
-  else m.classList.remove('with-panel');
-}
-
-function guidePick(field, value) {
-  guideState[field] = (guideState[field] === value) ? null : value;
-  renderGuideStep(guideState.step);
-  if (guideState[field] === value && NEXT_STEP[field])
-    setTimeout(() => { if (guideState[field] === value) renderGuideStep(NEXT_STEP[field]); }, 300);
-}
-
-function renderGuideStep(step) {
-  guideState.step = step;
-  const body = document.getElementById('guideBody');
-  const foot = document.getElementById('guideFooter');
-
-  if (step === 'user_type') {
-    body.innerHTML = `<div class="step"><div class="step-label">Step 1/4</div><div class="step-question">你的身份是？</div><div class="choice-grid">
-      <div class="choice${guideState.user_type==='enterprise'?' picked':''}" onclick="guidePick('user_type','enterprise')"><span class="ci">🏢</span>企业</div>
-      <div class="choice${guideState.user_type==='individual'?' picked':''}" onclick="guidePick('user_type','individual')"><span class="ci">👤</span>个人 / 个体户</div>
-      <div class="choice${guideState.user_type==='agent'?' picked':''}" onclick="guidePick('user_type','agent')"><span class="ci">📋</span>代理记账 / 税务师</div>
-      <div class="choice${guideState.user_type==='other'?' picked':''}" onclick="guidePick('user_type','other')"><span class="ci">💬</span>其他</div>
-    </div></div>`;
-    foot.innerHTML = '<button disabled>点击选项自动进入下一步</button>';
-  } else if (step === 'tax_type') {
-    const idLabels = {enterprise:'企业',individual:'个人/个体户',agent:'代理记账/税务师',other:''};
-    const idLabel = idLabels[guideState.user_type] || '';
-    const ch = TAX_TYPES;
-    body.innerHTML = `<div class="step"><div class="step-label">Step 2/4 ${idLabel?'· '+idLabel:''}</div><div class="step-question">你想了解哪个税种？</div><div class="choice-grid">${ch.map(c => `<div class="choice${guideState.tax_type===c.kw?' picked':''}" onclick="guidePick('tax_type','${c.kw}')"><span class="ci">${c.icon}</span>${c.label}<span class="cl">${c.kw}</span></div>`).join('')}</div></div>`;
-    foot.innerHTML = `<button onclick="renderGuideStep('intent')">跳过手动选择 →</button>${guideState.user_type?`<button class="reset" onclick="renderGuideStep('user_type')">← 返回修改</button>`:''}`;
-  } else if (step === 'intent') {
-    const tLabel = guideState.tax_type || '';
-    body.innerHTML = `<div class="step"><div class="step-label">Step 3/4${tLabel?' · '+tLabel:''}</div><div class="step-question">你想了解什么？</div><div class="choice-grid">
-      <div class="choice${guideState.intent==='policy'?' picked':''}" onclick="guidePick('intent','policy')"><span class="ci">📖</span>查政策 / 税率<span class="cl">具体规定、税率标准</span></div>
-      <div class="choice${guideState.intent==='preference'?' picked':''}" onclick="guidePick('intent','preference')"><span class="ci">🎁</span>优惠资格<span class="cl">能否享受减免/退税</span></div>
-      <div class="choice${guideState.intent==='risk'?' picked':''}" onclick="guidePick('intent','risk')"><span class="ci">⚠️</span>风险自查<span class="cl">金税四期/合规</span></div>
-      <div class="choice${guideState.intent==='filing'?' picked':''}" onclick="guidePick('intent','filing')"><span class="ci">📋</span>申报流程<span class="cl">怎么申报/截止日期</span></div>
-      <div class="choice${guideState.intent==='invoice'?' picked':''}" onclick="guidePick('intent','invoice')"><span class="ci">🧾</span>发票问题<span class="cl">开票/遗失/红冲</span></div>
-      <div class="choice${guideState.intent==='calc'?' picked':''}" onclick="guidePick('intent','calc')"><span class="ci">🔢</span>计算/标准<span class="cl">起征点/扣除标准</span></div>
-    </div></div>`;
-    foot.innerHTML = `<button onclick="renderGuideStep('conditions')">跳过手动选择 →</button><button class="reset" onclick="renderGuideStep('tax_type')">← 返回修改</button>`;
-  } else {
-    const tLabel = guideState.tax_type || '';
-    const intentMap = {policy:'查政策',preference:'优惠资格',risk:'风险自查',filing:'申报流程',invoice:'发票问题',calc:'计算标准'};
-    const iLabel = intentMap[guideState.intent] || '';
-    body.innerHTML = `<div class="step"><div class="step-label">Step 4/4${tLabel?' · '+tLabel:''}${iLabel?' · '+iLabel:''}</div><div class="step-question">补充条件（可选，可多选）</div><div class="choice-grid">
-      <div class="choice${guideState.enterprise_type==='small'?' picked':''}" onclick="guidePick('enterprise_type','small')"><span class="ci">🏪</span>小规模纳税人<span class="cl">年应税≤500万</span></div>
-      <div class="choice${guideState.enterprise_type==='general'?' picked':''}" onclick="guidePick('enterprise_type','general')"><span class="ci">🏭</span>一般纳税人</div>
-      <div class="choice${guideState.enterprise_type==='micro'?' picked':''}" onclick="guidePick('enterprise_type','micro')"><span class="ci">🌱</span>小微企业<span class="cl">利润≤300万</span></div>
-      <div class="choice${guideState.enterprise_type==='hitech'?' picked':''}" onclick="guidePick('enterprise_type','hitech')"><span class="ci">🔬</span>高新技术企业</div>
-      <div class="choice${guideState.timeframe==='latest'?' picked':''}" onclick="guidePick('timeframe','latest')"><span class="ci">🆕</span>只看最新政策</div>
-      <div class="choice${guideState.timeframe==='2024'?' picked':''}" onclick="guidePick('timeframe','2024')"><span class="ci">📅</span>2024年以来的</div>
-      <div class="choice${guideState.region==='national'?' picked':''}" onclick="guidePick('region','national')"><span class="ci">🇨🇳</span>全国性政策</div>
-      <div class="choice${guideState.region==='local'?' picked':''}" onclick="guidePick('region','local')"><span class="ci">📍</span>指定省份</div>
-    </div>
-    ${guideState.region==='local'?`<div style="margin-top:10px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">选择省份：</div><select id="guideProvince" onchange="guideState.guideProvince=this.value" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px">
-      <option value="">请选择省份</option>
-      ${Object.entries(PROVINCE_NAMES).map(([k,v])=>`<option value="${k}" ${guideState.guideProvince===k?'selected':''}>${v}</option>`).join('')}
-    </select></div>`:''}
-    <div style="margin-top:14px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">或直接输入关键词：</div><input type="text" id="customKeyword" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px" placeholder="例如：研发费用加计扣除、留抵退税…"></div></div>`;
-    foot.innerHTML = `<button onclick="executeGuidedSearch()">🔍 生成搜索 →</button><button class="reset" onclick="renderGuideStep('intent')">← 返回修改</button>`;
-  }
-}
-
-function executeGuidedSearch() {
-  const intentMap = {policy:'',preference:'优惠',risk:'风险 合规',filing:'申报',invoice:'发票',calc:'标准 扣除'};
-  const entMap = {small:'小规模纳税人',general:'一般纳税人',micro:'小微企业',hitech:'高新技术企业'};
-  let parts = [];
-  if (guideState.tax_type) parts.push(guideState.tax_type);
-  if (guideState.intent && intentMap[guideState.intent]) parts.push(intentMap[guideState.intent]);
-  if (guideState.enterprise_type && entMap[guideState.enterprise_type]) parts.push(entMap[guideState.enterprise_type]);
-  const custom = document.getElementById('customKeyword')?.value?.trim();
-  if (custom) parts.push(custom);
-  document.getElementById('searchInput').value = parts.join(' ') || '增值税';
-  // Apply guidance date filters
-  if (guideState.timeframe === 'latest') document.getElementById('filterSort').value = 'date';
-  if (guideState.timeframe === '2024') document.getElementById('filterDateFrom').value = '2024-01-01';
-  // Apply province from guidance panel
-  if (guideState.region === 'local') {
-    const gp = document.getElementById('guideProvince');
-    if (gp && gp.value) {
-      document.getElementById('filterProvince').value = gp.value;
-      guideState.guideProvince = gp.value;
-    }
-  } else if (guideState.region === 'national') {
-    document.getElementById('filterProvince').value = '';
-  }
-  toggleGuidance();
-  doSearch();
-}
-
-function esc(s) {
-  if (!s) return '';
-  const d = document.createElement('div');
-  d.textContent = s;
-  return d.innerHTML;
-}
+  loadErr.style.display = 'block';
+  loadErr.textContent = '所有后端暂不可用，请稍后刷新重试';
+  loading.innerHTML = '<p style="font-size:16px;color:#111827">⚠️ 服务暂时不可用</p><p class="err">请稍后刷新页面重试</p>';
+})();
 </script>
 </body>
 </html>
