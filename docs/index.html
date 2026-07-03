@@ -103,8 +103,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
     <div class="quick-tax" id="quickTax"></div>
     <div class="filters">
       <div class="filter-group"><label>范围</label><select id="filterScope"><option value="title">标题</option><option value="fulltext" selected>全文</option></select></div>
+      <div class="filter-group"><label>匹配</label><select id="filterType"><option value="fuzzy">模糊</option><option value="exact">精确</option></select></div>
       <div class="filter-group"><label>时效</label><select id="filterStatus"><option value="3" selected>现行有效</option><option value="">全部</option></select></div>
       <div class="filter-group"><label>排序</label><select id="filterSort"><option value="relevance">相关度</option><option value="date">日期↓</option></select></div>
+      <div class="filter-group"><label>省份</label><select id="filterProvince"><option value="">全国</option></select></div>
       <div class="filter-group"><label>日期</label><input type="date" id="filterDateFrom">—<input type="date" id="filterDateTo"></div>
     </div>
     <div class="guidance-toggle" onclick="toggleGuidance()">💡 不确定查什么？打开智能引导</div>
@@ -147,6 +149,7 @@ const STATUS_MAP = {1:"s-abolished",2:"s-amended",3:"s-effective",4:"s-pending"}
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') doSearch(); });
   loadData();
+  loadProvinces();
   renderGuideStep('user_type');
 });
 
@@ -171,6 +174,14 @@ function buildQuickTax() {
   ).join('');
 }
 
+function loadProvinces() {
+  const sel = document.getElementById('filterProvince');
+  const provs = [
+    {name:'全国',subdomain:''},{name:'北京',subdomain:'beijing'},{name:'上海',subdomain:'shanghai'},{name:'天津',subdomain:'tianjin'},{name:'重庆',subdomain:'chongqing'},{name:'广东',subdomain:'guangdong'},{name:'深圳',subdomain:'shenzhen'},{name:'浙江',subdomain:'zhejiang'},{name:'江苏',subdomain:'jiangsu'},{name:'山东',subdomain:'shandong'},{name:'四川',subdomain:'sichuan'},{name:'湖北',subdomain:'hubei'},{name:'湖南',subdomain:'hunan'},{name:'河南',subdomain:'henan'},{name:'河北',subdomain:'hebei'},{name:'福建',subdomain:'fujian'},{name:'厦门',subdomain:'xiamen'},{name:'安徽',subdomain:'anhui'},{name:'辽宁',subdomain:'liaoning'},{name:'大连',subdomain:'dalian'},{name:'吉林',subdomain:'jilin'},{name:'黑龙江',subdomain:'heilongjiang'},{name:'江西',subdomain:'jiangxi'},{name:'山西',subdomain:'shanxi'},{name:'陕西',subdomain:'shaanxi'},{name:'甘肃',subdomain:'gansu'},{name:'青海',subdomain:'qinghai'},{name:'云南',subdomain:'yunnan'},{name:'贵州',subdomain:'guizhou'},{name:'广西',subdomain:'guangxi'},{name:'海南',subdomain:'hainan'},{name:'内蒙古',subdomain:'neimenggu'},{name:'宁夏',subdomain:'ningxia'},{name:'新疆',subdomain:'xinjiang'},{name:'西藏',subdomain:'xizang'},{name:'青岛',subdomain:'qingdao'},{name:'宁波',subdomain:'ningbo'}
+  ];
+  sel.innerHTML = provs.map(p => `<option value="${p.subdomain}">${p.name}</option>`).join('');
+}
+
 function pickTax(kw) {
   document.getElementById('searchInput').value = kw;
   doSearch();
@@ -186,9 +197,11 @@ function doSearch() {
   // Read filters
   const filterStatus = document.getElementById('filterStatus').value;
   const filterSort = document.getElementById('filterSort').value;
+  const filterType = document.getElementById('filterType').value;
   const filterDateFrom = document.getElementById('filterDateFrom').value;
   const filterDateTo = document.getElementById('filterDateTo').value;
   const statusFilter = filterStatus !== '' ? parseInt(filterStatus) : null;
+  const isExact = filterType === 'exact';
 
   let allResults = [];
   const seen = new Set();
@@ -206,15 +219,18 @@ function doSearch() {
     }
   }
 
-  // Step 2: Broad text search
-  if (allResults.length < 5) {
+  // Step 2: Broad text search (only when results < 5, or always for non-exact)
+  if (!isExact || allResults.length < 5) {
     for (const [key, data] of Object.entries(taxData)) {
       if (!data || !data.results) continue;
       for (const item of data.results) {
         if (seen.has(item.id)) continue;
         const t = (item.title || '').toLowerCase();
         const a = (item.issuing_authority || '').toLowerCase();
-        if (t.includes(q) || a.includes(q)) {
+        const matched = isExact
+          ? t.includes(q)  // exact: must contain full query string (case-insensitive)
+          : t.includes(q) || a.includes(q);  // fuzzy: also match by authority
+        if (matched) {
           seen.add(item.id);
           allResults.push({...item, _source: data.type || key});
         }
