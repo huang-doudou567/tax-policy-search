@@ -1,0 +1,279 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "出口退税",
+  "type": "出口退税",
+  "scope": "fulltext",
+  "total": 51,
+  "results": [
+    {
+      "id": "f99c412df98b4ea396d6709c78703111",
+      "title": "中华人民共和国对外贸易法",
+      "publish_date": "2025-12-27",
+      "effective_date": "2026-03-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf78cff0785",
+      "title": "中华人民共和国税收征收管理法",
+      "publish_date": "2015-04-24",
+      "effective_date": "2015-04-24",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181796a636a0179822a19640c92",
+      "title": "中华人民共和国刑法",
+      "publish_date": "2020-12-26",
+      "effective_date": "2021-03-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf8d0550bf9",
+      "title": "全国人民代表大会常务委员会关于《中华人民共和国刑法》有关<em class='highlight'>出口退税、抵扣税款的其他发票规定的解释",
+      "publish_date": "2005-12-29",
+      "effective_date": "2005-12-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律解释"
+    },
+    {
+      "id": "ff8081819b697220019bc0aa9f146bf4",
+      "title": "中华人民共和国增值税法实施条例",
+      "publish_date": "2025-12-25",
+      "effective_date": "2026-01-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff808181900f8e94019010bc03260890",
+      "title": "国际邮轮在中华人民共和国港口靠港补给的规定",
+      "publish_date": "2024-04-22",
+      "effective_date": "2024-06-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081819c46f9bb019cd19182d36cdd",
+      "title": "中华人民共和国货物进<em class='highlight'>出口管理条例",
+      "publish_date": "2024-03-10",
+      "effective_date": "2024-05-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff80818180e0a61301811e43f41f1fa2",
+      "title": "中华人民共和国海关行政处罚实施条例",
+      "publish_date": "2022-03-29",
+      "effective_date": "2022-05-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f409df6fa0566",
+      "title": "中华人民共和国税收征收管理法实施细则",
+      "publish_date": "2016-02-06",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f41124ba91528",
+      "title": "中华人民共和国海关对<em class='highlight'>出口加工区监管的暂行办法",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f40a4d55d05a8",
+      "title": "保税区海关监管办法",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff80818198a7ecd40198e24493592f36",
+      "title": "中华人民共和国监察法实施条例",
+      "publish_date": "2025-06-01",
+      "effective_date": "2025-06-01",
+      "status_code": 3,
+      "issuing_authority": "国家监察委员会",
+      "category": "监察法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016c8a2a994d3fa8",
+      "title": "天津市优化营商环境条例",
+      "publish_date": "2019-07-31",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8080816ea719d7016eb12a99a75b34",
+      "title": "天津港保税区条例",
+      "publish_date": "2019-05-30",
+      "effective_date": "2019-05-30",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff808181927f12760193d2542cd13bf5",
+      "title": "河北省优化营商环境条例",
+      "publish_date": "2024-11-28",
+      "effective_date": "2024-11-28",
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818c24e05b018c60de891a226b",
+      "title": "沈阳市优化营商环境条例",
+      "publish_date": "2023-11-27",
+      "effective_date": "2024-01-01",
+      "status_code": 3,
+      "issuing_authority": "沈阳市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8080816fbc57c101710b77081e08e3",
+      "title": "辽宁省企业权益保护条例",
+      "publish_date": "2019-11-28",
+      "effective_date": "2020-02-01",
+      "status_code": 3,
+      "issuing_authority": "辽宁省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081819c46fcc5019c51574b614bc1",
+      "title": "上海市优化营商环境条例",
+      "publish_date": "2025-11-26",
+      "effective_date": "2026-01-01",
+      "status_code": 3,
+      "issuing_authority": "上海市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081819a7c98d2019ac95b531c141e",
+      "title": "上海市民营经济促进条例",
+      "publish_date": "2025-09-25",
+      "effective_date": "2025-10-20",
+      "status_code": 3,
+      "issuing_authority": "上海市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818d6d9371018d72003c7d088a",
+      "title": "上海市推进国际贸易中心建设条例",
+      "publish_date": "2023-12-28",
+      "effective_date": "2024-02-01",
+      "status_code": 3,
+      "issuing_authority": "上海市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818364d9f60183ea8e7a7e1b7b",
+      "title": "中国（上海）自由贸易试验区临港新片区条例",
+      "publish_date": "2022-02-18",
+      "effective_date": "2022-03-01",
+      "status_code": 3,
+      "issuing_authority": "上海市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818d736dae018d78630dc61632",
+      "title": "浙江省优化营商环境条例",
+      "publish_date": "2024-01-26",
+      "effective_date": "2024-03-01",
+      "status_code": 3,
+      "issuing_authority": "浙江省人民代表大会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081817fd98341017fd9d926851050",
+      "title": "中国（浙江）自由贸易试验区条例",
+      "publish_date": "2022-03-18",
+      "effective_date": "2022-05-01",
+      "status_code": 3,
+      "issuing_authority": "浙江省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff808181927f127601941afee0d77653",
+      "title": "安徽省优化营商环境条例",
+      "publish_date": "2024-11-26",
+      "effective_date": "2024-11-26",
+      "status_code": 3,
+      "issuing_authority": "安徽省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818a1cb3c3018a203f471c07a9",
+      "title": "阜阳市优化营商环境条例",
+      "publish_date": "2023-08-04",
+      "effective_date": "2023-09-01",
+      "status_code": 3,
+      "issuing_authority": "阜阳市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818073c77c018074231b560a87",
+      "title": "中国（安徽）自由贸易试验区条例",
+      "publish_date": "2022-03-25",
+      "effective_date": "2022-05-01",
+      "status_code": 3,
+      "issuing_authority": "安徽省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80818191d62db001920ac73a9f2496",
+      "title": "江西省促进科技成果转化条例",
+      "publish_date": "2020-11-25",
+      "effective_date": "2020-11-25",
+      "status_code": 3,
+      "issuing_authority": "江西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff808181869cd8610186a11c2a525132",
+      "title": "济宁市优化营商环境条例",
+      "publish_date": "2023-01-10",
+      "effective_date": "2023-04-01",
+      "status_code": 3,
+      "issuing_authority": "济宁市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081819aedd63e019b4e05f1ab0e20",
+      "title": "河南省优化营商环境条例",
+      "publish_date": "2025-12-04",
+      "effective_date": "2026-03-01",
+      "status_code": 3,
+      "issuing_authority": "河南省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff808181844230ec0185528515564f2a",
+      "title": "中国（湖北）自由贸易试验区条例",
+      "publish_date": "2022-11-25",
+      "effective_date": "2022-11-25",
+      "status_code": 3,
+      "issuing_authority": "湖北省人民代表大会常务委员会",
+      "category": "地方法规"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "个人所得税",
+  "type": "个人所得税",
+  "scope": "title",
+  "total": 59,
+  "results": [
+    {
+      "id": "2c909fdd678bf17901678bf609680235",
+      "title": "中华人民共和国<em class='highlight'>个人独资企业法",
+      "publish_date": "1999-08-30",
+      "effective_date": "2000-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f2106acd11784",
+      "title": "中华人民共和国企业<em class='highlight'>所得税法",
+      "publish_date": "2018-12-29",
+      "effective_date": "2018-12-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf724bd0609",
+      "title": "中华人民共和国<em class='highlight'>个人所得税法",
+      "publish_date": "2018-08-31",
+      "effective_date": "2019-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817b6472a3017b656cc2040044",
+      "title": "中华人民共和国<em class='highlight'>个人信息保护法",
+      "publish_date": "2021-08-20",
+      "effective_date": "2021-11-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181971b86bf0197a61d2a06193a",
+      "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+      "publish_date": "2025-06-20",
+      "effective_date": "2025-06-20",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081819c230ff2019c2d0fcd4a6436",
+      "title": "中华人民共和国企业<em class='highlight'>所得税法实施条例",
+      "publish_date": "2024-12-06",
+      "effective_date": "2025-01-20",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f414f9d74216e",
+      "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+      "publish_date": "2019-03-02",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4122d8d9194b",
+      "title": "中华人民共和国<em class='highlight'>个人所得税法实施条例",
+      "publish_date": "2018-12-18",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+      "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411bd9e317a0",
+      "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411aeff91764",
+      "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+      "publish_date": "2008-11-10",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4105bea511c9",
+      "title": "对储蓄存款利息<em class='highlight'>所得征收<em class='highlight'>个人所得税的实施办法",
+      "publish_date": "2007-07-20",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f41105f1e149a",
+      "title": "<em class='highlight'>个人存款账户实名制规定",
+      "publish_date": "2000-03-20",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f412a31091aaf",
+      "title": "国务院关于外商投资企业和外国企业适用增值<em class='highlight'>税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+      "publish_date": "1994-02-22",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cf65c9d205499",
+      "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "北京市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5bb6a291f86016b7e951b6925ec",
+      "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+      "publish_date": "2019-05-30",
+      "effective_date": "2019-08-01",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8080817467025c017467a8dfb801f2",
+      "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+      "publish_date": "2020-07-30",
+      "effective_date": "2020-09-01",
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818faab35d018fc1fbc1c455f0",
+      "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+      "publish_date": "2024-03-28",
+      "effective_date": "2024-04-01",
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5b96c128b4c016d3e13b7b126a5",
+      "title": "黑龙江省人民代表大会常务委员会关于黑龙江省耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-08-16",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "黑龙江省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5b96c128b4c016cacf3b5100dec",
+      "title": "江苏省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "江苏省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cd0d3757e4747",
+      "title": "浙江省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-08-01",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "浙江省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+      "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-29",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "安徽省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8080817321d55601732d5a61740938",
+      "title": "山东省人民代表大会常务委员会关于山东省资源<em class='highlight'>税具体适用税率、计征方式和免征或者减征办法的决定",
+      "publish_date": "2020-06-12",
+      "effective_date": "2020-09-01",
+      "status_code": 3,
+      "issuing_authority": "山东省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cd7414f204c6b",
+      "title": "山东省人民代表大会常务委员会关于山东省耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "山东省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5b96c128b4c016d1ae08d5c24ec",
+      "title": "河南省人民代表大会常务委员会关于河南省耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "河南省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5b96c128b4c016cbdfb1af0114a",
+      "title": "湖北省人民代表大会常务委员会关于耕地占用<em class='highlight'>税具体适用税额标准的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "湖北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80808175265dd4017688cf856b0801",
+      "title": "湖南省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等事项的决定",
+      "publish_date": "2020-07-30",
+      "effective_date": "2020-09-01",
+      "status_code": 3,
+      "issuing_authority": "湖南省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff808081736bb19d017409f3a535513d",
+      "title": "广东省人民代表大会常务委员会关于广东省资源<em class='highlight'>税具体适用税率等事项的决定",
+      "publish_date": "2020-07-29",
+      "effective_date": "2020-09-01",
+      "status_code": 3,
+      "issuing_authority": "广东省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016c759fbcc93d2f",
+      "title": "广东省人民代表大会常务委员会关于广东省耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-25",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "广东省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "4028abcc61277793016127fbdc053cce",
+      "title": "海南省人民代表大会常务委员会关于加强治理向企业乱收费、乱罚款和各种摊派，减轻企业<em class='highlight'>税外负担的决定",
+      "publish_date": null,
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "海南省人民代表大会常务委员会",
+      "category": "地方法规"
+    }
+  ]
+}

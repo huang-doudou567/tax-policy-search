@@ -1,0 +1,279 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "土地增值税",
+  "type": "土地增值税",
+  "scope": "title",
+  "total": 191,
+  "results": [
+    {
+      "id": "ff8080816f135f46016f2104531f1774",
+      "title": "中华人民共和国农村<em class='highlight'>土地承包法",
+      "publish_date": "2018-12-29",
+      "effective_date": "2019-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181927b083b0193fd65a0eb02cb",
+      "title": "中华人民共和国<em class='highlight'>增值税法",
+      "publish_date": "2024-12-25",
+      "effective_date": "2026-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181818e90e70181947372d60184",
+      "title": "中华人民共和国黑<em class='highlight'>土地保护法",
+      "publish_date": "2022-06-24",
+      "effective_date": "2022-08-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4626903427fc",
+      "title": "中华人民共和国<em class='highlight'>土地管理法",
+      "publish_date": "2019-08-26",
+      "effective_date": "2020-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf6726303f7",
+      "title": "中华人民共和国农村<em class='highlight'>土地承包经营纠纷调解仲裁法",
+      "publish_date": "2009-06-27",
+      "effective_date": "2010-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081819b697220019bc0aa9f146bf4",
+      "title": "中华人民共和国<em class='highlight'>增值税法实施条例",
+      "publish_date": "2025-12-25",
+      "effective_date": "2026-01-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff80818199855c3201998efc275f0f98",
+      "title": "军用<em class='highlight'>土地管理条例",
+      "publish_date": "2025-09-17",
+      "effective_date": "2025-11-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff808181971b86bf0197a61d2a06193a",
+      "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+      "publish_date": "2025-06-20",
+      "effective_date": "2025-06-20",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081817b63b895017b7b071b6843c0",
+      "title": "中华人民共和国<em class='highlight'>土地管理法实施条例",
+      "publish_date": "2021-07-02",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff808081777d0c940177b8c2f598365d",
+      "title": "中华人民共和国城镇国有<em class='highlight'>土地使用权出让和转让暂行条例",
+      "publish_date": "2020-11-29",
+      "effective_date": "2020-11-29",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f414f9d74216e",
+      "title": "中华人民共和国城镇<em class='highlight'>土地使用<em class='highlight'>税暂行条例",
+      "publish_date": "2019-03-02",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3e98bd016f423bf73d03a1",
+      "title": "<em class='highlight'>土地调查条例",
+      "publish_date": "2018-03-19",
+      "effective_date": "2018-03-19",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f40fb7e520f9f",
+      "title": "<em class='highlight'>土地复垦条例",
+      "publish_date": "2011-03-05",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f40fa642a0f58",
+      "title": "国有<em class='highlight'>土地上房屋征收与补偿条例",
+      "publish_date": "2011-01-21",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411bd9e317a0",
+      "title": "中华人民共和国<em class='highlight'>土地增值税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+      "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411aeff91764",
+      "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+      "publish_date": "2008-11-10",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4105bea511c9",
+      "title": "对储蓄存款利息所得征收个人所得<em class='highlight'>税的实施办法",
+      "publish_date": "2007-07-20",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f412a31091aaf",
+      "title": "国务院关于外商投资企业和外国企业适用<em class='highlight'>增值税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+      "publish_date": "1994-02-22",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "2c90e5ba6a291d8f016cf65c9d205499",
+      "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+      "publish_date": "2019-07-26",
+      "effective_date": "2019-09-01",
+      "status_code": 3,
+      "issuing_authority": "北京市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081817d7e735a017d8e9144b21d00",
+      "title": "天津市<em class='highlight'>土地管理条例",
+      "publish_date": "2021-11-29",
+      "effective_date": "2022-01-01",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "2c90e5bb6a291f86016b7e951b6925ec",
+      "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+      "publish_date": "2019-05-30",
+      "effective_date": "2019-08-01",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80818180641f88018068eead877c31",
+      "title": "河北省<em class='highlight'>土地管理条例",
+      "publish_date": "2022-03-30",
+      "effective_date": "2022-06-01",
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8080817467025c017467a8dfb801f2",
+      "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+      "publish_date": "2020-07-30",
+      "effective_date": "2020-09-01",
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "4028abcc612777930161281a90cd5b91",
+      "title": "河北省农村<em class='highlight'>土地承包条例",
+      "publish_date": null,
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80818199614e1101997e829f585561",
+      "title": "山西省实施《中华人民共和国农村<em class='highlight'>土地承包法》办法",
+      "publish_date": "2025-07-30",
+      "effective_date": "2025-09-01",
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818f19d70e018f847252957562",
+      "title": "山西省实施《中华人民共和国<em class='highlight'>土地管理法》办法",
+      "publish_date": "2024-03-28",
+      "effective_date": "2024-05-01",
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081818faab35d018fc1fbc1c455f0",
+      "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+      "publish_date": "2024-03-28",
+      "effective_date": "2024-04-01",
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "4028abcc61277793016127e2a1392193",
+      "title": "山西省国有<em class='highlight'>土地上房屋征收与补偿条例",
+      "publish_date": "2015-09-24",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "4028abcc61277793016127ff393c4076",
+      "title": "山西省<em class='highlight'>土地整治条例",
+      "publish_date": "2014-05-29",
+      "effective_date": "2014-10-01",
+      "status_code": 3,
+      "issuing_authority": "山西省人民代表大会常务委员会",
+      "category": "地方法规"
+    }
+  ]
+}

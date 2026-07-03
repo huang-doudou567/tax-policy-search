@@ -1,0 +1,279 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "企业所得税",
+  "type": "企业所得税",
+  "scope": "title",
+  "total": 294,
+  "results": [
+    {
+      "id": "2c909fdd678bf17901678bf63c7c0343",
+      "title": "中华人民共和国<em class='highlight'>企业破产法",
+      "publish_date": "2006-08-27",
+      "effective_date": "2007-06-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf63dce034d",
+      "title": "中华人民共和国合伙<em class='highlight'>企业法",
+      "publish_date": "2006-08-27",
+      "effective_date": "2007-06-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf609680235",
+      "title": "中华人民共和国个人独资<em class='highlight'>企业法",
+      "publish_date": "1999-08-30",
+      "effective_date": "2000-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f2106acd11784",
+      "title": "中华人民共和国<em class='highlight'>企业所得税法",
+      "publish_date": "2018-12-29",
+      "effective_date": "2018-12-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf724bd0609",
+      "title": "中华人民共和国个人<em class='highlight'>所得税法",
+      "publish_date": "2018-08-31",
+      "effective_date": "2019-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf85eba0a23",
+      "title": "中华人民共和国中小<em class='highlight'>企业促进法",
+      "publish_date": "2017-09-01",
+      "effective_date": "2018-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf653fb03c5",
+      "title": "中华人民共和国<em class='highlight'>企业国有资产法",
+      "publish_date": "2008-10-28",
+      "effective_date": "2009-05-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181971b86bf0197a61d2a06193a",
+      "title": "互联网平台<em class='highlight'>企业涉<em class='highlight'>税信息报送规定",
+      "publish_date": "2025-06-20",
+      "effective_date": "2025-06-20",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff808181927f1276019610f4dde60a27",
+      "title": "保障中小<em class='highlight'>企业款项支付条例",
+      "publish_date": "2025-03-17",
+      "effective_date": "2025-06-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081819c230ff2019c2d0fcd4a6436",
+      "title": "中华人民共和国<em class='highlight'>企业所得税法实施条例",
+      "publish_date": "2024-12-06",
+      "effective_date": "2025-01-20",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081818fe2c502019010c856d73c47",
+      "title": "国有<em class='highlight'>企业管理人员处分条例",
+      "publish_date": "2024-05-21",
+      "effective_date": "2024-09-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081819c46fcc5019cd18fc6e9557d",
+      "title": "<em class='highlight'>企业信息公示暂行条例",
+      "publish_date": "2024-03-10",
+      "effective_date": "2024-05-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8081819c46fdc3019cd19068731f64",
+      "title": "外国<em class='highlight'>企业常驻代表机构登记管理条例",
+      "publish_date": "2024-03-10",
+      "effective_date": "2024-05-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff80818180e0a44101811e3049ca1401",
+      "title": "外商投资电信<em class='highlight'>企业管理规定",
+      "publish_date": "2022-03-29",
+      "effective_date": "2022-05-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff808081777d0c94017784da4aa50a73",
+      "title": "<em class='highlight'>企业名称登记管理规定",
+      "publish_date": "2020-12-28",
+      "effective_date": "2021-03-01",
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f414f9d74216e",
+      "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+      "publish_date": "2019-03-02",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f40d9ff6b0741",
+      "title": "<em class='highlight'>企业国有资产监督管理暂行条例",
+      "publish_date": "2019-03-02",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4122d8d9194b",
+      "title": "中华人民共和国个人<em class='highlight'>所得税法实施条例",
+      "publish_date": "2018-12-18",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f413065461be0",
+      "title": "<em class='highlight'>企业投资项目核准和备案管理条例",
+      "publish_date": "2016-11-30",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f40d73bfc06b1",
+      "title": "中华人民共和国城镇集体所有制<em class='highlight'>企业条例",
+      "publish_date": "2016-02-06",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+      "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411bd9e317a0",
+      "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4106f07d1215",
+      "title": "<em class='highlight'>企业债券管理条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4086cb9f03c4",
+      "title": "中华人民共和国乡村集体所有制<em class='highlight'>企业条例",
+      "publish_date": "2011-01-08",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f411aeff91764",
+      "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+      "publish_date": "2008-11-10",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4105bea511c9",
+      "title": "对储蓄存款利息<em class='highlight'>所得征收个人<em class='highlight'>所得税的实施办法",
+      "publish_date": "2007-07-20",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f410faf721475",
+      "title": "<em class='highlight'>企业事业单位内部治安保卫条例",
+      "publish_date": "2004-09-27",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4113f1b515b9",
+      "title": "<em class='highlight'>企业财务会计报告条例",
+      "publish_date": "2000-06-21",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4107b3351256",
+      "title": "国务院关于国家行政机关和<em class='highlight'>企业事业单位社会团体印章管理的规定",
+      "publish_date": "1999-10-31",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    },
+    {
+      "id": "ff8080816f3cbb3c016f4102b3a7113d",
+      "title": "控制对<em class='highlight'>企业进行经济检查的规定",
+      "publish_date": "1999-07-23",
+      "effective_date": null,
+      "status_code": 3,
+      "issuing_authority": "国务院",
+      "category": "行政法规"
+    }
+  ]
+}

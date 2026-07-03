@@ -1,0 +1,207 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "契税",
+  "type": "契税",
+  "scope": "title",
+  "total": 22,
+  "results": [
+    {
+      "id": "ff808081736ba7420173e71ef7563753",
+      "title": "中华人民共和国<em class='highlight'>契税法",
+      "publish_date": "2020-08-11",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181844230ec0184eb97169551af",
+      "title": "辽宁省<em class='highlight'>契税具体适用税率的调整方案",
+      "publish_date": "2022-11-29",
+      "effective_date": "2023-01-01",
+      "status_code": 3,
+      "issuing_authority": "辽宁省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081817c26c71c017c306822df2c2b",
+      "title": "辽宁省实施<em class='highlight'>契税法授权事项的方案",
+      "publish_date": "2021-07-27",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "辽宁省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff80818179faa362017a13d947b00b89",
+      "title": "山东省人民代表大会常务委员会关于山东省<em class='highlight'>契税具体适用税率和免征或者减征办法的决定",
+      "publish_date": "2021-05-27",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "山东省人民代表大会常务委员会",
+      "category": "地方法规"
+    },
+    {
+      "id": "ff8081817b39d2f9017b3e9e957b0773",
+      "title": "北京市人民代表大会常务委员会关于北京市<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-07-30",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "北京市人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff80818179c0e42e0179e94e033b610f",
+      "title": "天津市人民代表大会常务委员会关于天津市<em class='highlight'>契税适用税率和减征免征办法的决定",
+      "publish_date": "2021-05-26",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "天津市人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b96971c017b9f2e96f818ce",
+      "title": "河北省人民代表大会常务委员会关于河北省<em class='highlight'>契税适用税率等有关事项的决定",
+      "publish_date": "2021-07-30",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "河北省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817bf35707017c20ef62bb0095",
+      "title": "黑龙江省人民代表大会常务委员会关于实施<em class='highlight'>契税法授权事项的决定",
+      "publish_date": "2021-06-24",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "黑龙江省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b63b935017b760e05d51b0c",
+      "title": "江苏省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等有关事项的决定",
+      "publish_date": "2021-07-29",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "江苏省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b149d62017b1a61038c0d21",
+      "title": "浙江省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-07-30",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "浙江省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b5e8b6b017b60eb90ab00c4",
+      "title": "安徽省人民代表大会常务委员会关于安徽省<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-07-23",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "安徽省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b39d32a017b51fcb486244a",
+      "title": "河南省人民代表大会常务委员会关于河南省<em class='highlight'>契税适用税率等事项的决定",
+      "publish_date": "2021-08-02",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "河南省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b826c87017b86b42a26074c",
+      "title": "湖北省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率及免征减征办法的决定",
+      "publish_date": "2021-07-30",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "湖北省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff80818179faa403017a1795cb861070",
+      "title": "湖南省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-05-27",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "湖南省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b63b895017b7712aeda2a6e",
+      "title": "广东省人民代表大会常务委员会关于广东省<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-07-30",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "广东省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b63b895017b8072ce226a11",
+      "title": "海南省人民代表大会常务委员会关于海南省<em class='highlight'>契税具体适用税率和免征减征办法的决定",
+      "publish_date": "2021-07-27",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "海南省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817bdd7e17017bde2ccfb52b51",
+      "title": "四川省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+      "publish_date": "2021-07-29",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "四川省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817e9b2546017eee0d88167d32",
+      "title": "贵州省人民代表大会常务委员会关于贵州省<em class='highlight'>契税具体适用税率和免征办法的决定",
+      "publish_date": "2021-05-27",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "贵州省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817bc2fb63017bc9e5b0c3113d",
+      "title": "云南省人民代表大会常务委员会关于云南省<em class='highlight'>契税具体适用税率和免征或者减征办法的决定",
+      "publish_date": "2021-07-29",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "云南省人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff80818179c0e42e0179ee89de207019",
+      "title": "西藏自治区人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等有关事项的决定",
+      "publish_date": "2021-05-28",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "西藏自治区人民代表大会常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff80818179c0e42e0179cc1345ed1859",
+      "title": "宁夏回族自治区人民代表大会常务委员会关于宁夏回族自治区<em class='highlight'>契税适用税率等有关事项的决定",
+      "publish_date": "2021-05-11",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "宁夏回族自治区人大常务委员会",
+      "category": "法规性决定"
+    },
+    {
+      "id": "ff8081817b39d32a017b4d18f23a1229",
+      "title": "新疆维吾尔自治区人民代表大会常务委员会关于自治区<em class='highlight'>契税具体适用税率和免征办法的决定",
+      "publish_date": "2021-07-28",
+      "effective_date": "2021-09-01",
+      "status_code": 3,
+      "issuing_authority": "新疆维吾尔自治区人大常务委员会",
+      "category": "法规性决定"
+    }
+  ]
+}

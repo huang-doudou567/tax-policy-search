@@ -5,26 +5,241 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>财税政策实时搜索引擎</title>
 <style>
-*{margin:0;padding:0}
-body,html{width:100%;height:100%;overflow:hidden}
-iframe{width:100%;height:100%;border:none}
+:root{--bg:#f3f4f6;--card:#fff;--text:#111827;--t2:#6b7280;--t3:#9ca3af;--border:#e5e7eb;--primary:#1d4ed8;--plight:#dbeafe;--green:#059669;--gbg:#d1fae5;--yellow:#b45309;--ybg:#fef3c7;--red:#dc2626;--rbg:#fee2e2;--radius:10px;--shadow:0 1px 3px #00000010}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:22px 0 18px;text-align:center}
+.header h1{font-size:22px;font-weight:700}
+.header p{font-size:12.5px;opacity:.7;margin-top:4px}
+.header .badges{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.header .badge{background:#ffffff22;padding:3px 10px;border-radius:20px;font-size:11px}
+.container{max-width:860px;margin:0 auto;padding:16px}
+.search-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 22px;margin-bottom:16px}
+.search-row{display:flex;gap:10px;align-items:center}
+.search-input{flex:1;padding:11px 15px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none;transition:border .2s}
+.search-input:focus{border-color:var(--primary)}
+.search-btn{padding:11px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.search-btn:hover{background:#1e40af}
+.quick-tax{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.quick-tax button{padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:var(--card);font-size:12px;cursor:pointer;transition:all .12s}
+.quick-tax button:hover{background:var(--plight);border-color:var(--primary)}
+.quick-tax button .t{display:block;font-weight:600;font-size:13px}
+.quick-tax button .s{display:block;font-size:10px;color:var(--t2)}
+.meta-bar{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:12px;color:var(--t2);flex-wrap:wrap}
+.tag{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
+.tag-intent{background:#ede9fe;color:#7c3aed}.tag-source{background:var(--plight);color:var(--primary)}
+.tag-time{background:#f3f4f6;color:#6b7280}.tag-count{background:var(--gbg);color:var(--green)}
+.result-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 20px;margin-bottom:10px;border-left:4px solid transparent;cursor:pointer;transition:all .15s}
+.result-card:hover{border-left-color:var(--primary);box-shadow:0 2px 8px #00000012}
+.result-card .title{font-size:15px;font-weight:600;margin-bottom:6px}
+.result-card .title mark{background:#fef08a;color:#854d0e;padding:0 2px;border-radius:2px}
+.result-card .meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--t2)}
+.result-card .meta span{display:inline-flex;align-items:center;gap:3px}
+.result-card .id-row{font-size:10.5px;color:var(--t3);font-family:monospace;margin-top:4px}
+.status-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+.s-effective{background:var(--gbg);color:var(--green)}.s-amended{background:var(--ybg);color:var(--yellow)}
+.s-abolished{background:var(--rbg);color:var(--red)}.s-pending{background:var(--plight);color:var(--primary)}
+.empty-state{text-align:center;padding:50px 20px;color:var(--t2)}
+.empty-state .icon{font-size:40px;margin-bottom:10px}
+.loading-spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.data-note{font-size:11px;color:var(--t3);text-align:center;padding:8px;background:var(--card);border-radius:0 0 var(--radius) var(--radius);margin:-4px 0 16px}
+.data-note a{color:var(--primary)}
+@media(max-width:600px){.search-row{flex-direction:column}.container{padding:10px}.search-card{padding:14px}}
 </style>
 </head>
 <body>
-<script src="current-tunnel.js?v=1"></script>
+<div class="header">
+  <h1>财税政策实时搜索引擎</h1>
+  <p>覆盖 12 大税种 · 数据每日自动更新 · NPC 国家法律法规数据库</p>
+  <div class="badges">
+    <span class="badge">增值税</span><span class="badge">企业所得税</span><span class="badge">个人所得税</span>
+    <span class="badge">消费税</span><span class="badge">印花税</span><span class="badge">房产税</span>
+    <span class="badge">关税</span><span class="badge">契税</span><span class="badge">土地增值税</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="search-card">
+    <div class="search-row">
+      <input type="text" class="search-input" id="searchInput" placeholder="输入税收政策关键词…如：小微企业增值税优惠、研发费用加计扣除比例…" autofocus>
+      <button class="search-btn" id="searchBtn" onclick="doSearch()">搜索</button>
+    </div>
+    <div class="quick-tax" id="quickTax"></div>
+  </div>
+  <div id="resultsContainer"></div>
+  <div class="data-note" id="dataNote"></div>
+</div>
+
 <script>
-(function(){
-  var url = window.SERVEO_URL;
-  if(!url){ document.body.innerHTML='<p style="padding:40px;font-family:sans-serif">Demo 暂不可用，请稍后刷新</p>'; return; }
-  var iframe = document.createElement('iframe');
-  iframe.src = url;
-  iframe.allow = 'clipboard-write';
-  document.body.appendChild(iframe);
-  // Update page title when iframe loads
-  iframe.onload = function(){
-    try{ var t = iframe.contentDocument.title; if(t) document.title = t; }catch(e){}
-  };
-})();
+/* ═══════════ GLOBAL STATE ═══════════ */
+let taxData = {};  // { keyword: { total, results[] } }
+let dataUpdated = '';
+
+/* ═══════════ Constants ═══════════ */
+const TAX_TYPES = [
+  {label:"增值税",kw:"增值税",icon:"📊"},{label:"企业所得税",kw:"企业所得税",icon:"🏢"},
+  {label:"个人所得税",kw:"个人所得税",icon:"👤"},{label:"消费税",kw:"消费税",icon:"🛒"},
+  {label:"关税",kw:"关税",icon:"🚢"},{label:"房产税",kw:"房产税",icon:"🏠"},
+  {label:"印花税",kw:"印花税",icon:"📝"},{label:"契税",kw:"契税",icon:"🔑"},
+  {label:"土地增值税",kw:"土地增值税",icon:"🏗️"},{label:"税收优惠",kw:"税收优惠",icon:"🎁"},
+  {label:"发票管理",kw:"发票管理办法",icon:"🧾"},{label:"税收征管",kw:"税收征收管理法",icon:"⚖️"}
+];
+const STATUS_ICONS = {1:"🔴",2:"🟡",3:"🟢",4:"🔵"};
+const STATUS_NAMES = {1:"已废止",2:"已修改",3:"现行有效",4:"尚未生效"};
+const STATUS_MAP = {1:"s-abolished",2:"s-amended",3:"s-effective",4:"s-pending"};
+
+/* ═══════════ INIT ═══════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') doSearch(); });
+  loadData();
+});
+
+async function loadData() {
+  document.getElementById('dataNote').innerHTML = '⏳ 正在加载数据…';
+  try {
+    // Load index file (contains ALL results, ~200KB)
+    const r = await fetch('data/index.json');
+    const idx = await r.json();
+    taxData = idx.searches || {};
+    dataUpdated = idx.updated || '';
+    buildQuickTax();
+    document.getElementById('dataNote').innerHTML = `📅 数据更新时间: ${dataUpdated} · <a href="https://flk.npc.gov.cn" target="_blank">数据源: NPC 国家法律法规数据库</a> · 每日自动更新`;
+  } catch(e) {
+    document.getElementById('dataNote').innerHTML = '⚠️ 数据加载失败，请刷新页面重试';
+  }
+}
+
+function buildQuickTax() {
+  document.getElementById('quickTax').innerHTML = TAX_TYPES.map(t =>
+    `<button onclick="pickTax('${t.kw}')"><span class="t">${t.icon} ${t.label}</span><span class="s">${t.kw}</span></button>`
+  ).join('');
+}
+
+function pickTax(kw) {
+  document.getElementById('searchInput').value = kw;
+  doSearch();
+}
+
+/* ═══════════ SEARCH ═══════════ */
+function doSearch() {
+  const query = document.getElementById('searchInput').value.trim();
+  if (!query) return;
+  const c = document.getElementById('resultsContainer');
+  c.innerHTML = `<div class="empty-state"><div class="loading-spinner"></div><p>搜索中…</p></div>`;
+
+  // Collect all results from pre-fetched data
+  let allResults = [];
+  const seen = new Set();
+
+  // Step 1: Find exact tax type match
+  for (const [key, data] of Object.entries(taxData)) {
+    if (!data || !data.results) continue;
+    const keyword = (data.keyword || '').toLowerCase();
+    const q = query.toLowerCase();
+    // Match if query matches the data's keyword, or if the data's type label matches
+    const typeLabel = (data.type || '').toLowerCase();
+    if (keyword.includes(q) || q.includes(keyword) || typeLabel.includes(q) || q.includes(typeLabel)) {
+      for (const item of data.results) {
+        if (!seen.has(item.id)) {
+          seen.add(item.id);
+          allResults.push({...item, _source: data.type || key});
+        }
+      }
+    }
+  }
+
+  // Step 2: Also do client-side text search across ALL results
+  if (allResults.length < 5) {
+    for (const [key, data] of Object.entries(taxData)) {
+      if (!data || !data.results) continue;
+      for (const item of data.results) {
+        if (seen.has(item.id)) continue;
+        const title = (item.title || '').toLowerCase();
+        const auth = (item.issuing_authority || '').toLowerCase();
+        const q = query.toLowerCase();
+        if (title.includes(q) || auth.includes(q)) {
+          seen.add(item.id);
+          allResults.push({...item, _source: data.type || key});
+        }
+      }
+    }
+  }
+
+  // Sort: effective first, then by date desc
+  allResults.sort((a, b) => {
+    if (a.status_code === 3 && b.status_code !== 3) return -1;
+    if (b.status_code === 3 && a.status_code !== 3) return 1;
+    return (b.publish_date || '').localeCompare(a.publish_date || '');
+  });
+
+  renderResults(query, allResults);
+}
+
+function highlight(text, query) {
+  if (!query || !text) return esc(text);
+  let r = esc(text);
+  const tokens = query.split(/\s+/).filter(t => t.length >= 1).sort((a, b) => b.length - a.length);
+  tokens.forEach(t => {
+    const e = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    r = r.replace(new RegExp(`(${e})`, 'gi'), '<mark>$1</mark>');
+  });
+  return r;
+}
+
+function renderResults(query, items) {
+  const c = document.getElementById('resultsContainer');
+  if (items.length === 0) {
+    c.innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p><b>未找到相关结果</b></p><p style="font-size:13px">关键词: "${esc(query)}"</p><p style="font-size:12px;margin-top:8px;color:var(--t3)">试试更宽泛的关键词（如 "增值税" "企业所得税"）</p></div>`;
+    return;
+  }
+  let h = `<div class="meta-bar"><span class="tag tag-count">📋 ${items.length}条</span><span class="tag tag-time">🔍 "${esc(query)}"</span></div>`;
+  items.slice(0, 50).forEach((item, i) => {
+    const sc = STATUS_MAP[item.status_code] || '';
+    const sid = item.id || '';
+    const titleHl = highlight(item.title, query);
+    h += `<div class="result-card" onclick="viewDetail('${sid}')">
+      <div class="title"><span style="font-size:11px;color:var(--t3)">#${i+1}</span> ${item._source?`<span class="tag tag-source" style="font-size:10px">${esc(item._source)}</span>`:''} ${titleHl}</div>
+      <div class="meta">${item.status_code?`<span><span class="status-badge ${sc}">${STATUS_ICONS[item.status_code]||'❓'} ${STATUS_NAMES[item.status_code]||''}</span></span>`:''}${item.publish_date?`<span>📅 ${item.publish_date}</span>`:''}${item.effective_date?`<span>施行:${item.effective_date}</span>`:''}${item.issuing_authority?`<span>🏛️ ${esc(item.issuing_authority)}</span>`:''}</div>
+      <div class="id-row">NPC ID: ${sid}</div></div>`;
+  });
+  if (items.length > 50) h += `<p style="text-align:center;font-size:12px;color:var(--t2);margin-top:10px">显示前 50 条，共 ${items.length} 条 · 缩小搜索范围以获取更精确结果</p>`;
+  c.innerHTML = h;
+}
+
+function viewDetail(id) {
+  // Find the item in our data
+  for (const [key, data] of Object.entries(taxData)) {
+    if (!data || !data.results) continue;
+    const item = data.results.find(r => r.id === id);
+    if (item) {
+      const detail = [
+        `法规名称: ${item.title}`,
+        `公布日期: ${item.publish_date || '未知'}`,
+        `施行日期: ${item.effective_date || '未知'}`,
+        `时效性: ${STATUS_NAMES[item.status_code] || '未知'}`,
+        `发布机关: ${item.issuing_authority || '未知'}`,
+        `法规分类: ${item.category || '未知'}`,
+        `NPC 法规ID: ${id}`,
+        '',
+        '💡 点击下方按钮查看 NPC 官网法规原文',
+      ].join('\n');
+      if (confirm(detail)) {
+        window.open(`https://flk.npc.gov.cn/detail?id=${id}`, '_blank');
+      }
+      return;
+    }
+  }
+  // Fallback
+  window.open(`https://flk.npc.gov.cn/detail?id=${id}`, '_blank');
+}
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
 </script>
 </body>
 </html>

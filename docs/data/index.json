@@ -1,0 +1,4957 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "searches": {
+    "tax_增值税": {
+      "keyword": "增值税",
+      "type": "增值税",
+      "scope": "title",
+      "total": 45,
+      "results": [
+        {
+          "id": "ff808181927b083b0193fd65a0eb02cb",
+          "title": "中华人民共和国<em class='highlight'>增值税法",
+          "publish_date": "2024-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819b697220019bc0aa9f146bf4",
+          "title": "中华人民共和国<em class='highlight'>增值税法实施条例",
+          "publish_date": "2025-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地<em class='highlight'>增值税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息所得征收个人所得<em class='highlight'>税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用<em class='highlight'>增值税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cf65c9d205499",
+          "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb6a291f86016b7e951b6925ec",
+          "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-08-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817467025c017467a8dfb801f2",
+          "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc1fbc1c455f0",
+          "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d3e13b7b126a5",
+          "title": "黑龙江省人民代表大会常务委员会关于黑龙江省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-16",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cacf3b5100dec",
+          "title": "江苏省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd0d3757e4747",
+          "title": "浙江省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+          "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817321d55601732d5a61740938",
+          "title": "山东省人民代表大会常务委员会关于山东省资源<em class='highlight'>税具体适用税率、计征方式和免征或者减征办法的决定",
+          "publish_date": "2020-06-12",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd7414f204c6b",
+          "title": "山东省人民代表大会常务委员会关于山东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d1ae08d5c24ec",
+          "title": "河南省人民代表大会常务委员会关于河南省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cbdfb1af0114a",
+          "title": "湖北省人民代表大会常务委员会关于耕地占用<em class='highlight'>税具体适用税额标准的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808175265dd4017688cf856b0801",
+          "title": "湖南省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081736bb19d017409f3a535513d",
+          "title": "广东省人民代表大会常务委员会关于广东省资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016c759fbcc93d2f",
+          "title": "广东省人民代表大会常务委员会关于广东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-25",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127fbdc053cce",
+          "title": "海南省人民代表大会常务委员会关于加强治理向企业乱收费、乱罚款和各种摊派，减轻企业<em class='highlight'>税外负担的决定",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016d140e1e79581c",
+          "title": "贵州省人民代表大会常务委员会关于贵州省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "贵州省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808174a08f0e0174a0cd0de60170",
+          "title": "云南省人民代表大会常务委员会关于云南省资源<em class='highlight'>税税目税率计征方式及减免税办法的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "云南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016dbf1432bf331d",
+          "title": "西藏自治区人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-09-25",
+          "effective_date": "2019-09-25",
+          "status_code": 3,
+          "issuing_authority": "西藏自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016d1aa0d28c592a",
+          "title": "宁夏回族自治区人民代表大会常务委员会关于宁夏回族自治区耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-14",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "宁夏回族自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819150415e0191a1fb18890412",
+          "title": "新疆维吾尔自治区人民代表大会常务委员会关于自治区资源<em class='highlight'>税具体适用税率、计征方式及减免税办法的决定",
+          "publish_date": "2024-06-02",
+          "effective_date": "2024-07-01",
+          "status_code": 3,
+          "issuing_authority": "新疆维吾尔自治区人大常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "tax_企业所得税": {
+      "keyword": "企业所得税",
+      "type": "企业所得税",
+      "scope": "title",
+      "total": 294,
+      "results": [
+        {
+          "id": "2c909fdd678bf17901678bf63c7c0343",
+          "title": "中华人民共和国<em class='highlight'>企业破产法",
+          "publish_date": "2006-08-27",
+          "effective_date": "2007-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf63dce034d",
+          "title": "中华人民共和国合伙<em class='highlight'>企业法",
+          "publish_date": "2006-08-27",
+          "effective_date": "2007-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf609680235",
+          "title": "中华人民共和国个人独资<em class='highlight'>企业法",
+          "publish_date": "1999-08-30",
+          "effective_date": "2000-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf724bd0609",
+          "title": "中华人民共和国个人<em class='highlight'>所得税法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf85eba0a23",
+          "title": "中华人民共和国中小<em class='highlight'>企业促进法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf653fb03c5",
+          "title": "中华人民共和国<em class='highlight'>企业国有资产法",
+          "publish_date": "2008-10-28",
+          "effective_date": "2009-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台<em class='highlight'>企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181927f1276019610f4dde60a27",
+          "title": "保障中小<em class='highlight'>企业款项支付条例",
+          "publish_date": "2025-03-17",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081818fe2c502019010c856d73c47",
+          "title": "国有<em class='highlight'>企业管理人员处分条例",
+          "publish_date": "2024-05-21",
+          "effective_date": "2024-09-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c46fcc5019cd18fc6e9557d",
+          "title": "<em class='highlight'>企业信息公示暂行条例",
+          "publish_date": "2024-03-10",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c46fdc3019cd19068731f64",
+          "title": "外国<em class='highlight'>企业常驻代表机构登记管理条例",
+          "publish_date": "2024-03-10",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818180e0a44101811e3049ca1401",
+          "title": "外商投资电信<em class='highlight'>企业管理规定",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081777d0c94017784da4aa50a73",
+          "title": "<em class='highlight'>企业名称登记管理规定",
+          "publish_date": "2020-12-28",
+          "effective_date": "2021-03-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40d9ff6b0741",
+          "title": "<em class='highlight'>企业国有资产监督管理暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4122d8d9194b",
+          "title": "中华人民共和国个人<em class='highlight'>所得税法实施条例",
+          "publish_date": "2018-12-18",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f413065461be0",
+          "title": "<em class='highlight'>企业投资项目核准和备案管理条例",
+          "publish_date": "2016-11-30",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40d73bfc06b1",
+          "title": "中华人民共和国城镇集体所有制<em class='highlight'>企业条例",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4106f07d1215",
+          "title": "<em class='highlight'>企业债券管理条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4086cb9f03c4",
+          "title": "中华人民共和国乡村集体所有制<em class='highlight'>企业条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息<em class='highlight'>所得征收个人<em class='highlight'>所得税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f410faf721475",
+          "title": "<em class='highlight'>企业事业单位内部治安保卫条例",
+          "publish_date": "2004-09-27",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4113f1b515b9",
+          "title": "<em class='highlight'>企业财务会计报告条例",
+          "publish_date": "2000-06-21",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4107b3351256",
+          "title": "国务院关于国家行政机关和<em class='highlight'>企业事业单位社会团体印章管理的规定",
+          "publish_date": "1999-10-31",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4102b3a7113d",
+          "title": "控制对<em class='highlight'>企业进行经济检查的规定",
+          "publish_date": "1999-07-23",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        }
+      ]
+    },
+    "tax_个人所得税": {
+      "keyword": "个人所得税",
+      "type": "个人所得税",
+      "scope": "title",
+      "total": 59,
+      "results": [
+        {
+          "id": "2c909fdd678bf17901678bf609680235",
+          "title": "中华人民共和国<em class='highlight'>个人独资企业法",
+          "publish_date": "1999-08-30",
+          "effective_date": "2000-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国企业<em class='highlight'>所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf724bd0609",
+          "title": "中华人民共和国<em class='highlight'>个人所得税法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817b6472a3017b656cc2040044",
+          "title": "中华人民共和国<em class='highlight'>个人信息保护法",
+          "publish_date": "2021-08-20",
+          "effective_date": "2021-11-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国企业<em class='highlight'>所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4122d8d9194b",
+          "title": "中华人民共和国<em class='highlight'>个人所得税法实施条例",
+          "publish_date": "2018-12-18",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息<em class='highlight'>所得征收<em class='highlight'>个人所得税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f41105f1e149a",
+          "title": "<em class='highlight'>个人存款账户实名制规定",
+          "publish_date": "2000-03-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用增值<em class='highlight'>税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cf65c9d205499",
+          "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb6a291f86016b7e951b6925ec",
+          "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-08-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817467025c017467a8dfb801f2",
+          "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc1fbc1c455f0",
+          "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d3e13b7b126a5",
+          "title": "黑龙江省人民代表大会常务委员会关于黑龙江省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-16",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cacf3b5100dec",
+          "title": "江苏省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd0d3757e4747",
+          "title": "浙江省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+          "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817321d55601732d5a61740938",
+          "title": "山东省人民代表大会常务委员会关于山东省资源<em class='highlight'>税具体适用税率、计征方式和免征或者减征办法的决定",
+          "publish_date": "2020-06-12",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd7414f204c6b",
+          "title": "山东省人民代表大会常务委员会关于山东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d1ae08d5c24ec",
+          "title": "河南省人民代表大会常务委员会关于河南省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cbdfb1af0114a",
+          "title": "湖北省人民代表大会常务委员会关于耕地占用<em class='highlight'>税具体适用税额标准的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808175265dd4017688cf856b0801",
+          "title": "湖南省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081736bb19d017409f3a535513d",
+          "title": "广东省人民代表大会常务委员会关于广东省资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016c759fbcc93d2f",
+          "title": "广东省人民代表大会常务委员会关于广东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-25",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127fbdc053cce",
+          "title": "海南省人民代表大会常务委员会关于加强治理向企业乱收费、乱罚款和各种摊派，减轻企业<em class='highlight'>税外负担的决定",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "tax_消费税": {
+      "keyword": "消费税",
+      "type": "消费税",
+      "scope": "title",
+      "total": 90,
+      "results": [
+        {
+          "id": "2c909fdd678bf17901678bf7670606ef",
+          "title": "中华人民共和国<em class='highlight'>消费者权益保护法",
+          "publish_date": "2013-10-25",
+          "effective_date": "2014-03-15",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181927f09310192c2f4cd777281",
+          "title": "中华人民共和国<em class='highlight'>消费者权益保护法实施条例",
+          "publish_date": "2024-03-15",
+          "effective_date": "2024-07-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国<em class='highlight'>消费税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息所得征收个人所得<em class='highlight'>税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用增值<em class='highlight'>税、<em class='highlight'>消费税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cf65c9d205499",
+          "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612855e0e6153e",
+          "title": "北京市实施《中华人民共和国<em class='highlight'>消费者权益保护法》办法",
+          "publish_date": null,
+          "effective_date": "1998-01-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb6a291f86016b7e951b6925ec",
+          "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-08-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816eb1afb8016ebbcc0bf826c2",
+          "title": "天津市<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2018-11-21",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817467025c017467a8dfb801f2",
+          "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161288b88a9422a",
+          "title": "河北省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2017-07-28",
+          "effective_date": "2017-11-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc1fbc1c455f0",
+          "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24df58018ccd5c92b15b57",
+          "title": "山西省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2023-11-30",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818181668bed01816b85ef202050",
+          "title": "内蒙古自治区实施《中华人民共和国<em class='highlight'>消费者权益保护法》办法",
+          "publish_date": "2022-05-26",
+          "effective_date": "2022-07-01",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818180e0a44101811403ef750ecf",
+          "title": "辽宁省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2022-04-21",
+          "effective_date": "2022-04-21",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816fbc57c1017084f06ec50c05",
+          "title": "吉林省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2019-11-28",
+          "effective_date": "2020-03-15",
+          "status_code": 3,
+          "issuing_authority": "吉林省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d3e13b7b126a5",
+          "title": "黑龙江省人民代表大会常务委员会关于黑龙江省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-16",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96a292396016bdad8f35f2ede",
+          "title": "黑龙江省人民代表大会常务委员会关于加强老年人保健产品等<em class='highlight'>消费领域<em class='highlight'>消费者权益保护工作的决议",
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161280618e747c6",
+          "title": "黑龙江省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2015-12-18",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819c46f9bb019c5166bf244e67",
+          "title": "上海市单用途预付<em class='highlight'>消费卡管理规定",
+          "publish_date": "2025-11-26",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181844230ec0184e0d927f33617",
+          "title": "上海市<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2022-07-21",
+          "effective_date": "2022-08-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818199e72c4f019a520c49ed0d11",
+          "title": "江苏省<em class='highlight'>消费者权益保护条例",
+          "publish_date": "2025-09-30",
+          "effective_date": "2025-09-30",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cacf3b5100dec",
+          "title": "江苏省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd0d3757e4747",
+          "title": "浙江省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161288d58e643bd",
+          "title": "浙江省实施《中华人民共和国<em class='highlight'>消费者权益保护法》办法",
+          "publish_date": "2017-03-31",
+          "effective_date": "2017-05-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+          "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "tax_关税": {
+      "keyword": "关税",
+      "type": "关税",
+      "scope": "title",
+      "total": 1,
+      "results": [
+        {
+          "id": "ff8081818f197cf0018f1a72b2c801e0",
+          "title": "中华人民共和国<em class='highlight'>关税法",
+          "publish_date": "2024-04-26",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        }
+      ]
+    },
+    "tax_房产税": {
+      "error": "HTTPSConnectionPool(host='flk.npc.gov.cn', port=443): Read timed out. (read timeout=20)"
+    },
+    "tax_印花税": {
+      "keyword": "印花税",
+      "type": "印花税",
+      "scope": "title",
+      "total": 44,
+      "results": [
+        {
+          "id": "ff80818179f5da5e0179f890885b0481",
+          "title": "中华人民共和国<em class='highlight'>印花税法",
+          "publish_date": "2021-06-10",
+          "effective_date": "2022-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息所得征收个人所得<em class='highlight'>税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用增值<em class='highlight'>税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cf65c9d205499",
+          "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb6a291f86016b7e951b6925ec",
+          "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-08-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817467025c017467a8dfb801f2",
+          "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc1fbc1c455f0",
+          "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d3e13b7b126a5",
+          "title": "黑龙江省人民代表大会常务委员会关于黑龙江省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-16",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cacf3b5100dec",
+          "title": "江苏省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd0d3757e4747",
+          "title": "浙江省人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cdaf04a6b4e87",
+          "title": "安徽省人民代表大会常务委员会关于安徽省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-29",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817321d55601732d5a61740938",
+          "title": "山东省人民代表大会常务委员会关于山东省资源<em class='highlight'>税具体适用税率、计征方式和免征或者减征办法的决定",
+          "publish_date": "2020-06-12",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cd7414f204c6b",
+          "title": "山东省人民代表大会常务委员会关于山东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016d1ae08d5c24ec",
+          "title": "河南省人民代表大会常务委员会关于河南省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016cbdfb1af0114a",
+          "title": "湖北省人民代表大会常务委员会关于耕地占用<em class='highlight'>税具体适用税额标准的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808175265dd4017688cf856b0801",
+          "title": "湖南省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081736bb19d017409f3a535513d",
+          "title": "广东省人民代表大会常务委员会关于广东省资源<em class='highlight'>税具体适用税率等事项的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016c759fbcc93d2f",
+          "title": "广东省人民代表大会常务委员会关于广东省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-25",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127fbdc053cce",
+          "title": "海南省人民代表大会常务委员会关于加强治理向企业乱收费、乱罚款和各种摊派，减轻企业<em class='highlight'>税外负担的决定",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016d140e1e79581c",
+          "title": "贵州省人民代表大会常务委员会关于贵州省耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-01",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "贵州省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808174a08f0e0174a0cd0de60170",
+          "title": "云南省人民代表大会常务委员会关于云南省资源<em class='highlight'>税税目税率计征方式及减免税办法的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "云南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5b96c128b4c016dbf1432bf331d",
+          "title": "西藏自治区人民代表大会常务委员会关于耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-09-25",
+          "effective_date": "2019-09-25",
+          "status_code": 3,
+          "issuing_authority": "西藏自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016d1aa0d28c592a",
+          "title": "宁夏回族自治区人民代表大会常务委员会关于宁夏回族自治区耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-08-14",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "宁夏回族自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819150415e0191a1fb18890412",
+          "title": "新疆维吾尔自治区人民代表大会常务委员会关于自治区资源<em class='highlight'>税具体适用税率、计征方式及减免税办法的决定",
+          "publish_date": "2024-06-02",
+          "effective_date": "2024-07-01",
+          "status_code": 3,
+          "issuing_authority": "新疆维吾尔自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081736bb19d0174058f67084dfe",
+          "title": "天津市人民代表大会常务委员会关于天津市资源<em class='highlight'>税适用税率、计征方式及减征免征办法的决定",
+          "publish_date": "2020-07-29",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "法规性决定"
+        }
+      ]
+    },
+    "tax_契税": {
+      "keyword": "契税",
+      "type": "契税",
+      "scope": "title",
+      "total": 22,
+      "results": [
+        {
+          "id": "ff808081736ba7420173e71ef7563753",
+          "title": "中华人民共和国<em class='highlight'>契税法",
+          "publish_date": "2020-08-11",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181844230ec0184eb97169551af",
+          "title": "辽宁省<em class='highlight'>契税具体适用税率的调整方案",
+          "publish_date": "2022-11-29",
+          "effective_date": "2023-01-01",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817c26c71c017c306822df2c2b",
+          "title": "辽宁省实施<em class='highlight'>契税法授权事项的方案",
+          "publish_date": "2021-07-27",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818179faa362017a13d947b00b89",
+          "title": "山东省人民代表大会常务委员会关于山东省<em class='highlight'>契税具体适用税率和免征或者减征办法的决定",
+          "publish_date": "2021-05-27",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817b39d2f9017b3e9e957b0773",
+          "title": "北京市人民代表大会常务委员会关于北京市<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-07-30",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff80818179c0e42e0179e94e033b610f",
+          "title": "天津市人民代表大会常务委员会关于天津市<em class='highlight'>契税适用税率和减征免征办法的决定",
+          "publish_date": "2021-05-26",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b96971c017b9f2e96f818ce",
+          "title": "河北省人民代表大会常务委员会关于河北省<em class='highlight'>契税适用税率等有关事项的决定",
+          "publish_date": "2021-07-30",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817bf35707017c20ef62bb0095",
+          "title": "黑龙江省人民代表大会常务委员会关于实施<em class='highlight'>契税法授权事项的决定",
+          "publish_date": "2021-06-24",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b63b935017b760e05d51b0c",
+          "title": "江苏省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等有关事项的决定",
+          "publish_date": "2021-07-29",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b149d62017b1a61038c0d21",
+          "title": "浙江省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-07-30",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b5e8b6b017b60eb90ab00c4",
+          "title": "安徽省人民代表大会常务委员会关于安徽省<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-07-23",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b39d32a017b51fcb486244a",
+          "title": "河南省人民代表大会常务委员会关于河南省<em class='highlight'>契税适用税率等事项的决定",
+          "publish_date": "2021-08-02",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b826c87017b86b42a26074c",
+          "title": "湖北省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率及免征减征办法的决定",
+          "publish_date": "2021-07-30",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff80818179faa403017a1795cb861070",
+          "title": "湖南省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-05-27",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b63b895017b7712aeda2a6e",
+          "title": "广东省人民代表大会常务委员会关于广东省<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-07-30",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "广东省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b63b895017b8072ce226a11",
+          "title": "海南省人民代表大会常务委员会关于海南省<em class='highlight'>契税具体适用税率和免征减征办法的决定",
+          "publish_date": "2021-07-27",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817bdd7e17017bde2ccfb52b51",
+          "title": "四川省人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等事项的决定",
+          "publish_date": "2021-07-29",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "四川省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817e9b2546017eee0d88167d32",
+          "title": "贵州省人民代表大会常务委员会关于贵州省<em class='highlight'>契税具体适用税率和免征办法的决定",
+          "publish_date": "2021-05-27",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "贵州省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817bc2fb63017bc9e5b0c3113d",
+          "title": "云南省人民代表大会常务委员会关于云南省<em class='highlight'>契税具体适用税率和免征或者减征办法的决定",
+          "publish_date": "2021-07-29",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "云南省人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff80818179c0e42e0179ee89de207019",
+          "title": "西藏自治区人民代表大会常务委员会关于<em class='highlight'>契税具体适用税率等有关事项的决定",
+          "publish_date": "2021-05-28",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "西藏自治区人民代表大会常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff80818179c0e42e0179cc1345ed1859",
+          "title": "宁夏回族自治区人民代表大会常务委员会关于宁夏回族自治区<em class='highlight'>契税适用税率等有关事项的决定",
+          "publish_date": "2021-05-11",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "宁夏回族自治区人大常务委员会",
+          "category": "法规性决定"
+        },
+        {
+          "id": "ff8081817b39d32a017b4d18f23a1229",
+          "title": "新疆维吾尔自治区人民代表大会常务委员会关于自治区<em class='highlight'>契税具体适用税率和免征办法的决定",
+          "publish_date": "2021-07-28",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "新疆维吾尔自治区人大常务委员会",
+          "category": "法规性决定"
+        }
+      ]
+    },
+    "tax_土地增值税": {
+      "keyword": "土地增值税",
+      "type": "土地增值税",
+      "scope": "title",
+      "total": 191,
+      "results": [
+        {
+          "id": "ff8080816f135f46016f2104531f1774",
+          "title": "中华人民共和国农村<em class='highlight'>土地承包法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181927b083b0193fd65a0eb02cb",
+          "title": "中华人民共和国<em class='highlight'>增值税法",
+          "publish_date": "2024-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181818e90e70181947372d60184",
+          "title": "中华人民共和国黑<em class='highlight'>土地保护法",
+          "publish_date": "2022-06-24",
+          "effective_date": "2022-08-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4626903427fc",
+          "title": "中华人民共和国<em class='highlight'>土地管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf6726303f7",
+          "title": "中华人民共和国农村<em class='highlight'>土地承包经营纠纷调解仲裁法",
+          "publish_date": "2009-06-27",
+          "effective_date": "2010-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819b697220019bc0aa9f146bf4",
+          "title": "中华人民共和国<em class='highlight'>增值税法实施条例",
+          "publish_date": "2025-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818199855c3201998efc275f0f98",
+          "title": "军用<em class='highlight'>土地管理条例",
+          "publish_date": "2025-09-17",
+          "effective_date": "2025-11-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181971b86bf0197a61d2a06193a",
+          "title": "互联网平台企业涉<em class='highlight'>税信息报送规定",
+          "publish_date": "2025-06-20",
+          "effective_date": "2025-06-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081817b63b895017b7b071b6843c0",
+          "title": "中华人民共和国<em class='highlight'>土地管理法实施条例",
+          "publish_date": "2021-07-02",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081777d0c940177b8c2f598365d",
+          "title": "中华人民共和国城镇国有<em class='highlight'>土地使用权出让和转让暂行条例",
+          "publish_date": "2020-11-29",
+          "effective_date": "2020-11-29",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414f9d74216e",
+          "title": "中华人民共和国城镇<em class='highlight'>土地使用<em class='highlight'>税暂行条例",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e98bd016f423bf73d03a1",
+          "title": "<em class='highlight'>土地调查条例",
+          "publish_date": "2018-03-19",
+          "effective_date": "2018-03-19",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40fb7e520f9f",
+          "title": "<em class='highlight'>土地复垦条例",
+          "publish_date": "2011-03-05",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40fa642a0f58",
+          "title": "国有<em class='highlight'>土地上房屋征收与补偿条例",
+          "publish_date": "2011-01-21",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国<em class='highlight'>土地增值税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4130e3f91bfc",
+          "title": "中华人民共和国房产<em class='highlight'>税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411aeff91764",
+          "title": "中华人民共和国消费<em class='highlight'>税暂行条例",
+          "publish_date": "2008-11-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4105bea511c9",
+          "title": "对储蓄存款利息所得征收个人所得<em class='highlight'>税的实施办法",
+          "publish_date": "2007-07-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用<em class='highlight'>增值税、消费<em class='highlight'>税、营业<em class='highlight'>税等税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016cf65c9d205499",
+          "title": "北京市人民代表大会常务委员会关于北京市耕地占用<em class='highlight'>税适用税额的决定",
+          "publish_date": "2019-07-26",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817d7e735a017d8e9144b21d00",
+          "title": "天津市<em class='highlight'>土地管理条例",
+          "publish_date": "2021-11-29",
+          "effective_date": "2022-01-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5bb6a291f86016b7e951b6925ec",
+          "title": "天津市人民代表大会常务委员会关于天津市耕地占用<em class='highlight'>税具体适用税额的决定",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-08-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818180641f88018068eead877c31",
+          "title": "河北省<em class='highlight'>土地管理条例",
+          "publish_date": "2022-03-30",
+          "effective_date": "2022-06-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080817467025c017467a8dfb801f2",
+          "title": "河北省人民代表大会常务委员会关于河北省资源<em class='highlight'>税适用税率、计征方式及免征减征办法的决定",
+          "publish_date": "2020-07-30",
+          "effective_date": "2020-09-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161281a90cd5b91",
+          "title": "河北省农村<em class='highlight'>土地承包条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818199614e1101997e829f585561",
+          "title": "山西省实施《中华人民共和国农村<em class='highlight'>土地承包法》办法",
+          "publish_date": "2025-07-30",
+          "effective_date": "2025-09-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818f19d70e018f847252957562",
+          "title": "山西省实施《中华人民共和国<em class='highlight'>土地管理法》办法",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc1fbc1c455f0",
+          "title": "山西省人民代表大会常务委员会关于资源<em class='highlight'>税具体适用税率等有关事项的决定",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127e2a1392193",
+          "title": "山西省国有<em class='highlight'>土地上房屋征收与补偿条例",
+          "publish_date": "2015-09-24",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127ff393c4076",
+          "title": "山西省<em class='highlight'>土地整治条例",
+          "publish_date": "2014-05-29",
+          "effective_date": "2014-10-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "tax_税收优惠": {
+      "keyword": "税收优惠",
+      "type": "税收优惠",
+      "scope": "title",
+      "total": 30,
+      "results": [
+        {
+          "id": "2c909fdd678bf17901678bf78cff0785",
+          "title": "中华人民共和国<em class='highlight'>税收征收管理法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f409df6fa0566",
+          "title": "中华人民共和国<em class='highlight'>税收征收管理法实施细则",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40f7c9ff0ed0",
+          "title": "外国在华常住人员携带进境物品进口<em class='highlight'>税收暂行规定",
+          "publish_date": "1999-03-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f408e231d042d",
+          "title": "残疾人专用品免征进口<em class='highlight'>税收暂行规定",
+          "publish_date": "1997-04-10",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f412a31091aaf",
+          "title": "国务院关于外商投资企业和外国企业适用增值税、消费税、营业税等<em class='highlight'>税收暂行条例有关问题的通知",
+          "publish_date": "1994-02-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816eb1afb8016ec04f56bf76d2",
+          "title": "本溪市非<em class='highlight'>税收入管理条例",
+          "publish_date": "2017-10-20",
+          "effective_date": "2017-10-20",
+          "status_code": 3,
+          "issuing_authority": "本溪市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612801566342d1",
+          "title": "抚顺市非<em class='highlight'>税收入管理条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "抚顺市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016128296d376c43",
+          "title": "黑龙江省政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2017-10-13",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612826ad5f6942",
+          "title": "黑龙江省<em class='highlight'>税收保障条例",
+          "publish_date": "2017-04-07",
+          "effective_date": "2017-07-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f0e7b01953c278e7f49e3",
+          "title": "江苏省非<em class='highlight'>税收入管理条例",
+          "publish_date": "2025-01-14",
+          "effective_date": "2025-01-14",
+          "status_code": 3,
+          "issuing_authority": "江苏省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081752b7d430176892dce4817b7",
+          "title": "浙江省政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2020-11-27",
+          "effective_date": "2020-11-27",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612822176f63f6",
+          "title": "安徽省非<em class='highlight'>税收入管理条例",
+          "publish_date": "2017-11-20",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818bd2739d018bdc11cd86340a",
+          "title": "江西省政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2023-09-27",
+          "effective_date": "2023-10-01",
+          "status_code": 3,
+          "issuing_authority": "江西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818180adcc8a0180d10096786cab",
+          "title": "山东省<em class='highlight'>税收保障条例",
+          "publish_date": "2022-03-30",
+          "effective_date": "2022-07-01",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127f03a562ffc",
+          "title": "青岛市<em class='highlight'>税收征收协助条例",
+          "publish_date": "2014-01-15",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "青岛市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818b2884d0018b4072373550bb",
+          "title": "河南省保障<em class='highlight'>税收服务发展条例",
+          "publish_date": "2023-09-28",
+          "effective_date": "2023-12-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127ebf8e32baa",
+          "title": "河南省政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2013-11-29",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819cf9f588019d74cc483f3b45",
+          "title": "湖南省非<em class='highlight'>税收入管理条例",
+          "publish_date": "2025-09-26",
+          "effective_date": "2025-11-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127e311932211",
+          "title": "珠海市政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2006-04-24",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "珠海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818e750aac018ef59fabc83660",
+          "title": "广西壮族自治区<em class='highlight'>税收保障条例",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-03-28",
+          "status_code": 3,
+          "issuing_authority": "广西壮族自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016128493bb10838",
+          "title": "广西壮族自治区政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2012-03-23",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "广西壮族自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819b697220019bdea0d1276e9b",
+          "title": "海南省<em class='highlight'>税收保障条例",
+          "publish_date": "2026-01-15",
+          "effective_date": "2026-01-15",
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127fb04f73beb",
+          "title": "海南省政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2013-07-30",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612800734d41c7",
+          "title": "重庆市人民代表大会常务委员会关于黔江区享受有关民族<em class='highlight'>优惠政策的决定",
+          "publish_date": "2004-09-27",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "重庆市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016128248ca366ce",
+          "title": "四川省非<em class='highlight'>税收入征收管理条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "四川省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127ea18872988",
+          "title": "云南省非<em class='highlight'>税收入管理条例",
+          "publish_date": "2011-05-26",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "云南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127e224572110",
+          "title": "西安市<em class='highlight'>税收保障条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "西安市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818185c9665f0185cd36fcc119d4",
+          "title": "青海省非<em class='highlight'>税收入管理条例",
+          "publish_date": "2022-11-29",
+          "effective_date": "2022-11-29",
+          "status_code": 3,
+          "issuing_authority": "青海省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "2c90e5ba6200715a01638ff5a46551d7",
+          "title": "宁夏回族自治区政府非<em class='highlight'>税收入管理条例",
+          "publish_date": "2014-07-23",
+          "effective_date": "2014-09-01",
+          "status_code": 3,
+          "issuing_authority": "宁夏回族自治区人大常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818faab35d018fc240e2795985",
+          "title": "最高人民法院、最高人民检察院关于办理危害<em class='highlight'>税收征管刑事案件适用法律若干问题的解释",
+          "publish_date": "2024-03-15",
+          "effective_date": "2024-03-20",
+          "status_code": 3,
+          "issuing_authority": "最高人民法院、最高人民检察院",
+          "category": "司法解释"
+        }
+      ]
+    },
+    "tax_发票管理": {
+      "keyword": "发票管理办法",
+      "type": "发票管理",
+      "scope": "title",
+      "total": 179,
+      "results": [
+        {
+          "id": "2c909fdd678bf17901678bf8d0550bf9",
+          "title": "全国人民代表大会常务委员会关于《中华人民共和国刑法》有关出口退税、抵扣税款的其他<em class='highlight'>发票规定的解释",
+          "publish_date": "2005-12-29",
+          "effective_date": "2005-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律解释"
+        },
+        {
+          "id": "ff8081819c230fa1019c2d0fca0b4b0a",
+          "title": "互联网信息服务<em class='highlight'>管理办法",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fca056411",
+          "title": "放射性药品<em class='highlight'>管理办法",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081818a1cb546018a6e362a746d5a",
+          "title": "中华人民共和国<em class='highlight'>发票<em class='highlight'>管理办法",
+          "publish_date": "2023-07-20",
+          "effective_date": "2023-07-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081818a22132f018a6fb9a8252e04",
+          "title": "废旧金属收购业治安<em class='highlight'>管理办法",
+          "publish_date": "2023-07-20",
+          "effective_date": "2023-07-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181844232f7018576e428bd60b5",
+          "title": "缔结条约<em class='highlight'>管理办法",
+          "publish_date": "2022-10-16",
+          "effective_date": "2023-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818180e0a61301811e2624a51e9a",
+          "title": "旅馆业治安<em class='highlight'>管理办法",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081777d07c50177b8e6c12d3942",
+          "title": "国有资产评估<em class='highlight'>管理办法",
+          "publish_date": "2020-11-29",
+          "effective_date": "2020-11-29",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081777d07c50177b8dc9dfa38f0",
+          "title": "关于外商参与打捞中国沿海水域沉船沉物<em class='highlight'>管理办法",
+          "publish_date": "2020-11-29",
+          "effective_date": "2020-11-29",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4145ebb31f9a",
+          "title": "报废机动车回收<em class='highlight'>管理办法",
+          "publish_date": "2019-04-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4048be2c027c",
+          "title": "军用饮食供应站供水站<em class='highlight'>管理办法",
+          "publish_date": "2019-03-02",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e9784016f4237f6770351",
+          "title": "卫星地面接收设施接收外国卫星传送电视节目<em class='highlight'>管理办法",
+          "publish_date": "2018-09-18",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e9784016f424816c20464",
+          "title": "中国公民出国旅游<em class='highlight'>管理办法",
+          "publish_date": "2017-03-01",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40f93dba0f16",
+          "title": "危险废物经营许可证<em class='highlight'>管理办法",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e98bd016f4257c9cb0532",
+          "title": "中华人民共和国考古涉外工作<em class='highlight'>管理办法",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40458a1d0249",
+          "title": "中华人民共和国进口计量器具监督<em class='highlight'>管理办法",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40dd9c260826",
+          "title": "中国公民往来台湾地区<em class='highlight'>管理办法",
+          "publish_date": "2015-06-14",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414d6b7620fb",
+          "title": "森林采伐更新<em class='highlight'>管理办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e98bd016f4205c511030c",
+          "title": "国家重点建设项目<em class='highlight'>管理办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40dda3dd082f",
+          "title": "计算机信息网络国际联网安全保护<em class='highlight'>管理办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40ddb9840839",
+          "title": "城市生活无着的流浪乞讨人员救助<em class='highlight'>管理办法",
+          "publish_date": "2003-06-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e9784016f41f508fa0201",
+          "title": "企业国有资产产权登记<em class='highlight'>管理办法",
+          "publish_date": "1996-01-25",
+          "effective_date": "1996-01-25",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40fa57c40f4e",
+          "title": "中华人民共和国国家货币出入境<em class='highlight'>管理办法",
+          "publish_date": "1993-01-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40d578c00648",
+          "title": "外国人来华登山<em class='highlight'>管理办法",
+          "publish_date": "1991-08-28",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f415620d42280",
+          "title": "医疗用毒性药品<em class='highlight'>管理办法",
+          "publish_date": "1988-12-27",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414b7f29209c",
+          "title": "中华人民共和国强制检定的工作计量器具检定<em class='highlight'>管理办法",
+          "publish_date": "1987-04-14",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f414169611f09",
+          "title": "中国公民因私事往来香港地区或者澳门地区的暂行<em class='highlight'>管理办法",
+          "publish_date": "1986-12-25",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f41032dff1161",
+          "title": "森林和野生动物类型自然保护区<em class='highlight'>管理办法",
+          "publish_date": "1985-07-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40f529ca0e1a",
+          "title": "军用标准化<em class='highlight'>管理办法",
+          "publish_date": "1984-01-07",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40aab81a05dd",
+          "title": "进口影片<em class='highlight'>管理办法",
+          "publish_date": "1981-10-13",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        }
+      ]
+    },
+    "tax_税收征管": {
+      "keyword": "税收征收管理法",
+      "type": "税收征管",
+      "scope": "title",
+      "total": 34,
+      "results": [
+        {
+          "id": "ff8080816f3cbb3c016f46242d6127ed",
+          "title": "中华人民共和国药品<em class='highlight'>管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f219a9e101bba",
+          "title": "中华人民共和国疫苗<em class='highlight'>管理法",
+          "publish_date": "2019-06-29",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf78e01078f",
+          "title": "中华人民共和国枪支<em class='highlight'>管理法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf73ebd064f",
+          "title": "中华人民共和国出境入境<em class='highlight'>管理法",
+          "publish_date": "2012-06-30",
+          "effective_date": "2013-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f462c6cc8280c",
+          "title": "中华人民共和国城市房地产<em class='highlight'>管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf78cff0785",
+          "title": "中华人民共和国<em class='highlight'>税收征收<em class='highlight'>管理法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf6442e0361",
+          "title": "中华人民共和国银行业监督<em class='highlight'>管理法",
+          "publish_date": "2006-10-31",
+          "effective_date": "2007-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf88cfe0b09",
+          "title": "中华人民共和国境外非政府组织境内活动<em class='highlight'>管理法",
+          "publish_date": "2017-11-04",
+          "effective_date": "2017-11-05",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4626903427fc",
+          "title": "中华人民共和国土地<em class='highlight'>管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf613e30299",
+          "title": "中华人民共和国海域使用<em class='highlight'>管理法",
+          "publish_date": "2001-10-27",
+          "effective_date": "2002-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819c230ff2019c2b63faec40bf",
+          "title": "中华人民共和国药品<em class='highlight'>管理法实施条例",
+          "publish_date": "2026-01-16",
+          "effective_date": "2026-05-15",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181927f1276019643173f20705f",
+          "title": "中国人民解放军实施《中华人民共和国药品<em class='highlight'>管理法》办法",
+          "publish_date": "2025-04-05",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081817b63b895017b7b071b6843c0",
+          "title": "中华人民共和国土地<em class='highlight'>管理法实施条例",
+          "publish_date": "2021-07-02",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f409df6fa0566",
+          "title": "中华人民共和国<em class='highlight'>税收征收<em class='highlight'>管理法实施细则",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081818f19d70e018f847252957562",
+          "title": "山西省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2024-03-28",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818185e7f9390186009256412e09",
+          "title": "内蒙古自治区实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2022-12-27",
+          "effective_date": "2023-03-01",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817b63b679017b7b5cb3e937c0",
+          "title": "内蒙古自治区实施《中华人民共和国药品<em class='highlight'>管理法》办法",
+          "publish_date": "2020-09-23",
+          "effective_date": "2020-09-23",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817e00906b017e0991362e2058",
+          "title": "辽宁省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2021-11-26",
+          "effective_date": "2022-02-01",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24df58018ce8af0f104293",
+          "title": "上海市实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2023-11-22",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181813cac0801814c1b815a512c",
+          "title": "安徽省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2022-05-27",
+          "effective_date": "2022-12-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181864a5e45018652a99f573a3a",
+          "title": "江西省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-06-01",
+          "status_code": 3,
+          "issuing_authority": "江西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161287262883067",
+          "title": "山东省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2015-07-24",
+          "effective_date": "2015-07-24",
+          "status_code": 3,
+          "issuing_authority": "山东省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127f03a562ffc",
+          "title": "青岛市<em class='highlight'>税收征收协助条例",
+          "publish_date": "2014-01-15",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "青岛市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24df58018ca3f57671398e",
+          "title": "河南省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2023-11-30",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612865e0d524b6",
+          "title": "湖北省实施《中华人民共和国城市房地产<em class='highlight'>管理法》办法",
+          "publish_date": "2014-09-25",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817f26b5f7017f29a5b8ea241e",
+          "title": "湖南省实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2022-01-19",
+          "effective_date": "2022-03-01",
+          "status_code": 3,
+          "issuing_authority": "湖南省人民代表大会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f0e7b0196d1eca909757e",
+          "title": "海南省实施《中华人民共和国海域使用<em class='highlight'>管理法》办法",
+          "publish_date": "2025-04-29",
+          "effective_date": "2025-05-01",
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161285d75421cac",
+          "title": "海南省实施《中华人民共和国海域使用<em class='highlight'>管理法》办法",
+          "publish_date": "2015-01-01",
+          "effective_date": "2015-01-01",
+          "status_code": 3,
+          "issuing_authority": "海南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181857bbb7601859aff76d93de9",
+          "title": "四川省《中华人民共和国土地<em class='highlight'>管理法》实施办法",
+          "publish_date": "2022-12-02",
+          "effective_date": "2023-03-01",
+          "status_code": 3,
+          "issuing_authority": "四川省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818d736dae018dc98db5775c04",
+          "title": "西藏自治区实施《中华人民共和国土地<em class='highlight'>管理法》办法",
+          "publish_date": "2024-01-24",
+          "effective_date": "2024-04-01",
+          "status_code": 3,
+          "issuing_authority": "西藏自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "topic_小微企业优惠": {
+      "keyword": "小微企业 企业所得税 优惠",
+      "type": "小微企业优惠",
+      "scope": "fulltext",
+      "total": 128,
+      "results": [
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818179f5da5e0179f88beb640406",
+          "title": "中华人民共和国海南自由贸易港法",
+          "publish_date": "2021-06-10",
+          "effective_date": "2021-06-10",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf85eba0a23",
+          "title": "中华人民共和国中小<em class='highlight'>企业促进法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf5aae40069",
+          "title": "第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议",
+          "publish_date": "1980-08-26",
+          "effective_date": "1980-08-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a4639018df3f1fc7e122d",
+          "title": "中华人民共和国慈善法",
+          "publish_date": "2023-12-29",
+          "effective_date": "2024-09-05",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf608a7022b",
+          "title": "中华人民共和国公益事业捐赠法",
+          "publish_date": "1999-06-28",
+          "effective_date": "1999-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e9784016f424fe00c04e5",
+          "title": "劳动就业服务<em class='highlight'>企业管理规定",
+          "publish_date": "1990-11-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f415aee52231e",
+          "title": "国务院关于鼓励投资开发海南岛的规定",
+          "publish_date": "1988-05-04",
+          "effective_date": "1988-05-04",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f41348bc71d01",
+          "title": "国务院关于鼓励外商投资的规定",
+          "publish_date": "1986-10-11",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818179f5d52f0179f8ce9aea01c8",
+          "title": "北京市院前医疗急救服务条例",
+          "publish_date": "2021-05-27",
+          "effective_date": "2021-05-27",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808177e75f88017857a30dbe74ea",
+          "title": "北京市促进中小<em class='highlight'>企业发展条例",
+          "publish_date": "2020-09-25",
+          "effective_date": "2020-12-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816eb1afb8016ebf5cf3514dca",
+          "title": "天津市就业促进条例",
+          "publish_date": "2018-12-14",
+          "effective_date": "2018-12-14",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816eea6bee016efcdd97223bbb",
+          "title": "天津新技术产业园区管理条例",
+          "publish_date": "2016-03-30",
+          "effective_date": "2016-03-30",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127dcefbe1bb5",
+          "title": "天津市民办教育促进条例",
+          "publish_date": "2011-01-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081752b7d4301756e26f62e3fa9",
+          "title": "廊坊市院前医疗急救服务条例",
+          "publish_date": "2020-10-12",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "廊坊市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161281cba2c5ded",
+          "title": "河北省促进科技成果转化条例",
+          "publish_date": "2016-09-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161281c4f795d72",
+          "title": "唐山市促进<em class='highlight'>企业科技进步条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "唐山市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808177e757ac0177f73d9ced0ee6",
+          "title": "太原市医疗急救服务条例",
+          "publish_date": "2020-12-01",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "太原市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081774c72b3017766d414401145",
+          "title": "山西省气候资源开发利用和保护条例",
+          "publish_date": "2020-09-30",
+          "effective_date": "2020-09-30",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161282d6f9470b0",
+          "title": "山西省科技创新促进条例",
+          "publish_date": "2017-09-29",
+          "effective_date": "2017-12-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816ecb2302016ee9df1a4b7ce2",
+          "title": "内蒙古自治区中小<em class='highlight'>企业促进条例",
+          "publish_date": "2019-09-26",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816fbc57c101710f5488430ff9",
+          "title": "抚顺市促进民营经济发展条例",
+          "publish_date": "2019-11-28",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "抚顺市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612807eb3249ce",
+          "title": "辽宁省实施《中华人民共和国民族区域自治法》办法",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f1276019666e74504027e",
+          "title": "吉林市科学技术进步条例",
+          "publish_date": "2025-04-15",
+          "effective_date": "2025-04-15",
+          "status_code": 3,
+          "issuing_authority": "吉林市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f1276019666a630757c52",
+          "title": "长春市促进中小<em class='highlight'>企业发展条例",
+          "publish_date": "2025-04-03",
+          "effective_date": "2025-05-01",
+          "status_code": 3,
+          "issuing_authority": "长春市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818e750bc6018ef43f147e269e",
+          "title": "长春市优化营商环境条例",
+          "publish_date": "2024-04-02",
+          "effective_date": "2024-04-02",
+          "status_code": 3,
+          "issuing_authority": "长春市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818187c29b5001881f2e2a6f5df9",
+          "title": "吉林省促进科技成果转化条例",
+          "publish_date": "2023-04-04",
+          "effective_date": "2023-05-04",
+          "status_code": 3,
+          "issuing_authority": "吉林省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127f2ed4632d2",
+          "title": "吉林省促进科技<em class='highlight'>企业发展条例",
+          "publish_date": "2004-11-26",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "吉林省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818199e72c4f019a004ad36d44b9",
+          "title": "黑龙江省促进科技成果转化条例",
+          "publish_date": "2025-09-25",
+          "effective_date": "2025-12-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "topic_高新技术企业优惠": {
+      "keyword": "高新技术企业 企业所得税 优惠",
+      "type": "高新技术企业优惠",
+      "scope": "fulltext",
+      "total": 128,
+      "results": [
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818179f5da5e0179f88beb640406",
+          "title": "中华人民共和国海南自由贸易港法",
+          "publish_date": "2021-06-10",
+          "effective_date": "2021-06-10",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf85eba0a23",
+          "title": "中华人民共和国中小<em class='highlight'>企业促进法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf5aae40069",
+          "title": "第五届全国人民代表大会常务委员会关于批准《广东省经济特区条例》的决议",
+          "publish_date": "1980-08-26",
+          "effective_date": "1980-08-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a4639018df3f1fc7e122d",
+          "title": "中华人民共和国慈善法",
+          "publish_date": "2023-12-29",
+          "effective_date": "2024-09-05",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf608a7022b",
+          "title": "中华人民共和国公益事业捐赠法",
+          "publish_date": "1999-06-28",
+          "effective_date": "1999-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国<em class='highlight'>企业所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e9784016f424fe00c04e5",
+          "title": "劳动就业服务<em class='highlight'>企业管理规定",
+          "publish_date": "1990-11-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f415aee52231e",
+          "title": "国务院关于鼓励投资开发海南岛的规定",
+          "publish_date": "1988-05-04",
+          "effective_date": "1988-05-04",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f41348bc71d01",
+          "title": "国务院关于鼓励外商投资的规定",
+          "publish_date": "1986-10-11",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818179f5d52f0179f8ce9aea01c8",
+          "title": "北京市院前医疗急救服务条例",
+          "publish_date": "2021-05-27",
+          "effective_date": "2021-05-27",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808177e75f88017857a30dbe74ea",
+          "title": "北京市促进中小<em class='highlight'>企业发展条例",
+          "publish_date": "2020-09-25",
+          "effective_date": "2020-12-01",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816eb1afb8016ebf5cf3514dca",
+          "title": "天津市就业促进条例",
+          "publish_date": "2018-12-14",
+          "effective_date": "2018-12-14",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816eea6bee016efcdd97223bbb",
+          "title": "天津<em class='highlight'>新技术产业园区管理条例",
+          "publish_date": "2016-03-30",
+          "effective_date": "2016-03-30",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127dcefbe1bb5",
+          "title": "天津市民办教育促进条例",
+          "publish_date": "2011-01-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081752b7d4301756e26f62e3fa9",
+          "title": "廊坊市院前医疗急救服务条例",
+          "publish_date": "2020-10-12",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "廊坊市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161281cba2c5ded",
+          "title": "河北省促进科技成果转化条例",
+          "publish_date": "2016-09-22",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161281c4f795d72",
+          "title": "唐山市促进<em class='highlight'>企业科技进步条例",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "唐山市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80808177e757ac0177f73d9ced0ee6",
+          "title": "太原市医疗急救服务条例",
+          "publish_date": "2020-12-01",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "太原市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808081774c72b3017766d414401145",
+          "title": "山西省气候资源开发利用和保护条例",
+          "publish_date": "2020-09-30",
+          "effective_date": "2020-09-30",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161282d6f9470b0",
+          "title": "山西省科技创新促进条例",
+          "publish_date": "2017-09-29",
+          "effective_date": "2017-12-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816ecb2302016ee9df1a4b7ce2",
+          "title": "内蒙古自治区中小<em class='highlight'>企业促进条例",
+          "publish_date": "2019-09-26",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816fbc57c101710f5488430ff9",
+          "title": "抚顺市促进民营经济发展条例",
+          "publish_date": "2019-11-28",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "抚顺市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc6127779301612807eb3249ce",
+          "title": "辽宁省实施《中华人民共和国民族区域自治法》办法",
+          "publish_date": null,
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f1276019666e74504027e",
+          "title": "吉林市科学<em class='highlight'>技术进步条例",
+          "publish_date": "2025-04-15",
+          "effective_date": "2025-04-15",
+          "status_code": 3,
+          "issuing_authority": "吉林市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f1276019666a630757c52",
+          "title": "长春市促进中小<em class='highlight'>企业发展条例",
+          "publish_date": "2025-04-03",
+          "effective_date": "2025-05-01",
+          "status_code": 3,
+          "issuing_authority": "长春市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818e750bc6018ef43f147e269e",
+          "title": "长春市优化营商环境条例",
+          "publish_date": "2024-04-02",
+          "effective_date": "2024-04-02",
+          "status_code": 3,
+          "issuing_authority": "长春市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818187c29b5001881f2e2a6f5df9",
+          "title": "吉林省促进科技成果转化条例",
+          "publish_date": "2023-04-04",
+          "effective_date": "2023-05-04",
+          "status_code": 3,
+          "issuing_authority": "吉林省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc61277793016127f2ed4632d2",
+          "title": "吉林省促进科技<em class='highlight'>企业发展条例",
+          "publish_date": "2004-11-26",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "吉林省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818199e72c4f019a004ad36d44b9",
+          "title": "黑龙江省促进科技成果转化条例",
+          "publish_date": "2025-09-25",
+          "effective_date": "2025-12-01",
+          "status_code": 3,
+          "issuing_authority": "黑龙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "topic_研发费用加计扣除": {
+      "keyword": "研发费用 加计扣除",
+      "type": "研发费用加计扣除",
+      "scope": "fulltext",
+      "total": 507,
+      "results": [
+        {
+          "id": "ff808081729d1efe01729d50b5c500bf",
+          "title": "中华人民共和国民法典",
+          "publish_date": "2020-05-28",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "1349e6aadd4947fe83ff811739825d3c",
+          "title": "中华人民共和国海商法",
+          "publish_date": "2025-10-28",
+          "effective_date": "2026-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7c4060811",
+          "title": "中华人民共和国保险法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf795800799",
+          "title": "中华人民共和国证券投资基金法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817d99a39f017dec555db834da",
+          "title": "中华人民共和国科学技术进步法",
+          "publish_date": "2021-12-24",
+          "effective_date": "2022-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab22b8a017abd719e0f05c0",
+          "title": "中华人民共和国海关法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf72f7a0613",
+          "title": "中华人民共和国行政强制法",
+          "publish_date": "2011-06-30",
+          "effective_date": "2012-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国企业所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf724bd0609",
+          "title": "中华人民共和国个人所得税法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818f197cf0018f1a72b2c801e0",
+          "title": "中华人民共和国关税法",
+          "publish_date": "2024-04-26",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1d08f6da12f6",
+          "title": "中华人民共和国旅游法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf85eba0a23",
+          "title": "中华人民共和国中小企业促进法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7c2c407fd",
+          "title": "中华人民共和国铁路法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a4639018df3f1fc7e122d",
+          "title": "中华人民共和国慈善法",
+          "publish_date": "2023-12-29",
+          "effective_date": "2024-09-05",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181865ee3360187bdb3430e764c",
+          "title": "中华人民共和国青藏高原生态保护法",
+          "publish_date": "2023-04-26",
+          "effective_date": "2023-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1d44e17e1415",
+          "title": "中华人民共和国国际刑事司法协助法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国企业所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ed9019c2d0fcd4e4c37",
+          "title": "音像制品管理条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ed9019c2d0fcda74c3a",
+          "title": "印刷业管理条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ed9019c2d0fc9324c13",
+          "title": "出版管理条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818180e0a61301811e3e6c391f6f",
+          "title": "中华人民共和国海关统计条例",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80808176d5cbce0176d73e21ac03db",
+          "title": "中华人民共和国预算法实施条例",
+          "publish_date": "2020-08-03",
+          "effective_date": "2020-10-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081774c7a3d01776c41674315b2",
+          "title": "保障农民工工资支付条例",
+          "publish_date": "2019-12-30",
+          "effective_date": "2020-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4122d8d9194b",
+          "title": "中华人民共和国个人所得税法实施条例",
+          "publish_date": "2018-12-18",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40ec81900b87",
+          "title": "中华人民共和国知识产权海关保护条例",
+          "publish_date": "2018-03-19",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f409df6fa0566",
+          "title": "中华人民共和国税收征收管理法实施细则",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f411bd9e317a0",
+          "title": "中华人民共和国土地增值税暂行条例",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40e87aa90a70",
+          "title": "广播电台电视台播放录音制品支付报酬暂行办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e98bd016f41e1395a015f",
+          "title": "诉讼<em class='highlight'>费用交纳办法",
+          "publish_date": "2006-12-19",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f4117ff3916b0",
+          "title": "国务院关于科学技术拨款管理的暂行规定",
+          "publish_date": "1986-01-23",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        }
+      ]
+    },
+    "topic_虚开发票风险": {
+      "keyword": "虚开发票 风险",
+      "type": "虚开发票风险",
+      "scope": "fulltext",
+      "total": 196,
+      "results": [
+        {
+          "id": "1349e6aadd4947fe83ff811739825d3c",
+          "title": "中华人民共和国海商法",
+          "publish_date": "2025-10-28",
+          "effective_date": "2026-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7670606ef",
+          "title": "中华人民共和国消费者权益保护法",
+          "publish_date": "2013-10-25",
+          "effective_date": "2014-03-15",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "f99c412df98b4ea396d6709c78703111",
+          "title": "中华人民共和国对外贸易法",
+          "publish_date": "2025-12-27",
+          "effective_date": "2026-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf8af050b81",
+          "title": "中华人民共和国电子商务法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181927f0e7b019294a6bf08358f",
+          "title": "中华人民共和国两用物项出口管制条例",
+          "publish_date": "2024-09-30",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181927f09310192c2f4cd777281",
+          "title": "中华人民共和国消费者权益保护法实施条例",
+          "publish_date": "2024-03-15",
+          "effective_date": "2024-07-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081818a1cb546018a6e362a746d5a",
+          "title": "中华人民共和国<em class='highlight'>发票管理办法",
+          "publish_date": "2023-07-20",
+          "effective_date": "2023-07-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818180e0a61301811e48085f1fd5",
+          "title": "中华人民共和国进出口商品检验法实施条例",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808081777d07c50177be8941b04084",
+          "title": "医疗保障基金使用监督管理条例",
+          "publish_date": "2021-01-15",
+          "effective_date": "2021-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3e98bd016f420808e70339",
+          "title": "结汇、售汇及付汇管理规定",
+          "publish_date": "1996-06-20",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818198a7ecd40198e24493592f36",
+          "title": "中华人民共和国监察法实施条例",
+          "publish_date": "2025-06-01",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "国家监察委员会",
+          "category": "监察法规"
+        },
+        {
+          "id": "ff808181927f12760193b49e40ac64ed",
+          "title": "北京市优化营商环境条例",
+          "publish_date": "2024-11-29",
+          "effective_date": "2024-11-29",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816f135f46016f17de569d09b3",
+          "title": "北京市实施《中华人民共和国节约能源法》办法",
+          "publish_date": "2019-11-27",
+          "effective_date": "2019-11-27",
+          "status_code": 3,
+          "issuing_authority": "北京市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f0e7b0196186f439c671a",
+          "title": "石家庄市出租汽车管理条例",
+          "publish_date": "2025-04-07",
+          "effective_date": "2025-04-07",
+          "status_code": 3,
+          "issuing_authority": "石家庄市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f09310193b4636c6c3754",
+          "title": "唐山市优化营商环境若干规定",
+          "publish_date": "2024-11-29",
+          "effective_date": "2025-03-01",
+          "status_code": 3,
+          "issuing_authority": "唐山市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f12760193d2542cd13bf5",
+          "title": "河北省优化营商环境条例",
+          "publish_date": "2024-11-28",
+          "effective_date": "2024-11-28",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819150415e019169adfeaf4051",
+          "title": "秦皇岛市旅游市场条例",
+          "publish_date": "2024-07-30",
+          "effective_date": "2024-07-30",
+          "status_code": 3,
+          "issuing_authority": "秦皇岛市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24df58018ca4f74c135125",
+          "title": "河北省道路运输条例",
+          "publish_date": "2023-11-30",
+          "effective_date": "2023-11-30",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818793d8520187b733ee955112",
+          "title": "石家庄市优化营商环境条例",
+          "publish_date": "2023-04-04",
+          "effective_date": "2023-05-01",
+          "status_code": 3,
+          "issuing_authority": "石家庄市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817f420ac8017f499360702de3",
+          "title": "邯郸市城市排水与污水处理条例",
+          "publish_date": "2018-04-12",
+          "effective_date": "2018-05-01",
+          "status_code": 3,
+          "issuing_authority": "邯郸市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "4028abcc612777930161288b88a9422a",
+          "title": "河北省消费者权益保护条例",
+          "publish_date": "2017-07-28",
+          "effective_date": "2017-11-01",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818199e72aa4019a32e18cc244da",
+          "title": "山西省农作物种子条例",
+          "publish_date": "2025-09-24",
+          "effective_date": "2025-09-24",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24df58018ccd5c92b15b57",
+          "title": "山西省消费者权益保护条例",
+          "publish_date": "2023-11-30",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "山西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817dc68a44017dc74e2ed80530",
+          "title": "太原市客运出租汽车服务管理条例",
+          "publish_date": "2021-10-08",
+          "effective_date": "2021-10-08",
+          "status_code": 3,
+          "issuing_authority": "太原市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818198a7ecd40198cf4ff72365a0",
+          "title": "赤峰市优化营商环境条例",
+          "publish_date": "2025-08-07",
+          "effective_date": "2025-09-01",
+          "status_code": 3,
+          "issuing_authority": "赤峰市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f0e7b0193fd7ef4817c36",
+          "title": "通辽市城市排水条例",
+          "publish_date": "2024-12-05",
+          "effective_date": "2025-03-01",
+          "status_code": 3,
+          "issuing_authority": "通辽市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818181668bed01816b85ef202050",
+          "title": "内蒙古自治区实施《中华人民共和国消费者权益保护法》办法",
+          "publish_date": "2022-05-26",
+          "effective_date": "2022-07-01",
+          "status_code": 3,
+          "issuing_authority": "内蒙古自治区人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f093101943f6ebda35ef0",
+          "title": "大连市经营主体服务条例",
+          "publish_date": "2024-12-05",
+          "effective_date": "2025-03-01",
+          "status_code": 3,
+          "issuing_authority": "大连市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24e05b018c60de891a226b",
+          "title": "沈阳市优化营商环境条例",
+          "publish_date": "2023-11-27",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "沈阳市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818b2884d0018b3783427d1b53",
+          "title": "辽宁省农作物种子管理条例",
+          "publish_date": "2023-09-27",
+          "effective_date": "2023-12-01",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "topic_留抵退税": {
+      "keyword": "留抵退税",
+      "type": "留抵退税",
+      "scope": "fulltext",
+      "total": 682,
+      "results": [
+        {
+          "id": "ff808081729d1efe01729d50b5c500bf",
+          "title": "中华人民共和国民法典",
+          "publish_date": "2020-05-28",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2104531f1774",
+          "title": "中华人民共和国农村土地承包法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf88dbe0b13",
+          "title": "中华人民共和国农民专业合作社法",
+          "publish_date": "2017-12-27",
+          "effective_date": "2018-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7a44407b7",
+          "title": "中华人民共和国拍卖法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080817703add20177373df6a43e33",
+          "title": "中华人民共和国行政处罚法",
+          "publish_date": "2021-01-22",
+          "effective_date": "2021-07-15",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818197af9ccc0197b159c38a0408",
+          "title": "中华人民共和国治安管理处罚法",
+          "publish_date": "2025-06-27",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab22b8a017abd719e0f05c0",
+          "title": "中华人民共和国海关法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808176f4df37017737360133541f",
+          "title": "中华人民共和国海警法",
+          "publish_date": "2021-01-22",
+          "effective_date": "2021-02-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f219a9e101bba",
+          "title": "中华人民共和国疫苗管理法",
+          "publish_date": "2019-06-29",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7448a066d",
+          "title": "中华人民共和国精神卫生法",
+          "publish_date": "2018-04-27",
+          "effective_date": "2018-04-27",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf72f7a0613",
+          "title": "中华人民共和国行政强制法",
+          "publish_date": "2011-06-30",
+          "effective_date": "2012-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2106acd11784",
+          "title": "中华人民共和国企业所得税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf724bd0609",
+          "title": "中华人民共和国个人所得税法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "7ee5a369049e412bbd1a96a2fef74abb",
+          "title": "中华人民共和国民用航空法",
+          "publish_date": "2025-12-27",
+          "effective_date": "2026-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "f99c412df98b4ea396d6709c78703111",
+          "title": "中华人民共和国对外贸易法",
+          "publish_date": "2025-12-27",
+          "effective_date": "2026-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818f197cf0018f1a72b2c801e0",
+          "title": "中华人民共和国关税法",
+          "publish_date": "2024-04-26",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080817703add2017737395a973e31",
+          "title": "中华人民共和国动物防疫法",
+          "publish_date": "2021-01-22",
+          "effective_date": "2021-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808081736ba7420173e715adbf36ff",
+          "title": "中华人民共和国城市维护建设税法",
+          "publish_date": "2020-08-11",
+          "effective_date": "2021-09-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2147561d18ed",
+          "title": "中华人民共和国车辆购置税法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2019-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1d0fc5761317",
+          "title": "中华人民共和国船舶吨税法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf78cff0785",
+          "title": "中华人民共和国税收征收管理法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f210989b9179a",
+          "title": "中华人民共和国社会保险法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab22b8a017abd5ad286057a",
+          "title": "中华人民共和国草原法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181796a636a0179822a19640c92",
+          "title": "中华人民共和国刑法",
+          "publish_date": "2020-12-26",
+          "effective_date": "2021-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7f30a087f",
+          "title": "中华人民共和国反恐怖主义法",
+          "publish_date": "2018-04-27",
+          "effective_date": "2018-04-27",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf8d0550bf9",
+          "title": "全国人民代表大会常务委员会关于《中华人民共和国刑法》有关出口<em class='highlight'>退税、抵扣税款的其他发票规定的解释",
+          "publish_date": "2005-12-29",
+          "effective_date": "2005-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律解释"
+        },
+        {
+          "id": "ff8081819b697220019bc0aa9f146bf4",
+          "title": "中华人民共和国增值税法实施条例",
+          "publish_date": "2025-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcd4a6436",
+          "title": "中华人民共和国企业所得税法实施条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181966737700196a98c5d5a338b",
+          "title": "印铸刻字业暂行管理规则",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c230ff2019c2d0fcc20642c",
+          "title": "使用有毒物品作业场所劳动保护条例",
+          "publish_date": "2024-12-06",
+          "effective_date": "2025-01-20",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        }
+      ]
+    },
+    "topic_出口退税": {
+      "keyword": "出口退税",
+      "type": "出口退税",
+      "scope": "fulltext",
+      "total": 51,
+      "results": [
+        {
+          "id": "f99c412df98b4ea396d6709c78703111",
+          "title": "中华人民共和国对外贸易法",
+          "publish_date": "2025-12-27",
+          "effective_date": "2026-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf78cff0785",
+          "title": "中华人民共和国税收征收管理法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181796a636a0179822a19640c92",
+          "title": "中华人民共和国刑法",
+          "publish_date": "2020-12-26",
+          "effective_date": "2021-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf8d0550bf9",
+          "title": "全国人民代表大会常务委员会关于《中华人民共和国刑法》有关<em class='highlight'>出口退税、抵扣税款的其他发票规定的解释",
+          "publish_date": "2005-12-29",
+          "effective_date": "2005-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律解释"
+        },
+        {
+          "id": "ff8081819b697220019bc0aa9f146bf4",
+          "title": "中华人民共和国增值税法实施条例",
+          "publish_date": "2025-12-25",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff808181900f8e94019010bc03260890",
+          "title": "国际邮轮在中华人民共和国港口靠港补给的规定",
+          "publish_date": "2024-04-22",
+          "effective_date": "2024-06-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8081819c46f9bb019cd19182d36cdd",
+          "title": "中华人民共和国货物进<em class='highlight'>出口管理条例",
+          "publish_date": "2024-03-10",
+          "effective_date": "2024-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818180e0a61301811e43f41f1fa2",
+          "title": "中华人民共和国海关行政处罚实施条例",
+          "publish_date": "2022-03-29",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f409df6fa0566",
+          "title": "中华人民共和国税收征收管理法实施细则",
+          "publish_date": "2016-02-06",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f41124ba91528",
+          "title": "中华人民共和国海关对<em class='highlight'>出口加工区监管的暂行办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f40a4d55d05a8",
+          "title": "保税区海关监管办法",
+          "publish_date": "2011-01-08",
+          "effective_date": null,
+          "status_code": 3,
+          "issuing_authority": "国务院",
+          "category": "行政法规"
+        },
+        {
+          "id": "ff80818198a7ecd40198e24493592f36",
+          "title": "中华人民共和国监察法实施条例",
+          "publish_date": "2025-06-01",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "国家监察委员会",
+          "category": "监察法规"
+        },
+        {
+          "id": "2c90e5ba6a291d8f016c8a2a994d3fa8",
+          "title": "天津市优化营商环境条例",
+          "publish_date": "2019-07-31",
+          "effective_date": "2019-09-01",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816ea719d7016eb12a99a75b34",
+          "title": "天津港保税区条例",
+          "publish_date": "2019-05-30",
+          "effective_date": "2019-05-30",
+          "status_code": 3,
+          "issuing_authority": "天津市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f12760193d2542cd13bf5",
+          "title": "河北省优化营商环境条例",
+          "publish_date": "2024-11-28",
+          "effective_date": "2024-11-28",
+          "status_code": 3,
+          "issuing_authority": "河北省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818c24e05b018c60de891a226b",
+          "title": "沈阳市优化营商环境条例",
+          "publish_date": "2023-11-27",
+          "effective_date": "2024-01-01",
+          "status_code": 3,
+          "issuing_authority": "沈阳市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8080816fbc57c101710b77081e08e3",
+          "title": "辽宁省企业权益保护条例",
+          "publish_date": "2019-11-28",
+          "effective_date": "2020-02-01",
+          "status_code": 3,
+          "issuing_authority": "辽宁省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819c46fcc5019c51574b614bc1",
+          "title": "上海市优化营商环境条例",
+          "publish_date": "2025-11-26",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819a7c98d2019ac95b531c141e",
+          "title": "上海市民营经济促进条例",
+          "publish_date": "2025-09-25",
+          "effective_date": "2025-10-20",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818d6d9371018d72003c7d088a",
+          "title": "上海市推进国际贸易中心建设条例",
+          "publish_date": "2023-12-28",
+          "effective_date": "2024-02-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818364d9f60183ea8e7a7e1b7b",
+          "title": "中国（上海）自由贸易试验区临港新片区条例",
+          "publish_date": "2022-02-18",
+          "effective_date": "2022-03-01",
+          "status_code": 3,
+          "issuing_authority": "上海市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818d736dae018d78630dc61632",
+          "title": "浙江省优化营商环境条例",
+          "publish_date": "2024-01-26",
+          "effective_date": "2024-03-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081817fd98341017fd9d926851050",
+          "title": "中国（浙江）自由贸易试验区条例",
+          "publish_date": "2022-03-18",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "浙江省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181927f127601941afee0d77653",
+          "title": "安徽省优化营商环境条例",
+          "publish_date": "2024-11-26",
+          "effective_date": "2024-11-26",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818a1cb3c3018a203f471c07a9",
+          "title": "阜阳市优化营商环境条例",
+          "publish_date": "2023-08-04",
+          "effective_date": "2023-09-01",
+          "status_code": 3,
+          "issuing_authority": "阜阳市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081818073c77c018074231b560a87",
+          "title": "中国（安徽）自由贸易试验区条例",
+          "publish_date": "2022-03-25",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "安徽省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff80818191d62db001920ac73a9f2496",
+          "title": "江西省促进科技成果转化条例",
+          "publish_date": "2020-11-25",
+          "effective_date": "2020-11-25",
+          "status_code": 3,
+          "issuing_authority": "江西省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181869cd8610186a11c2a525132",
+          "title": "济宁市优化营商环境条例",
+          "publish_date": "2023-01-10",
+          "effective_date": "2023-04-01",
+          "status_code": 3,
+          "issuing_authority": "济宁市人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff8081819aedd63e019b4e05f1ab0e20",
+          "title": "河南省优化营商环境条例",
+          "publish_date": "2025-12-04",
+          "effective_date": "2026-03-01",
+          "status_code": 3,
+          "issuing_authority": "河南省人民代表大会常务委员会",
+          "category": "地方法规"
+        },
+        {
+          "id": "ff808181844230ec0185528515564f2a",
+          "title": "中国（湖北）自由贸易试验区条例",
+          "publish_date": "2022-11-25",
+          "effective_date": "2022-11-25",
+          "status_code": 3,
+          "issuing_authority": "湖北省人民代表大会常务委员会",
+          "category": "地方法规"
+        }
+      ]
+    },
+    "topic_专项附加扣除": {
+      "keyword": "个人 专项附加扣除",
+      "type": "专项附加扣除",
+      "scope": "fulltext",
+      "total": 7379,
+      "results": [
+        {
+          "id": "ff808181927b083b0195881cfb1458aa",
+          "title": "中华人民共和国全国人民代表大会和地方各级人民代表大会代表法",
+          "publish_date": "2025-03-11",
+          "effective_date": "2025-03-12",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181944069720194960dcea345a2",
+          "title": "中华人民共和国监察法",
+          "publish_date": "2024-12-25",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817f48d8de017f71b0aac01019",
+          "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法",
+          "publish_date": "2022-03-11",
+          "effective_date": "2022-03-12",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1cb8515010ba",
+          "title": "中华人民共和国人民检察院组织法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1c5dbc0f106d",
+          "title": "中华人民共和国人民法院组织法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf60d3f0267",
+          "title": "中华人民共和国民族区域自治法",
+          "publish_date": "2001-02-28",
+          "effective_date": "2001-02-28",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "189021012184442fa2ecd6b4c26dcba0",
+          "title": "中华人民共和国法治宣传教育法",
+          "publish_date": "2025-09-12",
+          "effective_date": "2025-11-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818188d7430b0189019c15ee0943",
+          "title": "中华人民共和国对外关系法",
+          "publish_date": "2023-06-28",
+          "effective_date": "2023-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817b6472a3017b65724edf004f",
+          "title": "中华人民共和国监察官法",
+          "publish_date": "2021-08-20",
+          "effective_date": "2022-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808172b5f24f0173094174de251e",
+          "title": "中华人民共和国香港特别行政区维护国家安全法",
+          "publish_date": "2020-06-30",
+          "effective_date": "2020-06-30",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f21669bcd1abd",
+          "title": "中华人民共和国法官法",
+          "publish_date": "2019-04-23",
+          "effective_date": "2019-10-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f2170ba331afb",
+          "title": "中华人民共和国检察官法",
+          "publish_date": "2019-04-23",
+          "effective_date": "2019-10-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808081729d1efe01729d50b5c500bf",
+          "title": "中华人民共和国民法典",
+          "publish_date": "2020-05-28",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a463901905f2cc2c12d3b",
+          "title": "中华人民共和国农村集体经济组织法",
+          "publish_date": "2024-06-28",
+          "effective_date": "2025-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808171e9e18101727e32b94d7de6",
+          "title": "中华人民共和国证券法",
+          "publish_date": "2019-12-28",
+          "effective_date": "2020-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f217645451b35",
+          "title": "中华人民共和国商标法",
+          "publish_date": "2019-04-23",
+          "effective_date": "2019-11-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf88dbe0b13",
+          "title": "中华人民共和国农民专业合作社法",
+          "publish_date": "2017-12-27",
+          "effective_date": "2018-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7c4060811",
+          "title": "中华人民共和国保险法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab22b8a017abd777cdc05d8",
+          "title": "中华人民共和国教育法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-30",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f210efccb17b9",
+          "title": "中华人民共和国义务教育法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818197af9ccc0197b159c38a0408",
+          "title": "中华人民共和国治安管理处罚法",
+          "publish_date": "2025-06-27",
+          "effective_date": "2026-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181927b083b01930c734c776beb",
+          "title": "中华人民共和国学前教育法",
+          "publish_date": "2024-11-08",
+          "effective_date": "2025-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181927b083b01930c94de976c66",
+          "title": "中华人民共和国文物保护法",
+          "publish_date": "2024-11-08",
+          "effective_date": "2025-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a424b01905f13edba2efb",
+          "title": "中华人民共和国突发事件应对法",
+          "publish_date": "2024-06-28",
+          "effective_date": "2024-11-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181802d2853018044c7370108c6",
+          "title": "中华人民共和国职业教育法",
+          "publish_date": "2022-04-20",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817d99a39f017dec555db834da",
+          "title": "中华人民共和国科学技术进步法",
+          "publish_date": "2021-12-24",
+          "effective_date": "2022-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab22b8a017abd719e0f05c0",
+          "title": "中华人民共和国海关法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab231eb017abd617ef70519",
+          "title": "中华人民共和国道路交通安全法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808176f4df37017737360133541f",
+          "title": "中华人民共和国海警法",
+          "publish_date": "2021-01-22",
+          "effective_date": "2021-02-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808171e9e18101727e38094d7e07",
+          "title": "中华人民共和国基本医疗卫生与健康促进法",
+          "publish_date": "2019-12-28",
+          "effective_date": "2020-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        }
+      ]
+    },
+    "topic_金税四期风险": {
+      "keyword": "金税四期 风险指标",
+      "type": "金税四期风险",
+      "scope": "fulltext",
+      "total": 1230,
+      "results": [
+        {
+          "id": "ff808081729d1efe01729d50b5c500bf",
+          "title": "中华人民共和国民法典",
+          "publish_date": "2020-05-28",
+          "effective_date": "2021-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "1349e6aadd4947fe83ff811739825d3c",
+          "title": "中华人民共和国海商法",
+          "publish_date": "2025-10-28",
+          "effective_date": "2026-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a463901905f2cc2c12d3b",
+          "title": "中华人民共和国农村集体经济组织法",
+          "publish_date": "2024-06-28",
+          "effective_date": "2025-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818c9108eb018cb6922f750c07",
+          "title": "中华人民共和国公司法",
+          "publish_date": "2023-12-29",
+          "effective_date": "2024-07-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181802d2853018044c12f9d070c",
+          "title": "中华人民共和国期货和衍生品法",
+          "publish_date": "2022-04-20",
+          "effective_date": "2022-08-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80808171e9e18101727e32b94d7de6",
+          "title": "中华人民共和国证券法",
+          "publish_date": "2019-12-28",
+          "effective_date": "2020-03-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f217645451b35",
+          "title": "中华人民共和国商标法",
+          "publish_date": "2019-04-23",
+          "effective_date": "2019-11-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7eba9086b",
+          "title": "中华人民共和国商业银行法",
+          "publish_date": "2015-08-29",
+          "effective_date": "2015-10-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7c4060811",
+          "title": "中华人民共和国保险法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf795800799",
+          "title": "中华人民共和国证券投资基金法",
+          "publish_date": "2015-04-24",
+          "effective_date": "2015-04-24",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf7670606ef",
+          "title": "中华人民共和国消费者权益保护法",
+          "publish_date": "2013-10-25",
+          "effective_date": "2014-03-15",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf63dce034d",
+          "title": "中华人民共和国合伙企业法",
+          "publish_date": "2006-08-27",
+          "effective_date": "2007-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf63c7c0343",
+          "title": "中华人民共和国企业破产法",
+          "publish_date": "2006-08-27",
+          "effective_date": "2007-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "7b5a76d0461745a08d3f964916b87ef3",
+          "title": "中华人民共和国食品安全法",
+          "publish_date": "2025-09-12",
+          "effective_date": "2025-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff808181802d2853018044c7370108c6",
+          "title": "中华人民共和国职业教育法",
+          "publish_date": "2022-04-20",
+          "effective_date": "2022-05-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081817ab231eb017abd617ef70519",
+          "title": "中华人民共和国道路交通安全法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-04-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f46242d6127ed",
+          "title": "中华人民共和国药品管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2019-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf8592a0a19",
+          "title": "中华人民共和国核安全法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f212401b317cc",
+          "title": "中华人民共和国预算法",
+          "publish_date": "2018-12-29",
+          "effective_date": "2018-12-29",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf6200302cb",
+          "title": "中华人民共和国中国人民银行法",
+          "publish_date": "2003-12-27",
+          "effective_date": "2004-02-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        },
+        {
+          "id": "6bae366fd9f94fbf9450c48a68bfc68a",
+          "title": "中华人民共和国环境保护税法",
+          "publish_date": "2025-10-28",
+          "effective_date": "2025-10-28",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818f197cf0018f1a72b2c801e0",
+          "title": "中华人民共和国关税法",
+          "publish_date": "2024-04-26",
+          "effective_date": "2024-12-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818179f5da5e0179f88beb640406",
+          "title": "中华人民共和国海南自由贸易港法",
+          "publish_date": "2021-06-10",
+          "effective_date": "2021-06-10",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff80818178efe3620179206d421428ce",
+          "title": "中华人民共和国乡村振兴促进法",
+          "publish_date": "2021-04-29",
+          "effective_date": "2021-06-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f3cbb3c016f462c6cc8280c",
+          "title": "中华人民共和国城市房地产管理法",
+          "publish_date": "2019-08-26",
+          "effective_date": "2020-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8080816f135f46016f1d08f6da12f6",
+          "title": "中华人民共和国旅游法",
+          "publish_date": "2018-10-26",
+          "effective_date": "2018-10-26",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf8af050b81",
+          "title": "中华人民共和国电子商务法",
+          "publish_date": "2018-08-31",
+          "effective_date": "2019-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf85eba0a23",
+          "title": "中华人民共和国中小企业促进法",
+          "publish_date": "2017-09-01",
+          "effective_date": "2018-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "2c909fdd678bf17901678bf6442e0361",
+          "title": "中华人民共和国银行业监督管理法",
+          "publish_date": "2006-10-31",
+          "effective_date": "2007-01-01",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会常务委员会",
+          "category": "法律"
+        },
+        {
+          "id": "ff8081818d6a4639018df3f1fc7e122d",
+          "title": "中华人民共和国慈善法",
+          "publish_date": "2023-12-29",
+          "effective_date": "2024-09-05",
+          "status_code": 3,
+          "issuing_authority": "全国人民代表大会",
+          "category": "法律"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "updated": "2026-07-03 15:34:24",
+  "keyword": "个人 专项附加扣除",
+  "type": "专项附加扣除",
+  "scope": "fulltext",
+  "total": 7379,
+  "results": [
+    {
+      "id": "ff808181927b083b0195881cfb1458aa",
+      "title": "中华人民共和国全国人民代表大会和地方各级人民代表大会代表法",
+      "publish_date": "2025-03-11",
+      "effective_date": "2025-03-12",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181944069720194960dcea345a2",
+      "title": "中华人民共和国监察法",
+      "publish_date": "2024-12-25",
+      "effective_date": "2025-06-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817f48d8de017f71b0aac01019",
+      "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法",
+      "publish_date": "2022-03-11",
+      "effective_date": "2022-03-12",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f1cb8515010ba",
+      "title": "中华人民共和国人民检察院组织法",
+      "publish_date": "2018-10-26",
+      "effective_date": "2019-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f1c5dbc0f106d",
+      "title": "中华人民共和国人民法院组织法",
+      "publish_date": "2018-10-26",
+      "effective_date": "2019-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf60d3f0267",
+      "title": "中华人民共和国民族区域自治法",
+      "publish_date": "2001-02-28",
+      "effective_date": "2001-02-28",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "189021012184442fa2ecd6b4c26dcba0",
+      "title": "中华人民共和国法治宣传教育法",
+      "publish_date": "2025-09-12",
+      "effective_date": "2025-11-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80818188d7430b0189019c15ee0943",
+      "title": "中华人民共和国对外关系法",
+      "publish_date": "2023-06-28",
+      "effective_date": "2023-07-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817b6472a3017b65724edf004f",
+      "title": "中华人民共和国监察官法",
+      "publish_date": "2021-08-20",
+      "effective_date": "2022-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80808172b5f24f0173094174de251e",
+      "title": "中华人民共和国香港特别行政区维护国家安全法",
+      "publish_date": "2020-06-30",
+      "effective_date": "2020-06-30",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f21669bcd1abd",
+      "title": "中华人民共和国法官法",
+      "publish_date": "2019-04-23",
+      "effective_date": "2019-10-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f2170ba331afb",
+      "title": "中华人民共和国检察官法",
+      "publish_date": "2019-04-23",
+      "effective_date": "2019-10-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808081729d1efe01729d50b5c500bf",
+      "title": "中华人民共和国民法典",
+      "publish_date": "2020-05-28",
+      "effective_date": "2021-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081818d6a463901905f2cc2c12d3b",
+      "title": "中华人民共和国农村集体经济组织法",
+      "publish_date": "2024-06-28",
+      "effective_date": "2025-05-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80808171e9e18101727e32b94d7de6",
+      "title": "中华人民共和国证券法",
+      "publish_date": "2019-12-28",
+      "effective_date": "2020-03-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f217645451b35",
+      "title": "中华人民共和国商标法",
+      "publish_date": "2019-04-23",
+      "effective_date": "2019-11-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf88dbe0b13",
+      "title": "中华人民共和国农民专业合作社法",
+      "publish_date": "2017-12-27",
+      "effective_date": "2018-07-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "2c909fdd678bf17901678bf7c4060811",
+      "title": "中华人民共和国保险法",
+      "publish_date": "2015-04-24",
+      "effective_date": "2015-04-24",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817ab22b8a017abd777cdc05d8",
+      "title": "中华人民共和国教育法",
+      "publish_date": "2021-04-29",
+      "effective_date": "2021-04-30",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8080816f135f46016f210efccb17b9",
+      "title": "中华人民共和国义务教育法",
+      "publish_date": "2018-12-29",
+      "effective_date": "2018-12-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80818197af9ccc0197b159c38a0408",
+      "title": "中华人民共和国治安管理处罚法",
+      "publish_date": "2025-06-27",
+      "effective_date": "2026-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181927b083b01930c734c776beb",
+      "title": "中华人民共和国学前教育法",
+      "publish_date": "2024-11-08",
+      "effective_date": "2025-06-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181927b083b01930c94de976c66",
+      "title": "中华人民共和国文物保护法",
+      "publish_date": "2024-11-08",
+      "effective_date": "2025-03-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081818d6a424b01905f13edba2efb",
+      "title": "中华人民共和国突发事件应对法",
+      "publish_date": "2024-06-28",
+      "effective_date": "2024-11-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff808181802d2853018044c7370108c6",
+      "title": "中华人民共和国职业教育法",
+      "publish_date": "2022-04-20",
+      "effective_date": "2022-05-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817d99a39f017dec555db834da",
+      "title": "中华人民共和国科学技术进步法",
+      "publish_date": "2021-12-24",
+      "effective_date": "2022-01-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817ab22b8a017abd719e0f05c0",
+      "title": "中华人民共和国海关法",
+      "publish_date": "2021-04-29",
+      "effective_date": "2021-04-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff8081817ab231eb017abd617ef70519",
+      "title": "中华人民共和国道路交通安全法",
+      "publish_date": "2021-04-29",
+      "effective_date": "2021-04-29",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80808176f4df37017737360133541f",
+      "title": "中华人民共和国海警法",
+      "publish_date": "2021-01-22",
+      "effective_date": "2021-02-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    },
+    {
+      "id": "ff80808171e9e18101727e38094d7e07",
+      "title": "中华人民共和国基本医疗卫生与健康促进法",
+      "publish_date": "2019-12-28",
+      "effective_date": "2020-06-01",
+      "status_code": 3,
+      "issuing_authority": "全国人民代表大会常务委员会",
+      "category": "法律"
+    }
+  ]
+}
