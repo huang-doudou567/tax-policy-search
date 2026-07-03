@@ -7,54 +7,51 @@
 <style>
 *{margin:0;padding:0}
 body,html{width:100%;height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
-#loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f3f4f6;z-index:9999;transition:opacity .4s}
+#loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f3f4f6;z-index:9999;transition:opacity .3s}
 #loading.done{opacity:0;pointer-events:none}
-#loading .spinner{width:40px;height:40px;border:3px solid #e5e7eb;border-top-color:#1d4ed8;border-radius:50%;animation:spin .7s linear infinite;margin-bottom:16px}
+.spinner{width:36px;height:36px;border:3px solid #e5e7eb;border-top-color:#1d4ed8;border-radius:50%;animation:spin .7s linear infinite;margin-bottom:12px}
 @keyframes spin{to{transform:rotate(360deg)}}
-#loading p{color:#6b7280;font-size:14px}
-#loading .err{color:#dc2626;font-size:12px;margin-top:8px;display:none}
+#status{color:#6b7280;font-size:14px}
 #iframe{width:100%;height:100%;border:none}
 </style>
 </head>
 <body>
 <div id="loading">
   <div class="spinner"></div>
-  <p>财税政策实时搜索引擎正在连接…</p>
-  <p class="err" id="loadErr"></p>
+  <p id="status">正在连接服务…</p>
 </div>
 <iframe id="iframe" src="" allow="clipboard-read;clipboard-write"></iframe>
 
 <script>
-const BACKENDS = [
-  { url: 'http://localhost:5080', label: '本地服务', timeout: 2000 },
-  { url: 'https://0a37d8d71373ad22-218-75-157-37.serveousercontent.com', label: '在线 Demo', timeout: 8000 },
-  { url: 'https://deploy-vercel-lemon-mu.vercel.app', label: 'Vercel 备用', timeout: 12000 },
-];
-
-(async function init() {
+(function(){
+  var TUNNEL = 'https://1415ec40105fbd4b-223-150-180-191.serveousercontent.com';
+  var FALLBACK = 'https://deploy-vercel-lemon-mu.vercel.app';
   var iframe = document.getElementById('iframe');
   var loading = document.getElementById('loading');
-  var loadErr = document.getElementById('loadErr');
+  var statusEl = document.getElementById('status');
 
-  for (var i = 0; i < BACKENDS.length; i++) {
-    var backend = BACKENDS[i];
-    try {
-      var ctrl = new AbortController();
-      var timer = setTimeout(function() { ctrl.abort(); }, backend.timeout);
-      var r = await fetch(backend.url + '/api/health', { signal: ctrl.signal });
-      clearTimeout(timer);
-      if (r.ok) {
-        iframe.src = backend.url;
-        iframe.onload = function() { loading.classList.add('done'); };
-        setTimeout(function() { loading.classList.add('done'); }, 5000);
-        return;
-      }
-    } catch(e) {}
-  }
+  // Quick health check on tunnel in parallel
+  var checked = false;
+  var timer = setTimeout(function(){
+    // After 3s, just load regardless — iframe will show error if truly down
+    if (!checked) { iframe.src = TUNNEL; checked = true; }
+    loading.classList.add('done');
+  }, 3000);
 
-  loadErr.style.display = 'block';
-  loadErr.textContent = '所有后端暂不可用，请稍后刷新重试';
-  loading.innerHTML = '<p style="font-size:16px;color:#111827">⚠️ 服务暂时不可用</p><p class="err">请稍后刷新页面重试</p>';
+  // Try tunnel health
+  fetch(TUNNEL + '/api/health').then(function(r){
+    return r.ok;
+  }).catch(function(){ return false; }).then(function(ok){
+    if (checked) return;
+    checked = true;
+    clearTimeout(timer);
+    statusEl.textContent = ok ? '服务已连接 ✓' : '连接较慢，正在加载…';
+    iframe.src = ok ? TUNNEL : FALLBACK;
+    setTimeout(function(){ loading.classList.add('done'); }, ok ? 600 : 1500);
+  });
+
+  // Hide loading once iframe content loads
+  iframe.onload = function(){ loading.classList.add('done'); };
 })();
 </script>
 </body>
