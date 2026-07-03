@@ -190,18 +190,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 <script>
 
 /* ═══════════ API Base Auto-Detection ═══════════ */
-const API_BASES = ['http://localhost:5080', 'https://deploy-vercel-lemon-mu.vercel.app'];
-let API_BASE = API_BASES[1]; // default to Vercel
-(async function detectAPI(){
-  for(const base of API_BASES){
-    try{
-      const r = await fetch(base+'/api/health', {mode:'cors', signal: AbortSignal.timeout(3000)});
-      if(r.ok){ API_BASE = base; console.log('API:',base); break; }
-    }catch(e){}
-  }
-  // Re-trigger quick-tax load
-  loadQuickTax();
-})();
+const API_BASE = 'https://deploy-vercel-lemon-mu.vercel.app';
 
 /* ═══════════ STATE ═══════════ */
 let lastResults=[],lastKeyword='',guideState={},activeTab='law';
@@ -231,7 +220,7 @@ async function loadProvinces(){
 }
 
 /* ═══════════ SEARCH ═══════════ */
-async function fetchWithRetry(url,opts={},retries=3,delay=800){
+async function fetchWithRetry(url,opts={},retries=2,delay=400){
   // Auto-retry on network errors + empty responses (serveo tunnel instability)
   for(let i=0;i<retries;i++){
     try{
