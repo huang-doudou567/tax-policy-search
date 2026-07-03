@@ -26,6 +26,14 @@ from tax_aggregator import aggregate_search
 
 app = Flask(__name__)
 
+# ── CORS support (for GitHub Pages cross-origin) ──
+@app.after_request
+def add_cors(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    return response
+
 # ── In-memory caches (per-invocation) ──
 _text_cache: dict[str, list[str]] = {}
 _interp_cache: dict[str, dict] = {}
