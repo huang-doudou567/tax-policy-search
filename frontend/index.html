@@ -3,189 +3,509 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>财税政策实时搜索引擎</title>
+<title>规则的起点 — 财税政策搜索引擎</title>
 <style>
 :root {
-  --bg:#f3f4f6; --card:#fff; --text:#111827; --t2:#6b7280; --t3:#9ca3af;
-  --border:#e5e7eb; --primary:#1d4ed8; --plight:#dbeafe;
-  --green:#059669; --gbg:#d1fae5; --yellow:#b45309; --ybg:#fef3c7;
-  --red:#dc2626; --rbg:#fee2e2; --radius:10px; --shadow:0 1px 3px #00000010;
-  --panel-w:420px;
+  --black: #111;
+  --white: #fff;
+  --g50: #fafafa;
+  --g100: #f5f5f5;
+  --g200: #e5e5e5;
+  --g300: #d4d4d4;
+  --g400: #a3a3a3;
+  --g500: #737373;
+  --g600: #525252;
+  --g700: #404040;
+  --g800: #262626;
+  --g900: #171717;
+  --accent: #dc2626;
+  --panel-w: 420px;
+  --readable: 720px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+  background:var(--white);color:var(--black);line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
 
-.app{display:flex;min-height:100vh}
-.main{flex:1;min-width:0;transition:margin .25s}
-.main.with-panel{margin-right:var(--panel-w)}
-@media(max-width:800px){.main.with-panel{margin-right:0;display:none}}
+/* ── Hero ── */
+.hero{
+  padding:100px 20px 40px;
+  text-align:center;
+  transition:padding .5s ease;
+  max-width:var(--readable);
+  margin:0 auto;
+}
+.hero.compact{padding:36px 20px 16px}
+.hero-inner{max-width:560px;margin:0 auto}
 
-.header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:22px 0 18px;text-align:center}
-.header h1{font-size:22px;font-weight:700}
-.header p{font-size:12.5px;opacity:.7;margin-top:4px}
-.header .badges{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap}
-.header .badge{background:#ffffff22;padding:3px 10px;border-radius:20px;font-size:11px}
+.hero-logo{color:var(--black);margin-bottom:20px;display:inline-block}
+.hero-logo svg{display:block}
+.hero.compact .hero-logo svg{width:28px;height:28px}
+.hero.compact .hero-logo{margin-bottom:10px}
 
-.container{max-width:860px;margin:0 auto;padding:16px}
+.hero-title{
+  font-size:clamp(28px,4.5vw,50px);
+  font-weight:700;
+  letter-spacing:8px;
+  color:var(--black);
+  margin-bottom:28px;
+  transition:font-size .5s ease,margin .5s ease,letter-spacing .5s ease;
+}
+.hero.compact .hero-title{
+  font-size:20px;
+  letter-spacing:4px;
+  margin-bottom:14px;
+}
 
-/* ── Search ── */
-.search-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 22px;margin-bottom:16px}
-.search-row{display:flex;gap:10px;align-items:center}
-.search-input{flex:1;padding:11px 15px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none;transition:border .2s}
-.search-input:focus{border-color:var(--primary)}
-.search-btn{padding:11px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
-.search-btn:hover{background:#1e40af}.search-btn:disabled{opacity:.5;cursor:not-allowed}
-.quick-tax{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
-.quick-tax button{padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:var(--card);font-size:12px;cursor:pointer;transition:all .12s}
-.quick-tax button:hover{background:var(--plight);border-color:var(--primary)}
-.quick-tax button .t{display:block;font-weight:600;font-size:13px}
-.quick-tax button .s{display:block;font-size:10px;color:var(--t2)}
-.filters{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;align-items:center}
-.filter-group{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--t2)}
-.filter-group select,.filter-group input{padding:5px 8px;border:1px solid var(--border);border-radius:5px;font-size:12px;outline:none;background:#fff}
-.filter-group select:focus{border-color:var(--primary)}
-.guidance-toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--primary);cursor:pointer;margin-top:8px;width:fit-content}
-.guidance-toggle:hover{text-decoration:underline}
+/* ── Search Box (red accent) ── */
+.search-box{
+  display:flex;
+  max-width:520px;
+  margin:0 auto;
+  border:2px solid var(--accent);
+  transition:box-shadow .2s;
+}
+.search-box:focus-within{
+  box-shadow:0 0 0 3px rgba(220,38,38,.12);
+}
+.search-input{
+  flex:1;min-width:0;
+  padding:13px 16px;
+  border:none;
+  font-size:15px;
+  outline:none;
+  background:var(--white);
+  color:var(--black);
+}
+.search-input::placeholder{color:var(--g400)}
+.search-btn{
+  padding:13px 24px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  letter-spacing:2px;
+  transition:opacity .15s;
+  white-space:nowrap;
+}
+.search-btn:hover{opacity:.88}
+.search-btn:disabled{opacity:.35;cursor:not-allowed}
+
+/* ── Subtitle ── */
+.hero-subtitle{
+  font-size:13px;
+  color:var(--g400);
+  margin-top:18px;
+  letter-spacing:1px;
+  transition:opacity .4s;
+}
+.hero.compact .hero-subtitle{display:none}
+
+/* ── Quick Tax (text links) ── */
+.quick-tax{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:6px;
+  margin-top:18px;
+  transition:opacity .3s;
+}
+.hero.compact .quick-tax{margin-top:10px}
+.quick-tax button{
+  padding:8px 4px;
+  border:1px solid var(--g200);
+  background:var(--white);
+  font-size:13px;
+  font-weight:600;
+  color:var(--g600);
+  cursor:pointer;
+  border-radius:6px;
+  transition:all .12s;
+  text-align:center;
+}
+.quick-tax button:hover{
+  border-color:var(--black);
+  color:var(--black);
+  background:var(--g50);
+}
+
+/* ── Toggle links ── */
+.toggle-row{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:14px;
+  font-size:12.5px;
+}
+.toggle-row span{
+  color:var(--g400);
+  cursor:pointer;
+  transition:color .12s;
+  letter-spacing:.5px;
+  user-select:none;
+}
+.toggle-row span:hover{color:var(--black)}
+
+/* ── Filters bar ── */
+.filters-bar{
+  max-width:var(--readable);
+  margin:0 auto;
+  padding:12px 16px 16px;
+  display:none;
+  flex-wrap:wrap;
+  gap:8px 14px;
+  align-items:center;
+  border-bottom:1px solid var(--g100);
+}
+.filters-bar.open{display:flex}
+.filter-group{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  font-size:12px;
+  color:var(--g500);
+}
+.filter-group select,.filter-group input{
+  padding:4px 8px;
+  border:1px solid var(--g200);
+  border-radius:2px;
+  font-size:12px;
+  outline:none;
+  background:var(--white);
+  color:var(--black);
+  font-family:inherit;
+}
+.filter-group select:focus,.filter-group input:focus{
+  border-color:var(--black);
+}
 
 /* ── Results ── */
-.meta-bar{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:12px;color:var(--t2);flex-wrap:wrap}
-.tag{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
-.tag-intent{background:#ede9fe;color:#7c3aed}.tag-source{background:var(--plight);color:var(--primary)}
-.tag-time{background:#f3f4f6;color:#6b7280}.tag-count{background:var(--gbg);color:var(--green)}
-.result-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 20px;margin-bottom:10px;border-left:4px solid transparent;cursor:pointer;transition:all .15s}
-.result-card:hover{border-left-color:var(--primary);box-shadow:0 2px 8px #00000012}
-.result-card .title{font-size:15px;font-weight:600;margin-bottom:6px}
-.result-card .meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--t2)}
-.result-card .meta span{display:inline-flex;align-items:center;gap:3px}
-.result-card .id-row{font-size:10.5px;color:var(--t3);font-family:monospace;margin-top:4px}
-.status-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
-.s-effective{background:var(--gbg);color:var(--green)}.s-amended{background:var(--ybg);color:var(--yellow)}
-.s-abolished{background:var(--rbg);color:var(--red)}.s-pending{background:var(--plight);color:var(--primary)}
-.empty-state,.loading-state{text-align:center;padding:50px 20px;color:var(--t2)}
-.empty-state .icon{font-size:40px;margin-bottom:10px}
-.loading-spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 14px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.source-label{display:inline-flex;align-items:center;gap:2px;padding:1px 7px;border-radius:4px;font-size:10.5px;font-weight:600}
-.src-npc{background:#dbeafe;color:#1e40af}.src-chinatax{background:#fef3c7;color:#92400e}.src-anysearch{background:#f3f4f6;color:#6b7280}
+.results-area{padding:0 20px 60px;max-width:var(--readable);margin:0 auto}
+.meta-bar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 0;
+  font-size:12px;
+  color:var(--g500);
+  flex-wrap:wrap;
+  border-bottom:1px solid var(--g100);
+}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+  padding:2px 8px;
+  border:1px solid var(--g200);
+  border-radius:2px;
+  font-size:11px;
+  color:var(--g600);
+}
+.tag-intent{border-color:var(--g300);color:var(--g700)}
+.tag-source{border-color:var(--g300);color:var(--g700)}
+.tag-time{border-color:var(--g200);color:var(--g500)}
+.tag-count{border-color:var(--g200);color:var(--g700);font-weight:600}
 
-/* ── MODAL ── */
-.modal-overlay{position:fixed;inset:0;background:#00000080;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeIn .2s}
+.source-label{
+  display:inline-flex;align-items:center;gap:2px;
+  padding:1px 6px;border:1px solid var(--g200);
+  border-radius:2px;font-size:10.5px;
+}
+.src-npc{border-color:var(--g300)}
+.src-chinatax{border-color:var(--g300)}
+.src-anysearch{border-color:var(--g300)}
+
+.result-card{
+  padding:16px 0;
+  border-bottom:1px solid var(--g100);
+  cursor:pointer;
+  transition:background .12s;
+}
+.result-card:hover{background:var(--g50);margin:0 -12px;padding:16px 12px;border-bottom-color:var(--g200)}
+.result-card .title{font-size:15px;font-weight:600;margin-bottom:5px;line-height:1.5}
+.result-card .meta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  font-size:12px;
+  color:var(--g500);
+}
+.result-card .meta span{display:inline-flex;align-items:center;gap:3px}
+.result-card .id-row{font-size:10.5px;color:var(--g400);font-family:monospace;margin-top:3px}
+
+.status-badge{
+  display:inline-flex;align-items:center;gap:3px;
+  padding:2px 7px;border:1px solid var(--g200);
+  border-radius:2px;font-size:11px;font-weight:500;
+}
+.s-effective{border-color:var(--g300);color:var(--g700)}
+.s-amended{border-color:var(--g300);color:var(--g600)}
+.s-abolished{border-color:var(--g300);color:var(--g500)}
+.s-pending{border-color:var(--g300);color:var(--g600)}
+
+.empty-state,.loading-state{text-align:center;padding:60px 20px;color:var(--g500)}
+.empty-state p{color:var(--g400)}
+.loading-spinner{
+  width:28px;height:28px;
+  border:2px solid var(--g200);
+  border-top-color:var(--black);
+  border-radius:50%;
+  animation:spin .7s linear infinite;
+  margin:0 auto 12px;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Modal ── */
+.modal-overlay{
+  position:fixed;inset:0;
+  background:#00000060;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  animation:fadeIn .2s;
+}
 @keyframes fadeIn{from{opacity:0}}
-.modal{background:#fff;border-radius:12px;width:100%;max-width:900px;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 20px 60px #00000030}
-.modal-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border);flex-shrink:0}
-.modal-header h2{font-size:16px;margin:0;flex:1;padding-right:12px}
-.modal-header .close-btn{width:32px;height:32px;border:none;background:none;font-size:22px;cursor:pointer;border-radius:6px;color:var(--t2)}
-.modal-header .close-btn:hover{background:var(--bg)}
+.modal{
+  background:var(--white);
+  border:1px solid var(--g200);
+  width:100%;
+  max-width:820px;
+  max-height:88vh;
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 8px 40px rgba(0,0,0,.08);
+}
+.modal-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;border-bottom:1px solid var(--g200);flex-shrink:0;
+}
+.modal-header h2{font-size:15px;margin:0;flex:1;padding-right:12px;font-weight:600}
+.modal-header .close-btn{
+  width:32px;height:32px;border:none;background:none;
+  font-size:20px;cursor:pointer;border-radius:2px;color:var(--g500);
+}
+.modal-header .close-btn:hover{background:var(--g50)}
 .modal-body{flex:1;overflow-y:auto;padding:0;font-size:14px;line-height:1.9;min-height:300px;position:relative}
 .modal-body .tab-panel{display:none;min-height:300px}
 .modal-body .tab-panel.active{display:block}
 .modal-body .body-padded{padding:16px 24px}
-.modal-footer{display:flex;gap:8px;padding:12px 20px;border-top:1px solid var(--border);flex-shrink:0;justify-content:flex-end}
-.modal-footer button{padding:7px 16px;border:1px solid var(--border);border-radius:6px;font-size:13px;cursor:pointer;background:#fff}
-.modal-footer button.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.modal-footer{
+  display:flex;gap:8px;padding:10px 20px;
+  border-top:1px solid var(--g200);flex-shrink:0;justify-content:flex-end;
+}
+.modal-footer button{
+  padding:6px 16px;border:1px solid var(--g200);
+  border-radius:2px;font-size:12.5px;cursor:pointer;background:var(--white);
+}
+.modal-footer button:hover{background:var(--g50)}
+.modal-footer button.primary{
+  background:var(--black);color:#fff;border-color:var(--black);
+}
+.modal-footer button.primary:hover{background:var(--g800)}
 
-/* ── Tabs ── */
-.modal-tabs{display:flex;border-bottom:2px solid var(--border);flex-shrink:0;padding:0 20px;background:#fafafa}
-.modal-tabs .tab-btn{padding:10px 18px;border:none;background:none;font-size:13.5px;font-weight:500;color:var(--t2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s}
-.modal-tabs .tab-btn:hover{color:var(--text)}
-.modal-tabs .tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);font-weight:600}
+/* ── Modal Tabs ── */
+.modal-tabs{
+  display:flex;border-bottom:1px solid var(--g200);
+  flex-shrink:0;padding:0 20px;background:var(--g50);
+}
+.modal-tabs .tab-btn{
+  padding:9px 16px;border:none;background:none;
+  font-size:13px;font-weight:500;color:var(--g500);
+  cursor:pointer;border-bottom:2px solid transparent;
+  margin-bottom:-1px;transition:all .15s;
+}
+.modal-tabs .tab-btn:hover{color:var(--black)}
+.modal-tabs .tab-btn.active{color:var(--black);border-bottom-color:var(--black);font-weight:600}
 
 /* ── Tab: Law Text ── */
-.modal-body mark{background:#fef08a;color:#854d0e;padding:0 2px;border-radius:2px}
-.modal-body .chapter{font-weight:700;font-size:15px;margin:20px 0 10px;color:var(--primary);padding-bottom:4px;border-bottom:1px solid var(--border)}
+.modal-body mark{background:#f5f5f5;color:var(--black);padding:0 2px;border-radius:1px;font-weight:600}
+.modal-body .chapter{font-weight:700;font-size:14px;margin:18px 0 8px;color:var(--black);padding-bottom:3px;border-bottom:1px solid var(--g100)}
 .modal-body .chapter:first-child{margin-top:0}
-.modal-body .article{font-weight:600;margin:14px 0 4px;color:#1f2937}
-.modal-body .body-text{margin:2px 0;color:#374151;text-indent:2em}
-.modal-body .meta-note{background:#f9fafb;padding:12px 16px;border-radius:6px;margin-bottom:16px;font-size:12px;color:var(--t2);display:flex;gap:16px;flex-wrap:wrap}
+.modal-body .article{font-weight:600;margin:12px 0 3px;color:var(--g800)}
+.modal-body .body-text{margin:2px 0;color:var(--g700);text-indent:2em}
+.modal-body .meta-note{
+  background:var(--g50);padding:10px 16px;margin-bottom:14px;
+  font-size:12px;color:var(--g500);display:flex;gap:14px;flex-wrap:wrap;
+}
 
 /* ── Tab: Interpretations ── */
-.interp-card{display:block;padding:14px 18px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);transition:background .12s}
-.interp-card:hover{background:#f9fafb}
-.interp-card .it{font-size:14px;font-weight:600;color:var(--primary);margin-bottom:4px}
-.interp-card .im{font-size:12px;color:var(--t2);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.interp-card .is{display:inline-flex;align-items:center;gap:2px;padding:1px 7px;border-radius:4px;font-size:10.5px;font-weight:600}
-.is-official{background:var(--gbg);color:var(--green)}.is-practical{background:#fef3c7;color:#92400e}.is-web{background:#f3f4f6;color:#6b7280}
-.interp-empty{text-align:center;padding:40px 20px;color:var(--t2)}
+.interp-card{
+  display:block;padding:14px 18px;
+  border-bottom:1px solid var(--g100);
+  text-decoration:none;color:var(--black);transition:background .12s;
+}
+.interp-card:hover{background:var(--g50)}
+.interp-card .it{font-size:13.5px;font-weight:600;margin-bottom:3px}
+.interp-card .im{font-size:12px;color:var(--g500);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.interp-card .is{
+  display:inline-flex;align-items:center;gap:2px;
+  padding:1px 6px;border:1px solid var(--g200);
+  border-radius:2px;font-size:10.5px;
+}
+.is-official{border-color:var(--g300);color:var(--g700)}
+.is-practical{border-color:var(--g300);color:var(--g700)}
+.is-web{border-color:var(--g200);color:var(--g500)}
+.interp-empty{text-align:center;padding:40px 20px;color:var(--g500)}
 
-/* ── GUIDANCE PANEL ── */
-.guidance-panel{position:fixed;top:0;right:0;bottom:0;width:var(--panel-w);background:#fff;box-shadow:-2px 0 12px #00000010;z-index:500;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .25s}
+/* ── Guidance Panel ── */
+.guidance-panel{
+  position:fixed;top:0;right:0;bottom:0;
+  width:var(--panel-w);
+  background:var(--white);
+  border-left:1px solid var(--g200);
+  z-index:500;
+  display:flex;
+  flex-direction:column;
+  transform:translateX(100%);
+  transition:transform .25s;
+}
 .guidance-panel.open{transform:translateX(0)}
-.guidance-panel .gp-header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--border);flex-shrink:0}
-.guidance-panel .gp-header h3{font-size:16px}
+.guidance-panel .gp-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;border-bottom:1px solid var(--g200);flex-shrink:0;
+}
+.guidance-panel .gp-header h3{font-size:15px;font-weight:600}
 .guidance-panel .gp-body{flex:1;overflow-y:auto;padding:18px}
-.guidance-panel .gp-body .step{margin-bottom:20px}
-.guidance-panel .gp-body .step-label{font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.guidance-panel .gp-body .step{margin-bottom:18px}
+.guidance-panel .gp-body .step-label{
+  font-size:10.5px;color:var(--g400);
+  text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;
+}
 .guidance-panel .gp-body .step-question{font-size:14px;font-weight:600;margin-bottom:10px}
-.guidance-panel .gp-body .choice-grid{display:flex;flex-wrap:wrap;gap:6px}
-.guidance-panel .gp-body .choice{flex:1 1 calc(50% - 6px);min-width:100px;padding:14px 10px;border:2px solid var(--border);border-radius:8px;text-align:center;cursor:pointer;font-size:14px;transition:all .12s;background:#fff}
-.guidance-panel .gp-body .choice:hover{border-color:var(--primary);background:var(--plight)}
-.guidance-panel .gp-body .choice.picked{border-color:var(--primary);background:var(--plight);font-weight:600}
-.guidance-panel .gp-body .choice .ci{font-size:22px;display:block;margin-bottom:4px}
-.guidance-panel .gp-body .choice .cl{display:block;font-size:12px;color:var(--t2);margin-top:2px}
-.guidance-panel .gp-footer{padding:14px 18px;border-top:1px solid var(--border);flex-shrink:0}
-.guidance-panel .gp-footer button{width:100%;padding:10px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer}
-.guidance-panel .gp-footer button:disabled{opacity:.4;cursor:not-allowed}
-.guidance-panel .gp-footer button:hover:not(:disabled){background:#1e40af}
-.guidance-panel .gp-footer .reset{background:none;color:var(--t2);font-size:12px;margin-top:6px;width:100%}
-.guidance-panel .gp-footer .reset:hover{color:var(--text)}
+.guidance-panel .gp-body .choice-grid{display:flex;flex-wrap:wrap;gap:5px}
+.guidance-panel .gp-body .choice{
+  flex:1 1 calc(50% - 5px);min-width:90px;
+  padding:12px 8px;
+  border:1px solid var(--g200);
+  border-radius:2px;
+  text-align:center;cursor:pointer;font-size:13px;
+  transition:all .12s;background:var(--white);color:var(--g600);
+}
+.guidance-panel .gp-body .choice:hover{border-color:var(--black);color:var(--black)}
+.guidance-panel .gp-body .choice.picked{border-color:var(--black);background:var(--g50);color:var(--black);font-weight:600}
+.guidance-panel .gp-body .choice .ci{font-size:18px;display:block;margin-bottom:2px}
+.guidance-panel .gp-body .choice .cl{display:block;font-size:11px;color:var(--g400);margin-top:2px}
+.guidance-panel .gp-footer{padding:12px 18px;border-top:1px solid var(--g200);flex-shrink:0}
+.guidance-panel .gp-footer button{
+  width:100%;padding:9px;
+  background:var(--black);color:#fff;
+  border:none;font-size:14px;font-weight:600;cursor:pointer;
+}
+.guidance-panel .gp-footer button:disabled{opacity:.3;cursor:not-allowed}
+.guidance-panel .gp-footer button:hover:not(:disabled){background:var(--g800)}
+.guidance-panel .gp-footer .reset{
+  background:none;color:var(--g500);font-size:12px;margin-top:4px;width:100%;
+}
+.guidance-panel .gp-footer .reset:hover{color:var(--black);background:none}
 
+/* ── Footer ── */
+.page-footer{
+  text-align:center;
+  padding:28px 20px 20px;
+  font-size:11px;
+  color:var(--g400);
+  letter-spacing:.3px;
+  border-top:1px solid var(--g50);
+  margin-top:20px;
+}
+.page-footer a{color:var(--g500);text-decoration:none}
+.page-footer a:hover{color:var(--black)}
+
+/* ── Responsive ── */
 @media(max-width:800px){
+  .hero{padding:60px 16px 28px}
+  .hero.compact{padding:24px 16px 12px}
+  .hero-title{font-size:clamp(24px,6vw,36px);letter-spacing:4px}
+  .search-box{max-width:100%}
+  .search-input{padding:11px 14px;font-size:14px}
+  .search-btn{padding:11px 18px;font-size:13px}
+  .quick-tax{grid-template-columns:repeat(3,1fr);gap:4px}
+  .quick-tax button{padding:6px 4px;font-size:12px}
+  .filters-bar{gap:6px 10px;padding:10px 12px}
   .guidance-panel{width:100%}
-  .search-row{flex-direction:column}.filters{flex-direction:column;align-items:flex-start}
-  .container{padding:10px}.search-card{padding:14px}
-  .modal{max-width:100%;max-height:95vh;margin:10px}
+  .results-area{padding:0 12px 40px}
+  .modal{max-width:100%;max-height:95vh;margin:8px;border:none}
   .modal-body .body-padded{padding:12px 16px}
+  .modal-tabs{overflow-x:auto;padding:0 12px}
+  .modal-tabs .tab-btn{padding:8px 12px;font-size:12px}
+  .toggle-row{flex-direction:column;gap:6px;align-items:center}
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>财税政策实时搜索引擎</h1>
-  <p>NPC 国家法律法规数据库 · 国家税务总局 · 18 个税种全覆盖 · 实时查询</p>
-  <div class="badges">
-    <span class="badge">实时查询</span><span class="badge">法律/行政法规</span>
-    <span class="badge">部门规章</span><span class="badge">官方解读</span><span class="badge">法规原文</span>
-  </div>
-</div>
+<!-- ═══ HERO ═══ -->
+<div class="hero" id="heroSection">
+  <div class="hero-inner">
+    <div class="hero-logo">
+      <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+        <rect x="4" y="4" width="32" height="32" rx="3" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="10" y1="14" x2="30" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="10" y1="20" x2="30" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="10" y1="26" x2="22" y2="26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
 
-<div class="app">
-<div class="main" id="mainContent">
-<div class="container">
+    <h1 class="hero-title">规则的起点</h1>
 
-  <div class="search-card">
-    <div class="search-row">
+    <div class="search-box">
       <input type="text" class="search-input" id="searchInput"
-        placeholder="输入税收政策关键词…如：小微企业增值税优惠、研发费用加计扣除比例…" autofocus>
+        placeholder="搜索税收政策关键词…" autofocus>
       <button class="search-btn" id="searchBtn" onclick="doSearch()">搜索</button>
     </div>
+
+    <p class="hero-subtitle">数据源自国家法规库 · 实时同步 · 现行有效</p>
+
     <div class="quick-tax" id="quickTax"></div>
-    <div class="filters">
-      <div class="filter-group"><label>范围</label><select id="filterScope"><option value="title">标题</option><option value="fulltext" selected>全文</option></select></div>
-      <div class="filter-group"><label>匹配</label><select id="filterType"><option value="fuzzy">模糊</option><option value="exact">精确</option></select></div>
-      <div class="filter-group"><label>时效</label><select id="filterStatus"><option value="3" selected>现行有效</option><option value="">全部</option></select></div>
-      <div class="filter-group"><label>排序</label><select id="filterSort"><option value="relevance">相关度</option><option value="date">日期↓</option></select></div>
-      <div class="filter-group"><label>数据源</label><select id="filterSource"><option value="npc">NPC法规库</option><option value="aggregated">多源聚合</option><option value="chinatax">税务总局</option></select></div>
-      <div class="filter-group"><label>省份</label><select id="filterProvince"><option value="">全国</option></select></div>
-      <div class="filter-group"><label>日期</label><input type="date" id="filterDateFrom">—<input type="date" id="filterDateTo"></div>
+
+    <div class="toggle-row">
+      <span onclick="toggleFilters()">高级筛选 ▾</span>
+      <span onclick="toggleGuidance()">智能引导</span>
     </div>
-    <div class="guidance-toggle" onclick="toggleGuidance()">💡 不确定查什么？打开智能引导</div>
   </div>
+</div>
 
+<!-- ═══ FILTERS ═══ -->
+<div class="filters-bar" id="filtersBar">
+  <div class="filter-group"><label>范围</label><select id="filterScope"><option value="title">标题</option><option value="fulltext" selected>全文</option></select></div>
+  <div class="filter-group"><label>匹配</label><select id="filterType"><option value="fuzzy">模糊</option><option value="exact">精确</option></select></div>
+  <div class="filter-group"><label>时效</label><select id="filterStatus"><option value="3" selected>现行有效</option><option value="">全部</option></select></div>
+  <div class="filter-group"><label>排序</label><select id="filterSort"><option value="relevance">相关度</option><option value="date">日期↓</option></select></div>
+  <div class="filter-group"><label>数据源</label><select id="filterSource"><option value="npc">NPC法规库</option><option value="aggregated">多源聚合</option><option value="chinatax">税务总局</option></select></div>
+  <div class="filter-group"><label>省份</label><select id="filterProvince"><option value="">全国</option></select></div>
+  <div class="filter-group"><label>日期</label><input type="date" id="filterDateFrom">—<input type="date" id="filterDateTo"></div>
+</div>
+
+<!-- ═══ RESULTS ═══ -->
+<div class="results-area">
   <div id="resultsContainer"></div>
-
-</div>
 </div>
 
+<!-- ═══ FOOTER ═══ -->
+<div class="page-footer">
+  数据源：<a href="https://flk.npc.gov.cn" target="_blank" rel="noopener">国家法律法规数据库</a> ·
+  <a href="https://www.chinatax.gov.cn" target="_blank" rel="noopener">国家税务总局</a> ·
+  财税实务公众号<br>
+  搜索结果仅供参考，以官方发布为准
+</div>
+
+<!-- ═══ GUIDANCE PANEL ═══ -->
 <div class="guidance-panel" id="guidancePanel">
-  <div class="gp-header"><h3>💡 政策需求引导</h3><button style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--t2)" onclick="toggleGuidance()">✕</button></div>
+  <div class="gp-header">
+    <h3>智能引导</h3>
+    <button style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--g500)" onclick="toggleGuidance()">✕</button>
+  </div>
   <div class="gp-body" id="guideBody"></div>
   <div class="gp-footer" id="guideFooter"></div>
 </div>
 
+<!-- ═══ MODAL ═══ -->
 <div id="modalOverlay" class="modal-overlay" style="display:none" onclick="if(event.target===this)closeModal()"></div>
-
-</div>
 
 <script>
 /* ═══════════ STATE ═══════════ */
@@ -197,14 +517,24 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
 });
 
+/* ═══════════ GARBAGE FILTER ═══════════ */
+const _GARBAGE_TITLES=['游戏','小游戏','攻略','视频','电影','电视剧','综艺','下载','app下载','安装','破解','会员','充值','美女','八卦','娱乐','体育','足球','NBA','4399','7k7k'];
+function _isGarbage(title){for(const k of _GARBAGE_TITLES){if((title||'').includes(k))return true;}return false;}
+
+/* ═══════════ TOGGLES ═══════════ */
+function toggleFilters(){
+  const bar=document.getElementById('filtersBar');
+  bar.classList.toggle('open');
+}
+
 /* ═══════════ QUICK TAX ═══════════ */
 async function loadQuickTax(){
   try{const types=await fetchWithRetry('/api/quick-tax-types');
   document.getElementById('quickTax').innerHTML=types.map(t=>
-    `<button onclick="pickTax('${t.keyword}')"><span class="t">${t.icon} ${t.label}</span><span class="s">${t.keyword}</span></button>`
+    `<button onclick="pickTax('${t.keyword}')">${t.label}</button>`
   ).join('');
   }catch(e){
-    document.getElementById('quickTax').innerHTML='<span style="font-size:12px;color:var(--t3)">快捷税种加载中…</span>';
+    document.getElementById('quickTax').innerHTML='<span style="font-size:12px;color:var(--g400)">加载中…</span>';
   }
 }
 function pickTax(kw){document.getElementById('searchInput').value=kw;document.getElementById('searchInput').focus();}
@@ -217,7 +547,6 @@ async function loadProvinces(){
 
 /* ═══════════ SEARCH ═══════════ */
 async function fetchWithRetry(url,opts={},retries=3,delay=800){
-  // Auto-retry on network errors + empty responses (serveo tunnel instability)
   for(let i=0;i<retries;i++){
     try{
       const r=await fetch(url,opts);
@@ -234,7 +563,7 @@ async function fetchWithRetry(url,opts={},retries=3,delay=800){
       if(e.name==='TypeError'||e.message.includes('Failed to fetch')||e.message.includes('NetworkError')){
         if(i<retries-1){
           const c=document.getElementById('resultsContainer');
-          c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>连接不稳定，正在重试…</p><p style="font-size:12px;color:var(--t3)">第 ${i+2}/${retries} 次尝试</p></div>`;
+          c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>连接不稳定，正在重试…</p><p style="font-size:12px;color:var(--g400)">第 ${i+2}/${retries} 次尝试</p></div>`;
           await new Promise(x=>setTimeout(x,delay*(i+1)));
           continue;
         }
@@ -249,7 +578,7 @@ async function fetchWithRetry(url,opts={},retries=3,delay=800){
 async function doSearch(){
   const keyword=document.getElementById('searchInput').value.trim();if(!keyword)return;
   const c=document.getElementById('resultsContainer'),btn=document.getElementById('searchBtn');
-  c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>实时查询中…</p><p style="font-size:12px;color:var(--t3)">"${esc(keyword)}"</p></div>`;
+  c.innerHTML=`<div class="loading-state"><div class="loading-spinner"></div><p>正在查询…</p><p style="font-size:12px;color:var(--g400)">"${esc(keyword)}"</p></div>`;
   btn.disabled=true;btn.textContent='查询中…';
   try{
     const payload={
@@ -263,9 +592,10 @@ async function doSearch(){
       date_to:document.getElementById('filterDateTo').value||null,
     };
     const data=await fetchWithRetry('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    lastResults=data.result?.results||data.result?.items||[];lastKeyword=keyword;
+    lastResults=(data.result?.results||data.result?.items||[]).filter(function(r){return !_isGarbage(r.title);});lastKeyword=keyword;
     renderResults(data);
-  }catch(e){c.innerHTML=`<div class="empty-state"><div class="icon">⚠️</div><p><b>查询失败</b></p><p style="font-size:13px">${esc(e.message)}</p><p style="font-size:12px;margin-top:8px;color:var(--t3)">已自动重试 3 次 · 请稍后再试</p></div>`}
+    document.getElementById('heroSection').classList.add('compact');
+  }catch(e){c.innerHTML=`<div class="empty-state"><div class="icon" style="font-size:28px;margin-bottom:8px">—</div><p><b>查询失败</b></p><p style="font-size:13px;color:var(--g400)">${esc(e.message)}</p><p style="font-size:12px;margin-top:8px;color:var(--g400)">已自动重试 3 次 · 请稍后再试</p></div>`}
   finally{btn.disabled=false;btn.textContent='搜索';}
 }
 
@@ -284,22 +614,22 @@ function renderResults(data){
     h+='<div class="meta-bar">';
     if(data.intent_label)h+=`<span class="tag tag-intent">🎯 ${data.intent_label}</span>`;
     if(data.tax_type)h+=`<span class="tag tag-source">📂 ${data.tax_type}</span>`;
-    if(data.province)h+=`<span class="tag" style="background:#fef3c7;color:#92400e">📍 ${getProvinceName(data.province)}</span>`;
+    if(data.province)h+=`<span class="tag" style="border-color:var(--g300);color:var(--g700)">📍 ${getProvinceName(data.province)}</span>`;
     h+=`<span class="tag tag-count">📋 ${total}条</span>`;
     if(searchedAt)h+=`<span class="tag tag-time">🕐 ${searchedAt}${cacheTag}</span>`;
     h+='</div>';
   }
   if(result?.source_summary){const s=result.source_summary;h+='<div class="meta-bar">';if(s.npc)h+=`<span class="source-label src-npc">📜 NPC ${s.npc}条</span>`;if(s.chinatax)h+=`<span class="source-label src-chinatax">🏛️ 总局 ${s.chinatax}条</span>`;if(s.anysearch)h+=`<span class="source-label src-anysearch">🌐 网页 ${s.anysearch}条</span>`;h+='</div>';}
-  if(items.length===0){h+=`<div class="empty-state"><div class="icon">🔍</div><p><b>未找到相关政策</b></p><p style="font-size:13px">关键词:"${esc(data.keyword)}"</p><p style="font-size:12px;margin-top:8px;color:var(--t3)">试试更宽泛的关键词 / 切换到"全文"搜索 / 使用"多源聚合"模式</p></div>`;}
+  if(items.length===0){h+=`<div class="empty-state"><div style="font-size:28px;margin-bottom:8px">🔍</div><p><b>未找到相关政策</b></p><p style="font-size:13px;color:var(--g400)">关键词:"${esc(data.keyword)}"</p><p style="font-size:12px;margin-top:8px;color:var(--g400)">试试更宽泛的关键词 / 切换到"全文"搜索 / 使用"多源聚合"模式</p></div>`;}
 
   items.forEach((item,i)=>{
     const sc=statusMap[item.status_code]||'',st=highlightText(item.title,lastKeyword),sid=item.id||'',rawTitle=esc(item.title);
     h+=`<div class="result-card" onclick="viewLaw('${sid}','${rawTitle.replace(/'/g,"\\'")}')">
-      <div class="title"><span style="font-size:11px;color:var(--t3)">#${i+1}</span> ${item._source?`<span class="source-label src-${item._source}">${srcIcons[item._source]||''} ${srcLabels[item._source]||''}</span>`:''}${st}</div>
+      <div class="title"><span style="font-size:11px;color:var(--g400);margin-right:6px">#${i+1}</span> ${item._source?`<span class="source-label src-${item._source}">${srcIcons[item._source]||''} ${srcLabels[item._source]||''}</span>`:''}${st}</div>
       <div class="meta">${item.status_code?`<span><span class="status-badge ${sc}">${statusIcons[item.status_code]||'❓'} ${statusNames[item.status_code]||item.status}</span></span>`:''}${item.publish_date?`<span>📅 公布:${item.publish_date}</span>`:''}${item.effective_date?`<span>施行:${item.effective_date}</span>`:''}${item.issuing_authority?`<span>🏛️ ${esc(item.issuing_authority)}</span>`:''}</div>
       <div class="id-row">NPC ID: ${sid}</div></div>`;
   });
-  if(total>items.length)h+=`<p style="text-align:center;font-size:12px;color:var(--t2);margin-top:10px">显示前${items.length}条，共${total}条 · 缩小搜索范围以获取更精确结果</p>`;
+  if(total>items.length)h+=`<p style="text-align:center;font-size:12px;color:var(--g400);margin-top:12px">显示前${items.length}条，共${total}条 · 缩小搜索范围以获取更精确结果</p>`;
   c.innerHTML=h;
 }
 
@@ -318,7 +648,7 @@ function renderLawTextTab(data,bbbsId,title){
 /* ═══════════ INTERPRETATIONS TAB ═══════════ */
 async function loadInterpretationsTab(bbbsId){
   const c=document.getElementById('tabInterpContent');
-  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索官方政策解读…</p><p style="font-size:12px;color:var(--t3)">chinatax.gov.cn · mof.gov.cn · gov.cn</p></div>`;
+  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索官方政策解读…</p><p style="font-size:12px;color:var(--g400)">chinatax.gov.cn · mof.gov.cn · gov.cn</p></div>`;
   try{
     const data=await fetchWithRetry(`/api/interpretations/${bbbsId}?keyword=${encodeURIComponent(lastKeyword)}&province=${encodeURIComponent(document.getElementById('filterProvince').value)}`);
     if(data.error)throw new Error(data.error);
@@ -333,10 +663,10 @@ async function loadInterpretationsTab(bbbsId){
           <div class="im">
             <span class="is ${badgeClass}">${badge}</span>
             <span>${esc(item.source_label||item.source)}</span>${item.date?`<span>${item.date}</span>`:''}
-            ${item.url?`<span style="color:var(--primary)">🔗 查看 →</span>`:''}
+            ${item.url?`<span style="color:var(--g600)">🔗 查看 →</span>`:''}
           </div></a>`;
       });
-    }else{h='<div class="interp-empty"><div class="icon">📭</div><p><b>未找到官方解读</b></p><p style="font-size:13px;margin-top:4px">该法规可能暂无公开的政策解读文件</p></div>';}
+    }else{h='<div class="interp-empty"><div style="font-size:24px;margin-bottom:8px">📭</div><p><b>未找到官方解读</b></p><p style="font-size:13px;margin-top:4px;color:var(--g400)">该法规可能暂无公开的政策解读文件</p></div>';}
     c.innerHTML=h;
   }catch(e){c.innerHTML=`<div class="interp-empty">⚠️ 搜索失败: ${esc(e.message)}</div>`;}
 }
@@ -344,13 +674,13 @@ async function loadInterpretationsTab(bbbsId){
 /* ═══════════ WEB RELATED TAB ═══════════ */
 async function loadWebRelatedTab(bbbsId,title){
   const c=document.getElementById('tabWebContent');
-  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索实务参考与解读…</p><p style="font-size:12px;color:var(--t3)">小颖言税 · 税海涛声 · 会计网 · 税小课 · 朴税 + 网络补充</p></div>`;
+  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">正在搜索实务参考与解读…</p><p style="font-size:12px;color:var(--g400)">小颖言税 · 税海涛声 · 会计网 · 税小课 · 朴税 + 网络补充</p></div>`;
   try{
     const data=await fetchWithRetry(`/api/web-related/${bbbsId}?keyword=${encodeURIComponent(title+' '+lastKeyword)}`);
     if(data.error)throw new Error(data.error);
     let h='';
     if(data.sources&&data.sources.length>0){
-      h+=`<div style="padding:12px 20px;font-size:12px;color:var(--t2);background:#fafafa;border-bottom:1px solid var(--border)">🔎 搜索结果: ${data.total}条 · ${data.searched_at||''}</div>`;
+      h+=`<div style="padding:10px 20px;font-size:12px;color:var(--g500);background:var(--g50);border-bottom:1px solid var(--g100)">🔎 搜索结果: ${data.total}条 · ${data.searched_at||''}</div>`;
       data.sources.forEach(item=>{
         const practiceNames=['小颖言税','税海涛声','会计网','税小课','朴税'];
         const isPractice=practiceNames.includes(item.source_label);
@@ -361,20 +691,20 @@ async function loadWebRelatedTab(bbbsId,title){
           <div class="it">${esc(item.title)}</div>
           <div class="im">
             <span class="is ${badgeClass}">${badge}</span>${item.date?`<span>${item.date}</span>`:''}
-            ${item.snippet?`<span style="color:var(--t2);font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(item.snippet)}</span>`:''}
-            ${item.url?`<span style="color:var(--primary)">🔗 查看 →</span>`:''}
+            ${item.snippet?`<span style="color:var(--g500);font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(item.snippet)}</span>`:''}
+            ${item.url?`<span style="color:var(--g600)">🔗 查看 →</span>`:''}
           </div></a>`;
       });
     }else{
-      h=`<div class="interp-empty"><div class="icon">🌐</div><p><b>未找到相关网页</b></p><p style="font-size:13px;margin-top:4px">可尝试以下途径：</p>
-        <div style="text-align:left;max-width:400px;margin:12px auto;font-size:13px;color:var(--t2)">
-          <p>🔗 <a href="https://www.chinatax.gov.cn/chinatax/n810341/n810755/index.html" target="_blank" style="color:var(--primary)">国家税务总局 - 政策法规库</a></p>
-          <p>🔗 <a href="https://flk.npc.gov.cn" target="_blank" style="color:var(--primary)">国家法律法规数据库</a></p>
+      h=`<div class="interp-empty"><div style="font-size:28px;margin-bottom:8px">🌐</div><p><b>未找到相关网页</b></p><p style="font-size:13px;margin-top:4px;color:var(--g400)">可尝试以下途径：</p>
+        <div style="text-align:left;max-width:400px;margin:12px auto;font-size:13px;color:var(--g500)">
+          <p>🔗 <a href="https://www.chinatax.gov.cn/chinatax/n810341/n810755/index.html" target="_blank" style="color:var(--g700)">国家税务总局 — 政策法规库</a></p>
+          <p>🔗 <a href="https://flk.npc.gov.cn" target="_blank" style="color:var(--g700)">国家法律法规数据库</a></p>
           <p>📞 税务服务热线: <b>12366</b></p>
         </div>`;
     }
     c.innerHTML=h;
-  }catch(e){c.innerHTML=`<div class="interp-empty">⚠️ 搜索失败: ${esc(e.message)}<br><span style="font-size:12px;color:var(--t3)">请尝试刷新或切换网络</span></div>`;}
+  }catch(e){c.innerHTML=`<div class="interp-empty">⚠️ 搜索失败: ${esc(e.message)}<br><span style="font-size:12px;color:var(--g400)">请尝试刷新或切换网络</span></div>`;}
 }
 
 /* ═══════════ MODAL ═══════════ */
@@ -389,17 +719,17 @@ async function viewLaw(bbbsId,title){
     <div class="modal-tabs">
       <button class="tab-btn active" onclick="switchTab('law')" id="tabBtnLaw">📖 法规原文</button>
       <button class="tab-btn" onclick="switchTab('interp')" id="tabBtnInterp">🔍 官方解读</button>
-      <button class="tab-btn" onclick="switchTab('ai')" id="tabBtnAi">🤖 AI 解读</button>
+      <button class="tab-btn" onclick="switchTab('ai')" id="tabBtnAi">🤖 AI解读</button>
       <button class="tab-btn" onclick="switchTab('web')" id="tabBtnWeb">🌐 相关网页</button>
     </div>
     <div class="modal-body">
-      <div class="tab-panel active" id="tabLawContent"><div style="text-align:center;padding:60px"><div class="loading-spinner"></div><p style="margin-top:10px;font-size:13px;color:var(--t2)">正在获取法规全文…</p></div></div>
+      <div class="tab-panel active" id="tabLawContent"><div style="text-align:center;padding:60px"><div class="loading-spinner"></div><p style="margin-top:10px;font-size:13px;color:var(--g500)">正在获取法规全文…</p></div></div>
       <div class="tab-panel" id="tabInterpContent"></div>
-      <div class="tab-panel" id="tabAiContent"><div class="interp-empty" style="padding:40px"><div style="font-size:32px;margin-bottom:12px">🤖</div><p><b>AI 政策解读</b></p><p style="font-size:13px;margin-top:4px;color:var(--t2)">点击下方按钮，AI 将用通俗语言解读本法规</p><button onclick="generateAiInterpret()" style="margin-top:14px;padding:10px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer">✨ 生成 AI 解读</button><p style="font-size:11px;color:var(--t3);margin-top:8px">约需 5-10 秒 · 仅供参考</p></div></div>
+      <div class="tab-panel" id="tabAiContent"><div class="interp-empty" style="padding:40px"><div style="font-size:28px;margin-bottom:10px">🤖</div><p><b>AI 政策解读</b></p><p style="font-size:13px;margin-top:4px;color:var(--g500)">点击下方按钮，AI 将用通俗语言解读本法规</p><button onclick="generateAiInterpret()" style="margin-top:14px;padding:9px 22px;background:var(--black);color:#fff;border:none;font-size:13px;font-weight:600;cursor:pointer">✨ 生成 AI 解读</button><p style="font-size:11px;color:var(--g400);margin-top:6px">约需 5–10 秒 · 仅供参考</p></div></div>
       <div class="tab-panel" id="tabWebContent"></div>
     </div>
     <div class="modal-footer">
-      <span style="font-size:11px;color:var(--t3);margin-right:auto" id="footerInfo">实时获取自NPC国家法规库</span>
+      <span style="font-size:11px;color:var(--g400);margin-right:auto" id="footerInfo">实时获取自NPC国家法规库</span>
       <button class="primary" onclick="window.open('https://flk.npc.gov.cn/detail?id=${bbbsId}','_blank')">NPC 原页面</button>
       <button onclick="closeModal()">关闭</button>
     </div></div>`;
@@ -420,29 +750,24 @@ async function viewLaw(bbbsId,title){
 
 function switchTab(tab){
   activeTab=tab;
-  // Hide all panels, show only active one using CSS class
   document.querySelectorAll('.modal-body .tab-panel').forEach(el=>el.classList.remove('active'));
   const panel=document.getElementById('tab'+tab.charAt(0).toUpperCase()+tab.slice(1)+'Content');
   if(panel)panel.classList.add('active');
-  // Update tab buttons
   document.querySelectorAll('.modal-tabs .tab-btn').forEach(b=>b.classList.remove('active'));
   const btn=document.getElementById('tabBtn'+tab.charAt(0).toUpperCase()+tab.slice(1));
   if(btn)btn.classList.add('active');
-  // Lazy load
   if(tab==='interp')loadInterpretationsTab(_modalLawId);
   if(tab==='web')loadWebRelatedTab(_modalLawId,_modalTitle);
-  // Footer info
   const footerLabels={law:'实时获取自NPC国家法规库',interp:'搜索自 chinatax.gov.cn · mof.gov.cn · gov.cn（仅官方来源）',ai:'AI 生成 · 仅供参考 · 以官方为准',web:'搜索自公众号 + 实务网络（含小颖言税/税海涛声/会计网等）'};
   document.getElementById('footerInfo').textContent=footerLabels[tab]||'';
 }
 
 async function generateAiInterpret(){
   const c=document.getElementById('tabAiContent');
-  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">AI 正在解读法规…</p><p style="font-size:12px;color:var(--t3)">约需 5-10 秒</p></div>`;
+  c.innerHTML=`<div class="interp-empty"><div class="loading-spinner"></div><p style="margin-top:10px">AI 正在解读法规…</p><p style="font-size:12px;color:var(--g400)">约需 5–10 秒</p></div>`;
   try{
     const data=await fetchWithRetry(`/api/ai-interpret/${_modalLawId}?keyword=${encodeURIComponent(lastKeyword)}`);
     if(data.error)throw new Error(data.error);
-    // Parse the markdown interpretation into HTML sections
     const text=data.interpretation||'';
     const sections=text.split(/^##\s+/gm).filter(Boolean);
     let h='';
@@ -450,17 +775,17 @@ async function generateAiInterpret(){
       const lines=sec.trim().split('\n');
       const title=lines[0].trim();
       const body=lines.slice(1).join('\n').trim();
-      h+=`<div style="margin-bottom:18px"><div style="font-weight:700;font-size:15px;color:var(--primary);margin-bottom:6px">📌 ${esc(title)}</div><div style="font-size:14px;line-height:1.8;color:#374151;white-space:pre-line">${esc(body)}</div></div>`;
+      h+=`<div style="margin-bottom:16px"><div style="font-weight:700;font-size:14px;color:var(--black);margin-bottom:4px">📌 ${esc(title)}</div><div style="font-size:14px;line-height:1.8;color:var(--g700);white-space:pre-line">${esc(body)}</div></div>`;
     });
     h+=`<div class="meta-note"><span>🤖 ${data.model||'AI 生成'}</span><span>🕐 ${data.generated_at||''}</span><span>⚠️ ${data.disclaimer||'仅供参考'}</span></div>`;
     c.innerHTML=h;
-  }catch(e){c.innerHTML=`<div class="interp-empty">⚠️ AI 解读失败: ${esc(e.message)}<br><span style="font-size:12px;color:var(--t3)">请确认 Claude Code CLI 可用</span></div>`;}
+  }catch(e){c.innerHTML=`<div class="interp-empty">⚠️ AI 解读失败: ${esc(e.message)}<br><span style="font-size:12px;color:var(--g400)">请确认 Claude Code CLI 可用</span></div>`;}
 }
 
 function closeModal(){document.getElementById('modalOverlay').style.display='none';}
 
 /* ═══════════ GUIDANCE PANEL ═══════════ */
-function toggleGuidance(){const p=document.getElementById('guidancePanel'),m=document.getElementById('mainContent');p.classList.toggle('open');if(p.classList.contains('open'))m.classList.add('with-panel');else m.classList.remove('with-panel');}
+function toggleGuidance(){document.getElementById('guidancePanel').classList.toggle('open');}
 
 function guidePick(field,value){
   guideState[field]=(guideState[field]===value)?null:value;renderGuideStep(guideState.step);
@@ -472,7 +797,8 @@ function renderGuideStep(step){
   if(step==='user_type'){body.innerHTML=`<div class="step"><div class="step-label">Step 1/4</div><div class="step-question">你的身份是？</div><div class="choice-grid"><div class="choice${guideState.user_type==='enterprise'?' picked':''}" onclick="guidePick('user_type','enterprise')"><span class="ci">🏢</span>企业</div><div class="choice${guideState.user_type==='individual'?' picked':''}" onclick="guidePick('user_type','individual')"><span class="ci">👤</span>个人 / 个体户</div><div class="choice${guideState.user_type==='agent'?' picked':''}" onclick="guidePick('user_type','agent')"><span class="ci">📋</span>代理记账 / 税务师</div><div class="choice${guideState.user_type==='other'?' picked':''}" onclick="guidePick('user_type','other')"><span class="ci">💬</span>其他</div></div></div>`;foot.innerHTML='<button disabled>点击选项自动进入下一步</button>';}
   else if(step==='tax_type'){const idLabels={enterprise:'企业',individual:'个人/个体户',agent:'代理记账/税务师',other:''};const idLabel=idLabels[guideState.user_type]||'';let ch=[{v:'vat',icon:'📊',label:'增值税',desc:'流转税核心'},{v:'cit',icon:'🏢',label:'企业所得税',desc:'利润征税'},{v:'iit',icon:'👤',label:'个人所得税',desc:'工资/劳务/经营'},{v:'invoice',icon:'🧾',label:'发票管理',desc:'开票/抵扣/红冲'},{v:'prefer',icon:'🎁',label:'税收优惠',desc:'减免/退税'},{v:'stamp',icon:'📝',label:'印花税',desc:'合同/账簿'},{v:'deed',icon:'🔑',label:'契税',desc:'不动产登记'},{v:'property',icon:'🏠',label:'房产税',desc:'房屋租赁'},{v:'consumption',icon:'🛒',label:'消费税',desc:'特定消费品'},{v:'tariff',icon:'🚢',label:'关税',desc:'进出口'},{v:'land_vat',icon:'🏗️',label:'土地增值税',desc:'房地产'},{v:'admin',icon:'⚖️',label:'税收征管',desc:'登记/申报/稽查'}];body.innerHTML=`<div class="step"><div class="step-label">Step 2/4 ${idLabel?'· '+idLabel:''}</div><div class="step-question">你想了解哪个税种？</div><div class="choice-grid">${ch.map(c=>`<div class="choice${guideState.tax_type===c.v?' picked':''}" onclick="guidePick('tax_type','${c.v}')"><span class="ci">${c.icon}</span>${c.label}<span class="cl">${c.desc}</span></div>`).join('')}</div></div>`;foot.innerHTML=`<button onclick="renderGuideStep('intent')">跳过手动选择 →</button>${guideState.user_type?`<button class="reset" onclick="renderGuideStep('user_type')">← 返回修改</button>`:''}`;}
   else if(step==='intent'){const tl={vat:'增值税',cit:'企业所得税',iit:'个人所得税',invoice:'发票管理',prefer:'税收优惠',stamp:'印花税',deed:'契税',property:'房产税',consumption:'消费税',tariff:'关税',land_vat:'土地增值税',admin:'税收征管'};const tLabel=tl[guideState.tax_type]||guideState.tax_type||'';body.innerHTML=`<div class="step"><div class="step-label">Step 3/4${tLabel?' · '+tLabel:''}</div><div class="step-question">你想了解什么？</div><div class="choice-grid"><div class="choice${guideState.intent==='policy'?' picked':''}" onclick="guidePick('intent','policy')"><span class="ci">📖</span>查政策 / 税率<span class="cl">具体规定、税率标准</span></div><div class="choice${guideState.intent==='preference'?' picked':''}" onclick="guidePick('intent','preference')"><span class="ci">🎁</span>优惠资格<span class="cl">能否享受减免/退税</span></div><div class="choice${guideState.intent==='risk'?' picked':''}" onclick="guidePick('intent','risk')"><span class="ci">⚠️</span>风险自查<span class="cl">金税四期/合规</span></div><div class="choice${guideState.intent==='filing'?' picked':''}" onclick="guidePick('intent','filing')"><span class="ci">📋</span>申报流程<span class="cl">怎么申报/截止日期</span></div><div class="choice${guideState.intent==='invoice'?' picked':''}" onclick="guidePick('intent','invoice')"><span class="ci">🧾</span>发票问题<span class="cl">开票/遗失/红冲</span></div><div class="choice${guideState.intent==='calc'?' picked':''}" onclick="guidePick('intent','calc')"><span class="ci">🔢</span>计算/标准<span class="cl">起征点/扣除标准</span></div></div></div>`;foot.innerHTML=`<button onclick="renderGuideStep('conditions')">跳过手动选择 →</button><button class="reset" onclick="renderGuideStep('tax_type')">← 返回修改</button>`;}
-  else{const tl={vat:'增值税',cit:'企业所得税',iit:'个人所得税',invoice:'发票管理',prefer:'税收优惠'};const il={policy:'查政策',preference:'优惠资格',risk:'风险自查',filing:'申报流程',invoice:'发票问题',calc:'计算标准'};const tLabel=tl[guideState.tax_type]||guideState.tax_type||'';const iLabel=il[guideState.intent]||guideState.intent||'';body.innerHTML=`<div class="step"><div class="step-label">Step 4/4${tLabel?' · '+tLabel:''}${iLabel?' · '+iLabel:''}</div><div class="step-question">补充条件（可选，可多选）</div><div class="choice-grid"><div class="choice${guideState.enterprise_type==='small'?' picked':''}" onclick="guidePick('enterprise_type','small')"><span class="ci">🏪</span>小规模纳税人<span class="cl">年应税≤500万</span></div><div class="choice${guideState.enterprise_type==='general'?' picked':''}" onclick="guidePick('enterprise_type','general')"><span class="ci">🏭</span>一般纳税人</div><div class="choice${guideState.enterprise_type==='micro'?' picked':''}" onclick="guidePick('enterprise_type','micro')"><span class="ci">🌱</span>小微企业<span class="cl">利润≤300万</span></div><div class="choice${guideState.enterprise_type==='hitech'?' picked':''}" onclick="guidePick('enterprise_type','hitech')"><span class="ci">🔬</span>高新技术企业</div><div class="choice${guideState.timeframe==='latest'?' picked':''}" onclick="guidePick('timeframe','latest')"><span class="ci">🆕</span>只看最新政策</div><div class="choice${guideState.timeframe==='2024'?' picked':''}" onclick="guidePick('timeframe','2024')"><span class="ci">📅</span>2024年以来的</div><div class="choice${guideState.region==='national'?' picked':''}" onclick="guidePick('region','national')"><span class="ci">🇨🇳</span>全国性政策</div><div class="choice${guideState.region==='local'?' picked':''}" onclick="guidePick('region','local')"><span class="ci">📍</span>也看地方性法规</div></div><div style="margin-top:14px"><div style="font-size:12px;color:var(--t2);margin-bottom:4px">或直接输入关键词：</div><input type="text" id="customKeyword" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:13px" placeholder="例如：研发费用加计扣除、留抵退税…"></div></div>`;foot.innerHTML=`<button onclick="executeGuidedSearch()">🔍 生成搜索 →</button><button class="reset" onclick="renderGuideStep('intent')">← 返回修改</button>`;}}
+  else{const tl={vat:'增值税',cit:'企业所得税',iit:'个人所得税',invoice:'发票管理',prefer:'税收优惠'};const il={policy:'查政策',preference:'优惠资格',risk:'风险自查',filing:'申报流程',invoice:'发票问题',calc:'计算标准'};const tLabel=tl[guideState.tax_type]||guideState.tax_type||'';const iLabel=il[guideState.intent]||guideState.intent||'';body.innerHTML=`<div class="step"><div class="step-label">Step 4/4${tLabel?' · '+tLabel:''}${iLabel?' · '+iLabel:''}</div><div class="step-question">补充条件（可选，可多选）</div><div class="choice-grid"><div class="choice${guideState.enterprise_type==='small'?' picked':''}" onclick="guidePick('enterprise_type','small')"><span class="ci">🏪</span>小规模纳税人<span class="cl">年应税≤500万</span></div><div class="choice${guideState.enterprise_type==='general'?' picked':''}" onclick="guidePick('enterprise_type','general')"><span class="ci">🏭</span>一般纳税人</div><div class="choice${guideState.enterprise_type==='micro'?' picked':''}" onclick="guidePick('enterprise_type','micro')"><span class="ci">🌱</span>小微企业<span class="cl">利润≤300万</span></div><div class="choice${guideState.enterprise_type==='hitech'?' picked':''}" onclick="guidePick('enterprise_type','hitech')"><span class="ci">🔬</span>高新技术企业</div><div class="choice${guideState.timeframe==='latest'?' picked':''}" onclick="guidePick('timeframe','latest')"><span class="ci">🆕</span>只看最新政策</div><div class="choice${guideState.timeframe==='2024'?' picked':''}" onclick="guidePick('timeframe','2024')"><span class="ci">📅</span>2024年以来的</div><div class="choice${guideState.region==='national'?' picked':''}" onclick="guidePick('region','national')"><span class="ci">🇨🇳</span>全国性政策</div><div class="choice${guideState.region==='local'?' picked':''}" onclick="guidePick('region','local')"><span class="ci">📍</span>也看地方性法规</div></div><div style="margin-top:14px"><div style="font-size:12px;color:var(--g500);margin-bottom:4px">或直接输入关键词：</div><input type="text" id="customKeyword" style="width:100%;padding:8px 12px;border:1px solid var(--g200);font-size:13px;background:var(--white);color:var(--black)" placeholder="例如：研发费用加计扣除、留抵退税…"></div></div>`;foot.innerHTML=`<button onclick="executeGuidedSearch()">🔍 生成搜索 →</button><button class="reset" onclick="renderGuideStep('intent')">← 返回修改</button>`;}
+}
 
 function executeGuidedSearch(){const taxMap={vat:'增值税',cit:'企业所得税',iit:'个人所得税',invoice:'发票管理办法',prefer:'税收优惠',stamp:'印花税',deed:'契税',property:'房产税',consumption:'消费税',tariff:'关税',land_vat:'土地增值税',admin:'税收征收管理法'};const intentMap={policy:'',preference:'优惠',risk:'风险 合规',filing:'申报',invoice:'发票',calc:'标准 扣除'};const entMap={small:'小规模纳税人',general:'一般纳税人',micro:'小微企业',hitech:'高新技术企业'};let parts=[];const taxK=guideState.tax_type?taxMap[guideState.tax_type]||guideState.tax_type:'';if(taxK)parts.push(taxK);if(guideState.intent&&intentMap[guideState.intent])parts.push(intentMap[guideState.intent]);if(guideState.enterprise_type&&entMap[guideState.enterprise_type])parts.push(entMap[guideState.enterprise_type]);const custom=document.getElementById('customKeyword')?.value?.trim();if(custom)parts.push(custom);document.getElementById('searchInput').value=parts.join(' ')||'增值税';if(guideState.timeframe==='latest')document.getElementById('filterSort').value='date';if(guideState.timeframe==='2024')document.getElementById('filterDateFrom').value='2024-01-01';if(guideState.region==='local')document.getElementById('filterStatus').value='';toggleGuidance();doSearch();}
 
