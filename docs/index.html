@@ -24,8 +24,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .search-input:focus{border-color:var(--primary)}
 .search-btn{padding:11px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
 .search-btn:hover{background:#1e40af}.search-btn:disabled{opacity:.5;cursor:not-allowed}
-.quick-tax{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
-.quick-tax button{padding:5px 12px;border:1px solid var(--border);border-radius:20px;background:var(--card);font-size:12px;cursor:pointer;transition:all .12s}
+.quick-tax{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:12px}
+@media(max-width:500px){.quick-tax{grid-template-columns:repeat(3,1fr)}}
+.quick-tax button{padding:6px 4px;border:1px solid var(--border);border-radius:6px;background:var(--card);font-size:11px;cursor:pointer;transition:all .12s;text-align:center}
 .quick-tax button:hover{background:var(--plight);border-color:var(--primary)}
 .quick-tax button .t{display:block;font-weight:600;font-size:13px}
 .quick-tax button .s{display:block;font-size:10px;color:var(--t2)}
