@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>财税政策实时搜索引擎</title>
 <style>
-:root{--bg:#f3f4f6;--card:#fff;--text:#111827;--t2:#6b7280;--t3:#9ca3af;--border:#e5e7eb;--primary:#1d4ed8;--plight:#dbeafe;--green:#059669;--gbg:#d1fae5;--yellow:#b45309;--ybg:#fef3c7;--red:#dc2626;--rbg:#fee2e2;--radius:10px;--shadow:0 1px 3px #00000010;--panel-w:420px}
+:root{--bg:#fafafa;--card:#fff;--text:#111;--t2:#525252;--t3:#a3a3a3;--border:#e5e5e5;--primary:#dc2626;--plight:#fee2e2;--accent:#dc2626;--green:#059669;--gbg:#d1fae5;--yellow:#b45309;--ybg:#fef3c7;--red:#dc2626;--rbg:#fee2e2;--radius:0;--shadow:none;--panel-w:420px}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .app{display:flex;min-height:100vh}
@@ -77,19 +77,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .guidance-panel .gp-footer .reset{background:none;color:var(--t2);font-size:12px;margin-top:6px;width:100%}
 .guidance-panel .gp-footer .reset:hover{color:var(--text)}
 @media(max-width:800px){.guidance-panel{width:100%}}
-</style>
+.hero{text-align:center;padding:48px 20px 28px;border-bottom:1px solid var(--border);transition:padding .3s}.hero-logo{display:block;margin:0 auto 14px;color:var(--text)}.hero-title{font-size:28px;font-weight:800;letter-spacing:8px;color:var(--text);margin-bottom:8px}.hero-subtitle{font-size:12px;color:var(--t2);letter-spacing:1px;max-width:360px;margin:0 auto;line-height:1.5}.hero.compact{padding:18px 20px 12px}.hero.compact .hero-logo{width:28px;height:28px;margin-bottom:8px}.hero.compact .hero-title{font-size:17px;letter-spacing:4px}.hero.compact .hero-subtitle{font-size:10px}</style>
 </head>
 <body>
 
-<div class="header">
-  <h1>财税政策实时搜索引擎</h1>
-  <p>覆盖 12 大税种 · 数据每日自动更新 · NPC 国家法律法规数据库</p>
-  <p style="font-size:11px;margin-top:6px;opacity:0.85">💻 <a href="https://github.com/huang-doudou567/tax-policy-search" target="_blank" style="color:#93c5fd;text-decoration:underline">下载完整版</a> 本地运行可体验：法规原文 · 官方解读 · AI解读 · 公众号实务参考</p>
-  <div class="badges">
-    <span class="badge">增值税</span><span class="badge">企业所得税</span><span class="badge">个人所得税</span>
-    <span class="badge">消费税</span><span class="badge">印花税</span><span class="badge">房产税</span>
-    <span class="badge">关税</span><span class="badge">契税</span><span class="badge">土地增值税</span>
-  </div>
+<div class="hero" id="heroSection">
+  <svg class="hero-logo" viewBox="0 0 48 48" width="48" height="48" fill="none">
+    <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 18h16M16 26h12M16 34h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M24 3l-4 5h8l-4-5z" fill="var(--accent)"/>
+    <circle cx="24" cy="18" r="6" fill="var(--accent)" opacity=".08"/>
+  </svg>
+  <h1 class="hero-title">规则的起点</h1>
+  <p class="hero-subtitle">数据源自国家法规库 · 实时同步 · 现行有效</p>
 </div>
 
 <div class="app">
@@ -102,7 +102,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
       <button class="search-btn" id="searchBtn" onclick="doSearch()">搜索</button>
     </div>
     <div class="quick-tax" id="quickTax"></div>
-    <div class="filters">
+    <div class="filters" id="filtersBar">
       <div class="filter-group"><label>范围</label><select id="filterScope"><option value="title">标题</option><option value="fulltext" selected>全文</option></select></div>
       <div class="filter-group"><label>匹配</label><select id="filterType"><option value="fuzzy">模糊</option><option value="exact">精确</option></select></div>
       <div class="filter-group"><label>时效</label><select id="filterStatus"><option value="3" selected>现行有效</option><option value="">全部</option></select></div>
@@ -110,7 +110,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
       <div class="filter-group"><label>省份</label><select id="filterProvince"><option value="">全国</option></select></div>
       <div class="filter-group"><label>日期</label><input type="date" id="filterDateFrom">—<input type="date" id="filterDateTo"></div>
     </div>
-    <div class="guidance-toggle" onclick="toggleGuidance()">💡 不确定查什么？打开智能引导</div>
+      <span class="guidance-toggle" id="filterToggleBtn" onclick="toggleFilters()" style="margin-right:12px">高级筛选 ▼</span>
+  <div class="guidance-toggle" onclick="toggleGuidance()">💡 不确定查什么？打开智能引导</div>
   </div>
 
   <div id="resultsContainer"></div>
@@ -136,12 +137,12 @@ const NEXT_STEP = {user_type:'tax_type',tax_type:'intent',intent:'conditions'};
 const PROVINCE_NAMES = {beijing:'北京',shanghai:'上海',tianjin:'天津',chongqing:'重庆',guangdong:'广东',shenzhen:'深圳',zhejiang:'浙江',jiangsu:'江苏',shandong:'山东',sichuan:'四川',hubei:'湖北',hunan:'湖南',henan:'河南',hebei:'河北',fujian:'福建',xiamen:'厦门',anhui:'安徽',liaoning:'辽宁',dalian:'大连',jilin:'吉林',heilongjiang:'黑龙江',jiangxi:'江西',shanxi:'山西',shaanxi:'陕西',gansu:'甘肃',qinghai:'青海',yunnan:'云南',guizhou:'贵州',guangxi:'广西',hainan:'海南',neimenggu:'内蒙古',ningxia:'宁夏',xinjiang:'新疆',xizang:'西藏',qingdao:'青岛',ningbo:'宁波'};
 
 const TAX_TYPES = [
-  {label:"增值税",kw:"增值税",icon:"📊"},{label:"企业所得税",kw:"企业所得税",icon:"🏢"},
-  {label:"个人所得税",kw:"个人所得税",icon:"👤"},{label:"消费税",kw:"消费税",icon:"🛒"},
-  {label:"关税",kw:"关税",icon:"🚢"},{label:"房产税",kw:"房产税",icon:"🏠"},
-  {label:"印花税",kw:"印花税",icon:"📝"},{label:"契税",kw:"契税",icon:"🔑"},
-  {label:"土地增值税",kw:"土地增值税",icon:"🏗️"},{label:"税收优惠",kw:"税收优惠",icon:"🎁"},
-  {label:"发票管理",kw:"发票管理办法",icon:"🧾"},{label:"税收征管",kw:"税收征收管理法",icon:"⚖️"}
+  {label:"增值税",kw:"增值税",icon:""},{label:"企业所得税",kw:"企业所得税",icon:""},
+  {label:"个人所得税",kw:"个人所得税",icon:""},{label:"消费税",kw:"消费税",icon:""},
+  {label:"关税",kw:"关税",icon:""},{label:"房产税",kw:"房产税",icon:""},
+  {label:"印花税",kw:"印花税",icon:""},{label:"契税",kw:"契税",icon:""},
+  {label:"土地增值税",kw:"土地增值税",icon:""},{label:"税收优惠",kw:"税收优惠",icon:""},
+  {label:"发票管理",kw:"发票管理办法",icon:""},{label:"税收征管",kw:"税收征收管理法",icon:""}
 ];
 const STATUS_ICONS = {1:"🔴",2:"🟡",3:"🟢",4:"🔵"};
 const STATUS_NAMES = {1:"已废止",2:"已修改",3:"现行有效",4:"尚未生效"};
@@ -187,6 +188,19 @@ function loadProvinces() {
 function pickTax(kw) {
   document.getElementById('searchInput').value = kw;
   doSearch();
+}
+const _GARBAGE_TITLES = ['游戏','小游戏','攻略','视频','电影','电视剧','综艺','下载','app下载','安装','破解','会员','充值','美女','八卦','娱乐','体育','足球','NBA','4399','7k7k'];
+function _isGarbage(title) {
+  for (const k of _GARBAGE_TITLES) { if ((title||'').includes(k)) return true; }
+  return false;
+}
+function toggleFilters() {
+  const bar = document.getElementById('filtersBar');
+  const btn = document.getElementById('filterToggleBtn');
+  if (!bar) return;
+  const isHidden = bar.style.display === 'none' || !bar.style.display;
+  bar.style.display = isHidden ? 'flex' : 'none';
+  if (btn) btn.textContent = isHidden ? '收起筛选 ▲' : '高级筛选 ▼';
 }
 
 /* ═══════════ SEARCH ═══════════ */
@@ -278,6 +292,8 @@ function doSearch() {
     });
   }
 
+  allResults = allResults.filter(item => !_isGarbage(item.title));
+  document.getElementById("heroSection")?.classList.add("compact");
   renderResults(query, allResults);
 }
 
