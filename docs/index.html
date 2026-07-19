@@ -26,10 +26,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .search-btn:hover{background:#1e40af}.search-btn:disabled{opacity:.5;cursor:not-allowed}
 .quick-tax{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:12px}
 @media(max-width:500px){.quick-tax{grid-template-columns:repeat(3,1fr)}}
-.quick-tax button{padding:6px 4px;border:1px solid var(--border);border-radius:6px;background:var(--card);font-size:11px;cursor:pointer;transition:all .12s;text-align:center}
+.quick-tax button{padding:8px 4px;border:1px solid var(--border);border-radius:6px;background:var(--card);font-size:13px;font-weight:600;cursor:pointer;transition:all .12s;text-align:center}
 .quick-tax button:hover{background:var(--plight);border-color:var(--primary)}
-.quick-tax button .t{display:block;font-weight:600;font-size:13px}
-.quick-tax button .s{display:block;font-size:10px;color:var(--t2)}
 .guidance-toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--primary);cursor:pointer;margin-top:8px;width:fit-content}
 .guidance-toggle:hover{text-decoration:underline}
 .filters{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;align-items:center}
@@ -174,7 +172,7 @@ async function loadData() {
 
 function buildQuickTax() {
   document.getElementById('quickTax').innerHTML = TAX_TYPES.map(t =>
-    `<button onclick="pickTax('${t.kw}')"><span class="t">${t.icon} ${t.label}</span><span class="s">${t.kw}</span></button>`
+    `<button onclick="pickTax('${t.kw}')">${t.label}</button>`
   ).join('');
 }
 
